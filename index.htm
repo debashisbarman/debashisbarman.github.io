@@ -1,8 +1,21 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
+<meta name="author" content="Debashis Barman" />
+<meta name="description" content="Debashis Barman is a Freelance Web Designer. He specialises in Minimalist Web Design, Responsive Layout and Web Typography." />
+<meta name="keywords" content="Freelance Web Designer Debashis Barman, Responsive Web Design, One Man Design" />
+<meta name="copyright" content="Debashis Barman" />
+<meta name="audience" content="all" />
+<meta name="distribution" content="global" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en"/>
+<meta name="robots" content="INDEX, FOLLOW" />
+<meta name="googlebot" content="INDEX, FOLLOW" />
+<meta name="google" content="notranslate" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 <title>Debashis Barman</title>
 <style type="text/css">
 html, body{
@@ -24,15 +37,15 @@ body{
 .body{
 	margin:0 auto;
 	padding:5%;
-	width:61.80%;
+	max-width:960px;
 	text-align:left;
-	border-left:thin;
-	border-left-color:gray;
-	border-left-style:solid;
 }
 .info{
-	font-size:1.618em;
-	padding-bottom:1em;
+	font-size:16px;
+	margin-bottom:2em;
+}
+.info div{
+	float:left;
 }
 .info a{
 	border-bottom:thin;
@@ -44,10 +57,37 @@ body{
 	border-bottom-color:black;
 }
 .contact{
-	font-size:1.2em;
+	clear:both;
+	padding-top:1.2em;
+}
+@media only screen
+and (min-width:240px)
+and (max-width:1024px)
+{
+.body{
+	width:90%;
+}
+.contact{
+	font-size:16px;
 }
 .contact a{
-	margin-right:1.2em;
+	margin-right:1em;
+}
+}
+@media screen and (min-width:1024px)
+{
+.body{
+	width:61.80%;
+	border-left:thin;
+	border-left-color:gray;
+	border-left-style:solid;
+}
+.contact{
+	font-size:1em;
+}
+.contact a{
+	margin-right:1em;
+}
 }
 </style>
 <style type="text/css">
@@ -72,16 +112,16 @@ body{
 [class*="entypo-twitter"]:before {
   font-family: 'entypo', sans-serif;
 }
-/* Google+ */
-[class*="entypo-gplus"]:before {
+/* Tumblr */
+[class*="entypo-tumblr"]:before {
   font-family: 'entypo', sans-serif;
 }
-/* Facebook */
-[class*="entypo-facebook"]:before {
+/* Dribble */
+[class*="entypo-dribbble"]:before {
   font-family: 'entypo', sans-serif;
 }
-/* Linkedin */
-[class*="entypo-linkedin"]:before {
+/* Github */
+[class*="entypo-github"]:before {
   font-family: 'entypo', sans-serif;
 }
 /* Behance */
@@ -102,17 +142,54 @@ a:hover{
 <body>
 <div class="wrapper">
 	<div class="body">
-		<div class="info">My name is Debashis Barman and I 
-			design clean and minimal websites.<br/></div>
+		<div class="info">
+			<div itemscope itemtype="http://schema.org/Person">
+				<div>Hi! Myself&nbsp;</div>
+					<a itemprop="url" href="http://www.debashisbarman.in/" title="Debashis Barman">
+						<div itemprop="name"><strong>Debashis Barman</strong></div>
+					</a>
+				<div>;&nbsp;</div> 
+				<div itemprop="jobtitle">Freelance Web Designer&nbsp;</div> 
+				<div>from&nbsp;</div> 
+				<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<div itemprop="addressCountry">India</div>
+				</div>
+				<div>; Co-founder of&nbsp;</div>
+				<div>
+					<a target="_blank" rel="" href="onemandesign/" title="One Man Design"><span itemprop="name">One Man Design</span></a>;&nbsp;
+				</div> 
+				<div>
+					working as webmaster on <a target="_blank" rel="external" href="http://www.proyakh.in" title="Proyakh">Proyakh</a>;
+					<a target="_blank" rel="" href="mailto:contact@debashisbarman.in" title="Email">let's talk</a>
+				</div>
+			</div>
+		</div>
 		<div class="contact">
-			<a target="_blank" rel="" href="mailto:contact@debashisbarman.in" title="Email" class="entypo-mail"></a>			
-			<a target="_blank" rel="external" href="https://www.facebook.com/debashisb04" title="Facebook" class="entypo-facebook"></a>
-			<a target="_blank" rel="external" href="http://plus.google.com/+DebashisBarman?rel=author" title="Google+" class="entypo-gplus"></a>
 			<a target="_blank" rel="external" href="http://twitter.com/Deb_Speaks" title="Twitter" class="entypo-twitter"></a>
+			<a target="_blank" rel="external" href="http://github.com/debashisbarman" title="Github" class="entypo-github"></a>
+			<a target="_blank" rel="external" href="http://dribbble.com/debashis.barman" title="Dribbble" class="entypo-dribbble"></a>
 			<a target="_blank" rel="external" href="https://www.behance.net/debashisbarman" title="Behance" class="entypo-behance"></a>
+			<a target="_blank" rel="external" href="http://debashisbarman.tumblr.com" title="Tumblr" class="entypo-tumblr"></a>
+			
+			<!--
+			<br/><br/>
+			<!-- Place this tag where you want the widget to render. --
+			<div class="g-follow" data-annotation="bubble" data-height="15" data-href="//plus.google.com/u/0/114830142065487275462" data-rel="author"></div>
+
+			<!-- Place this tag after the last widget tag. --
+			<script type="text/javascript">
+				(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/platform.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				})();
+			</script>
+			-->
 		</div>
 	</div>
 </div>
 </body>
 
 </html>
+
+
