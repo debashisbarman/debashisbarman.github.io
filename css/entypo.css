@@ -1,0 +1,48 @@
+/*
+
+Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io
+07/29/2014
+
+*/
+
+/* Import
+=========================*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+/* Declaration
+=========================*/
+/* entypo */
+[class*="entypo-quote"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-docs"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-picture"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-link"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-chat"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-paper-plane"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-archive"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-download"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-mail"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-paper-plane"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-up-circled"]:before {
+  font-family: 'entypo', sans-serif;
+}
