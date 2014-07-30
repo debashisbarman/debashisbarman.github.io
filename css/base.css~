@@ -7,21 +7,21 @@ Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.gi
 
 /* Body
 =========================*/
-html, body{
+html, body {
 width: 100%;
 height: 100%;
 margin: 0;
 padding: 0;
 }
-body{
+body {
 }
 
 /* Components
 =========================*/
-.container{
-margin: 10% auto 5%;
+.container {
+margin: 10% auto;
 }
-.vertical-center{
+.vertical-center {
 display: table-cell;
 vertical-align: middle;
 }
@@ -31,24 +31,38 @@ border: none;
 height: 2.5px;
 background-color: #03a9f4;
 }
-.title{
+.title {
 font-size: 3.5em;
 font-weight: 400;
 }
-.subtitle{
+.subtitle {
 font-size: 1.618em;
 font-weight: 400;
 }
-.para{
+.para {
 margin-top: 2.5%;
 margin-bottom: 2.5%;
-font-size: 1.25em;		/* 20 px / 16 px */
+font-size: 1.25em;/* 20 px / 16 px */
 line-height: 2.25em;	/* 36 px / 16 px */
 color: #6c6c6c;
 }
+footer {  
+pointer-events: none;
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 50%;
+z-index: 3;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 86%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(86%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 100%);
+background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 100%);
+	}
 
 /* Typography
 =========================*/
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
 color: #050000;
 }
