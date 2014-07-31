@@ -4,7 +4,7 @@ Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.gi
 07/29/2014
 
 */
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 /* Body
 =========================*/
 html, body {
@@ -12,6 +12,8 @@ width: 100%;
 height: 100%;
 margin: 0;
 padding: 0;
+font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-rendering: optimizeLegibility;
 border-top: 2px solid #03a9f4;
 }
 
