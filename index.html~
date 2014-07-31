@@ -19,22 +19,6 @@
 <body>
 <div class="container">
 
-<!-- Navigation -->
-<div class="navigation">
-<div class="vertical-center">
-<div class="dotstyle dotstyle-fillin">
-	<ul>
-		<li class="current"><a href="#home">Home</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#thoughts-and-words">Thoughts & Words</a></li>
-		<li><a href="#works-on-behance">Works on Behance</a></li>
-		<li><a href="#let's-talk">Let's Talk</a></li>
-		<li><a href="#reach-me">Reach-Me</a></li>
-	</ul>
-</div>
-</div>
-</div>
-
 <!-- Header -->
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
@@ -109,16 +93,5 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-
-<script src="js/dots.js"></script>
-		<script>
-			[].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
-				new DotNav( nav, {
-					callback : function( idx ) {
-						//console.log( idx )
-					}
-				} );
-			} );
-		</script>
 </body>
 </html>
