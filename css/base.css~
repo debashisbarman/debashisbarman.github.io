@@ -100,7 +100,7 @@ outline: none;
 border-radius: 50%;
 background-color: #03a9f4;
 background-color: #03a9f4;
-text-indent: -999em;		/* Make the text accessible to screen readers */
+text-indent: -999em;		/* Make the text accessible to screen readers. */
 cursor: pointer;
 position: absolute;
 }
@@ -168,11 +168,11 @@ top: 0;
 }
 ul.timeline li:first-child:before {
 /* First li's line */
-top: 50%;	/* Moves the line down so that it disappears under the bullet. Adjust manually */
+top: 50%;	/* Moves the line down so that it disappears under the bullet. Adjust manually. */
 }
 ul.timeline li:last-child:before {
 /* Last li's line */
-height: 50%;	/* Shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+height: 50%;	/* Shorten the line so it goes only up to the bullet. Is equal to first-child:before's top. */
 }
 .year{
 padding-left: 1em;
@@ -191,38 +191,38 @@ color: #050000;
 @media (max-width: 768px) {
 	.title {
 	font-size: 269.2307692%;		/* 80.769230769 px / 30 px */
-	margin-left: -0.4%;				/* 3px / 750 px */
+	margin-left: -0.4%;		/* 3px / 750 px */
 	}
 	.subtitle, h2 {
-	font-size:  19.230769231px;	/* ( 30 px * 750 ) / 1170 px */
+	font-size:  19.230769231px;		/* ( 30 px * 750 ) / 1170 px */
 	}
 	.para {
 	font-size: 16px;
-	line-height: 144.2307692%;	/* 23.076923077 px / 16 px */
+	line-height: 144.2307692%;		/* 23.076923077 px / 16 px */
 	}
 	ul.timeline li {
-	padding-top: 1.025em;
-	padding-bottom: 1.025em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	font-size: .9em;	
 	}
 	ul.list-unstyled li {
 	font-size: .9em;
-	margin: 1.25em auto;				/* Google tap targets size issue */
+	margin: 1.25em auto;			/* Google User Experience */
 	}
 	footer {
-	height: 32.051282051%;			/* ( 50 * 750 ) / 1170 px */	
+	height: 32.051282051%;		/* ( 50 * 750 ) / 1170 px */	
 	}
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	.title {
 	font-size: 290.1709402%;		/* 104.461538462 px / 36 px */
-	margin-left: -0.309278351%;	/* 3 px / 970 px */
+	margin-left: -0.309278351%;		/* 3 px / 970 px */
 	}
 	.subtitle, h2 {
-	font-size: 24.871794872px;	/* ( 30 px * 970 ) / 1170 px */
+	font-size: 24.871794872px;		/* ( 30 px * 970 ) / 1170 px */
 	}
 	.para {
-	line-height: 186.5384615%;	/* 29.846153846 px / 16 px */
+	line-height: 186.5384615%;		/* 29.846153846 px / 16 px */
 	}
 	footer {
 	height: 41.452991453%;			/* ( 50 * 970 ) / 1170 px */
