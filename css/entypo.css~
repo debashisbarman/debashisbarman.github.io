@@ -9,7 +9,8 @@ Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.gi
 =========================*/
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
-/* Import
+
+/* Declaration
 =========================*/
 /* entypo */
 [class*="entypo-quote"]:before {
@@ -42,6 +43,6 @@ Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.gi
 [class*="entypo-paper-plane"]:before {
   font-family: 'entypo', sans-serif;
 }
-[class*="entypo-up-circled"]:before {
+[class*="entypo-twitter"]:before {
   font-family: 'entypo', sans-serif;
 }
