@@ -43,6 +43,9 @@ Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.gi
 [class*="entypo-paper-plane"]:before {
   font-family: 'entypo', sans-serif;
 }
-[class*="entypo-twitter"]:before {
+[class*="entypo-back-in-time"]:before {
+  font-family: 'entypo', sans-serif;
+}
+[class*="entypo-twitter-circled"]:before {
   font-family: 'entypo', sans-serif;
 }

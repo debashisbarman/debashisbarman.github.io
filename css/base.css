@@ -178,9 +178,9 @@ ul.timeline li:last-child:before {
 height: 50%;	/* Shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
 }
 .year{
-padding-left: 2.5%;
+padding-left: 1em;
+font-size: .9em;
 color: silver;	
-font-weight: bold;
 }
 
 /* Typography
