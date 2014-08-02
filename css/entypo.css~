@@ -2,6 +2,7 @@
 
 Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io
 07/29/2014
+Version 1.0.25 (Stable)
 
 */
 
@@ -44,8 +45,5 @@ Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.gi
   font-family: 'entypo', sans-serif;
 }
 [class*="entypo-back-in-time"]:before {
-  font-family: 'entypo', sans-serif;
-}
-[class*="entypo-twitter-circled"]:before {
   font-family: 'entypo', sans-serif;
 }
