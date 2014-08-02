@@ -48,9 +48,6 @@ font-size: 125%;			/* 20 px / 16 px */
 line-height: 2.25em;	/* 36 px / 16 px */
 color: #6c6c6c;
 }
-.fun {
-text-decoration: line-through;
-}
 footer {  
 pointer-events: none;
 position: fixed;
@@ -201,7 +198,16 @@ color: #050000;
 	}
 	.para {
 	font-size: 16px;
-	/*line-height: 144.2307692%;	/* 23.076923077 px / 16 px */
+	line-height: 144.2307692%;	/* 23.076923077 px / 16 px */
+	}
+	ul.timeline li {
+	padding-top: 1.025em;
+	padding-bottom: 1.025em;
+	font-size: .9em;	
+	}
+	ul.list-unstyled li {
+	font-size: .9em;
+	margin: 1.25em auto;				/* Google tap targets size issue */
 	}
 	footer {
 	height: 32.051282051%;			/* ( 50 * 750 ) / 1170 px */	
