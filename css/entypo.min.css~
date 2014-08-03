@@ -1,6 +1,6 @@
 /*
 Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io
 07/29/2014
-Version 1.3.28 (Stable)
+Version 1.4.29 (Unstable)
 */
 @import url(http://weloveiconfonts.com/api/?family=entypo);[class*=entypo-archive]:before,[class*=entypo-back-in-time]:before,[class*=entypo-chat]:before,[class*=entypo-docs]:before,[class*=entypo-download]:before,[class*=entypo-link]:before,[class*=entypo-mail]:before,[class*=entypo-paper-plane]:before,[class*=entypo-picture]:before,[class*=entypo-quote]:before,[class*=entypo-search]:before,[class*=entypo-location]:before{font-family:entypo,sans-serif}

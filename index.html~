@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <!-- Website content and design (c) Debashis Barman -->
-<!-- Version 1.4.29 (Unstable) -->
+<!-- Version 1.4.30 (Stable) -->
 <head>
 <title>Debashis Barman | Freelance Web Designer</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable=no">
 <meta name="description" content="Debashis Barman is a Freelance Web Designer. He specializes in Minimalist Web Design, Responsive Layout and Web Typography."/>
 <meta name="keywords" content="Freelance Web Designer, Debashis Barman, Responsive Web Design, Minimal Web Design"/>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/base.min.css" rel="stylesheet">
-<link href="css/entypo.min.css" rel="stylesheet">		
+<link target="_blank" href="css/bootstrap.min.css" rel="stylesheet">
+<link target="_blank" href="css/base.min.css" rel="stylesheet">
+<link target="_blank" href="css/entypo.min.css" rel="stylesheet">		
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -32,7 +32,7 @@
 <div class="row para">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2 col-md-offset-2">
 <hr width="100px" align="left"/>
-<p>Hi, my name is Debashis Barman. I'm a 21 years old college guy who is currently doing Bachelor of Technology in Computer Science and Engineering at <a href="http://dbuniversity.ac.in">Assam Don Bosco University</a> in Guwahati, India. I have been addicted to the Internet since I was young and started making websites since I was in 11. I'm mostly interested in front end web designing but also otherwise enjoy any kind of programming (specially C and Kernel programming) and web development works.</p>
+<p>Hi, my name is Debashis Barman. I'm a 21 years old college guy who is currently doing Bachelor of Technology in Computer Science and Engineering at <a target="_blank" href="http://dbuniversity.ac.in">Assam Don Bosco University</a> in Guwahati, India. I have been addicted to the Internet since I was young and started making websites since I was in 11. I'm mostly interested in front end web designing but also otherwise enjoy any kind of programming (specially C and Kernel programming) and web development works.</p>
 <p>I try to make the websites I design and build as simple and intuitive to use as possible whilst still having a unique aesthetic appeal. I specialise in responsive front-end design, HTML/CSS and web typography.</p>
 <p>When I'm free, I spend my time exploring places and beyond, adventuring in the wilderness, learning about the world, working on tiny side projects, writing, romancing my <em>lovely girlfriend</em>, sketching and doodling, <span class="fun">reading</span> short stories and novels, listening to music and playing games. And internet. I love internet.</p>
 </div>
@@ -61,9 +61,9 @@
 <hr width="100px" align="left"/>
 <p>Ocassionally I write down some of my lucid thoughts and observation on my blog. Though basically I blog on web design, web development and different relevant topics; sometimes my subjects include other non-technical staff as well.</p>
 <ul class="list-unstyled">
-<li><span class="entypo-link"></span> <a href="http://debashisbarman.tumblr.com" >debashisbarman.tumblr.com</a></li>
-<li><span class="entypo-link"></span> <a href="https://medium.com/@Deb_Speaks" >medium.com/@Deb_Speaks</a></li>
-<li><span class="entypo-link"></span> <a href="https://debashisbarman.wordpress.com" >debashisbarman.wordpress.com</a></li>
+<li><span class="entypo-link"></span> <a target="_blank" href="http://debashisbarman.tumblr.com" >debashisbarman.tumblr.com</a></li>
+<li><span class="entypo-link"></span> <a target="_blank" href="https://medium.com/@Deb_Speaks" >medium.com/@Deb_Speaks</a></li>
+<li><span class="entypo-link"></span> <a target="_blank" href="https://debashisbarman.wordpress.com" >debashisbarman.wordpress.com</a></li>
 </ul>
 </div>
 </div>
@@ -75,7 +75,7 @@
 <hr width="100px" align="left"/>
 <p>I have uploaded some of my works on <em>Behance</em> and some yet to be uploaded. Feel free to have a look on my portfolio.</p>
 <ul class="list-unstyled">
-<li><span class="entypo-link"></span> <a href="http://behance.net/debashisbarman" >behance.net/debashisbarman</a></li>
+<li><span class="entypo-link"></span> <a target="_blank" href="http://behance.net/debashisbarman" >behance.net/debashisbarman</a></li>
 </ul>
 </div>
 </div>
@@ -85,12 +85,12 @@
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
 <h2><span class="entypo-chat"></span> Let's Talk</h2>
 <hr width="100px" align="left"/>
-<p>If you want to discuss potential projects or want to learn more about me and my process, do not hesitate to <a href="mailto:debashisb04@gmail.com" >say hello</a>.</p>
+<p>If you want to discuss potential projects or want to learn more about me and my process, do not hesitate to <a target="_blank" href="mailto:debashisb04@gmail.com" >say hello</a>.</p>
 </div>
 </div>
 
 <!-- Here I am -->
-<div class="row para hidden-xs">
+<div class="row para hidden-xs hidden-sm">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
 <h2><span class="entypo-search"></span> Where to find</h2>
 <hr width="100px" align="left"/>
@@ -100,13 +100,18 @@
 </div>
 </div>
 </div>
+<div class="row para hidden-xs hidden-sm">
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
+<p><small><span class="entypo-location"></span> Guwahati, India (<a target="_blank" href="https://www.google.co.in/maps/place/Don+Bosco+College/@26.129491,91.620516,17z/data=!3m1!4b1!4m2!3m1!1s0x375a4474fe00e2a7:0x22f81581ad181136">26.129491,91.620516</a>)</small></p>
+</div>
+</div>
 
 <!-- Reach Me (hidden-xs) -->
 <div class="row para hidden-xs">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
 <h2><span class="entypo-paper-plane"></span> Reach Me</h2>
 <hr width="100px" align="left"/>
-<p>Feel free to hit me up on <a href="http://twitter.com/_DebashisBarman">Twitter</a>, <a href="http://facebook.com/debashisb04">Facebook</a>, <a href="http://plus.google.com/+DebashisBarman/">Google+</a>, <a href="https://debashisbarman.tumblr.com">Tumblr</a>, <a href="http://in.linkedin.com/pub/debashis-barman/66/a26/b67">LinkedIn</a>, <a href="https://medium.com/@Deb_Speaks">Medium</a> or anywhere else you can find me.</p>
+<p>Feel free to hit me up on <a target="_blank" href="http://twitter.com/_DebashisBarman">Twitter</a>, <a target="_blank" href="http://facebook.com/debashisb04">Facebook</a>, <a target="_blank" href="http://plus.google.com/+DebashisBarman/">Google+</a>, <a target="_blank" href="https://debashisbarman.tumblr.com">Tumblr</a>, <a target="_blank" href="http://in.linkedin.com/pub/debashis-barman/66/a26/b67">LinkedIn</a>, <a target="_blank" href="https://medium.com/@Deb_Speaks">Medium</a> or anywhere else you can find me.</p>
 </div>
 </div>
 
@@ -117,12 +122,12 @@
 <hr width="100px" align="left"/>
 <p>Feel free to hit me up on social media or anywhere else you can find me.</p>
 <ul class="list-unstyled social">
-<li><a href="http://twitter.com/_DebashisBarman">Twitter</a></li>
-<li><a href="http://facebook.com/debashisb04">Facebook</a></li>
-<li><a href="http://plus.google.com/+DebashisBarman/">Google+</a></li>
-<li><a href="https://debashisbarman.tumblr.com">Tumblr</a></li>
-<li><a href="http://in.linkedin.com/pub/debashis-barman/66/a26/b67">LinkedIn</a></li>
-<li><a href="https://medium.com/@Deb_Speaks">Medium</a></li>
+<li><a target="_blank" href="http://twitter.com/_DebashisBarman">Twitter</a></li>
+<li><a target="_blank" href="http://facebook.com/debashisb04">Facebook</a></li>
+<li><a target="_blank" href="http://plus.google.com/+DebashisBarman/">Google+</a></li>
+<li><a target="_blank" href="https://debashisbarman.tumblr.com">Tumblr</a></li>
+<li><a target="_blank" href="http://in.linkedin.com/pub/debashis-barman/66/a26/b67">LinkedIn</a></li>
+<li><a target="_blank" href="https://medium.com/@Deb_Speaks">Medium</a></li>
 </ul>
 </div>
 </div>
@@ -131,7 +136,7 @@
 <!-- Copyright -->
 <div class="row para">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
-<p><small>Copyright &copy; 2014 Debashis Barman. All rights reserved. Powered by <a href="http://github.com" >Github</a>.</small></p>
+<p><small>Copyright &copy; 2014 Debashis Barman. All rights reserved. Powered by <a target="_blank" href="http://github.com" >Github</a>.</small></p>
 </div>
 </div>
 
