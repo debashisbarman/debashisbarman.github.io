@@ -41,6 +41,12 @@ margin-left: -3px;
 font-size: 161.8%;		/* 48.54 px / 30 px */	
 font-weight: 400;
 }
+.twitter {
+position: fixed;
+margin: 2.5%;
+top: 0;
+right: 0;	
+}
 .para {
 margin-top: 2.5%;
 margin-bottom: 2.5%;
