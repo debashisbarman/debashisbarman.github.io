@@ -89,20 +89,22 @@
 </div>
 </div>
 
-<!-- Here I am -->
+<!-- Where to find -->
 <div class="row para hidden-xs hidden-sm">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
 <h2><span class="entypo-search"></span> Where to find</h2>
 <hr width="100px" align="left"/>
 <img src="images/map.svg" class="img-responsive" alt="Where to find"></img>
 <div class="location-marker">
-<span class="entypo-location" title="Guwahati, India"></span>
+<span data-tooltip="Guwahati, India">
+<span class="entypo-location"></span>
+</span>
 </div>
 </div>
 </div>
 <div class="row para hidden-xs hidden-sm">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
-<p><small><span class="entypo-location"></span> Guwahati, India (<a target="_blank" href="https://www.google.co.in/maps/place/Don+Bosco+College/@26.129491,91.620516,17z/data=!3m1!4b1!4m2!3m1!1s0x375a4474fe00e2a7:0x22f81581ad181136">26.129491,91.620516</a>)</small></p>
+<p><small><span class="entypo-location"></span> Guwahati, India (<a target="_blank" href="https://www.google.co.in/maps/place/Don+Bosco+College/@26.129491,91.620516,17z/data=!3m1!4b1!4m2!3m1!1s0x375a4474fe00e2a7:0x22f81581ad181136">26.129491&deg;N, 91.620516&deg;E</a>)</small></p>
 </div>
 </div>
 

@@ -185,9 +185,31 @@ right: 29.5%;
 top: 53%;
 font-size: 1.2em;
 color: #6c6c6c;
-cursor: default;
 }
-
+[data-tooltip] {
+position: relative;
+z-index: 2;
+}
+[data-tooltip]:before,
+[data-tooltip]:after {
+visibility: visible;
+opacity: 1;
+}
+[data-tooltip]:before {
+position: absolute;
+bottom: 75%;
+left: 100%;
+margin-bottom: 0px;
+margin-left: -80px;
+padding: 7px;
+width: 160px;
+background-color: transparent;
+color: #6c6c6c;
+content: attr(data-tooltip);
+text-align: right;
+font-size: 14px;
+line-height: 1.2;
+}
 
 /* Typography
 =========================*/
