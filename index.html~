@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!-- Website content and design (c) Debashis Barman -->
-<!-- Version 1.4.29 (Stable) -->
+<!-- Version 1.4.29 (Unstable) -->
 <head>
 <title>Debashis Barman | Freelance Web Designer</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -94,7 +94,7 @@
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-offset-2 col-md-offset-2">
 <h2><span class="entypo-search"></span> Where to find</h2>
 <hr width="100px" align="left"/>
-<img src="images/map.svg" class="img-responsive" alt="Responsive image"></img>
+<img src="images/map.svg" class="img-responsive" alt="Guwahati, India"></img>
 <div class="location-marker">
 <span class="entypo-location" title="Guwahati, India"></span>
 </div>
