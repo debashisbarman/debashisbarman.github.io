@@ -2,7 +2,7 @@
 
 Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io
 07/29/2014
-1.0.25 (Stable)
+Version 1.0.25 (Stable)
 
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
@@ -179,6 +179,15 @@ padding-left: 1em;
 font-size: .9em;
 color: silver;	
 }
+.location-marker {
+position: absolute;
+right: 29.5%;
+top: 53%;
+font-size: 1.2em;
+color: #6c6c6c;
+cursor: default;
+}
+
 
 /* Typography
 =========================*/
