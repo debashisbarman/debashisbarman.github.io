@@ -22,6 +22,10 @@ border-top: 2px solid #03a9f4;
 .container {
 margin: 10% auto;
 }
+.vertical-center-outer{
+height: 100%;
+display: table;	
+}
 .vertical-center {
 display: table-cell;
 vertical-align: middle;
