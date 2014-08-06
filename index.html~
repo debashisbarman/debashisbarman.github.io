@@ -8,8 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable=no">
 <meta name="description" content="Debashis Barman is a Freelance Web Designer. He specializes in Minimalist Web Design, Responsive Layout and Web Typography."/>
 <meta name="keywords" content="Freelance Web Designer, Debashis Barman, Responsive Web Design, Minimal Web Design"/>
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/base2.0.0.css" rel="stylesheet">	
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/base2.0.0.min.css" rel="stylesheet">
+<link href="css/entypo.min.css" rel="stylesheet">	
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -91,11 +92,11 @@
 <div class="col-md-7 col-lg-7">
 <dl class="post">
 <dt><h4><a target="_blank" href="http://debashisbarman.tumblr.com/post/86189526364/whitespace-in-webdesign-an-example">Whitespace in Webdesign: an Example</a></h4></dt>
-<dd><small><span class="entypo-clock"></span> Published on May 19, 2014</small></dd>
+<dd><small><span class="glyphicon glyphicon-calendar"></span> Published on May 19, 2014</small></dd>
 <dt><h4><a target="_blank" href="http://debashisbarman.tumblr.com/post/83708455740/elements-of-modern-web-design">Elements of Modern Web Design</a></h4></dt>
-<dd><small><span class="entypo-clock"></span> Published on April 24, 2014</small></dd>
+<dd><small><span class="glyphicon glyphicon-calendar"></span> Published on April 24, 2014</small></dd>
 <dt><h4><a target="_blank" href="http://debashisbarman.tumblr.com/post/82093725972/minimalist-web-design">Minimalist Web Design</a></h4></dt>
-<dd><small><span class="entypo-clock"></span> Published on April 8, 2014</small></dd>
+<dd><small><span class="glyphicon glyphicon-calendar"></span> Published on April 8, 2014</small></dd>
 </dl>
 </div>
 </div>
@@ -171,11 +172,11 @@
 <h1><span class="glyphicon glyphicon-pencil"></span> Writings</h1>
 <dl class="post para">
 <dt><h4><a target="_blank" href="http://debashisbarman.tumblr.com/post/86189526364/whitespace-in-webdesign-an-example">Whitespace in Webdesign: an Example</a></h4></dt>
-<dd><small><span class="entypo-clock"></span> Published on May 19, 2014</small></dd>
+<dd><small><span class="glyphicon glyphicon-calendar"></span> Published on May 19, 2014</small></dd>
 <dt><h4><a target="_blank" href="http://debashisbarman.tumblr.com/post/83708455740/elements-of-modern-web-design">Elements of Modern Web Design</a></h4></dt>
-<dd><small><span class="entypo-clock"></span> Published on April 24, 2014</small></dd>
+<dd><small><span class="glyphicon glyphicon-calendar"></span> Published on April 24, 2014</small></dd>
 <dt><h4><a target="_blank" href="http://debashisbarman.tumblr.com/post/82093725972/minimalist-web-design">Minimalist Web Design</a></h4></dt>
-<dd><small><span class="entypo-clock"></span> Published on April 8, 2014</small></dd>
+<dd><small><span class="glyphicon glyphicon-calendar"></span> Published on April 8, 2014</small></dd>
 </dl>
 </div>
 </div>		<!-- Writings -->
