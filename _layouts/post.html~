@@ -1,0 +1,21 @@
+---
+layout: article
+---
+<div class="row">
+	<div class="col-lg-1 col-lg-offset-1"></div>
+	
+	<div class="col-lg-8">
+
+		<header>		<!-- Article header -->
+			<h1 class="intro"><strong>{{ page.title }}</strong></h1>
+			<h2><small><span class="glyphicon glyphicon-time"></span> Published on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small></h2>
+		</header>
+		<hr class="article-hr" align="left">
+		<article class="para article">		<!-- Article body -->
+			{{ content }}
+		</article>
+		<hr class="article-hr para" align="left">
+	</div>
+</div>
+
+{% include share.html %}
