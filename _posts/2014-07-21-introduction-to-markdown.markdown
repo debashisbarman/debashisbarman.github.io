@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Markdown"
-date:   2014-08-21 00:04:10
+date:   2014-07-21 00:04:10
 tags: Markdown-Tutorial
 ---
 
