@@ -1,6 +1,0 @@
-/*
-Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io
-08/07/2014
-Version 2.0.0 (Unstable)
-*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);body{font-family:Open Sans,sans-serif}.container{padding-top:5%;padding-bottom:5%;border-top:7.5px solid #000}.intro{margin-top:5%;margin-bottom:2.5%;font-weight:300}.intro h1,.intro h2{font-size:400%;font-weight:300;line-height:80px;margin:0 0 10px}h1,h2,h3,h4,h5,h6{font-weight:600}.about{margin-top:2.5%;margin-bottom:2.5%}.fun{text-decoration:line-through}p{line-height:26px}.para{margin-top:5%;margin-bottom:5%;line-height:26px}dl.post dd{margin-bottom:2.5%}.location-marker{position:absolute;right:28.75%;top:33%;font-size:1.2em;color:#6c6c6c}[data-tooltip]{position:relative;z-index:2}[data-tooltip]:after,[data-tooltip]:before{visibility:visible;opacity:1}[data-tooltip]:before{position:absolute;bottom:75%;left:100%;margin-bottom:0;margin-left:-80px;padding:7px;width:160px;background-color:transparent;color:#6c6c6c;content:attr(data-tooltip);text-align:right;font-size:14px;line-height:1.2}a{text-decoration:none;font-style:italic;color:#259286}a:focus,a:hover{color:#092832;text-decoration:none}@media (max-width:768px){dl.post dd{margin-bottom:5%}}
