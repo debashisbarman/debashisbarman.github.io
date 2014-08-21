@@ -6,7 +6,7 @@ tags: Web Design, Modern Website
 ---
 >Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.[1]
 
-Decided to reconstruct the site by redesigning it. My goal was a clean and minimal content focused layout. Started removing all the unnecessary components and finally arrived at this current layout.
+Decided to reconstruct my site by redesigning it. The goal was a clean and minimal content focused layout. So I started removing all the unnecessary components and finally arrived at this current layout.
 
 Few things about my site:
 
@@ -23,4 +23,4 @@ The design and source code powering this site is available on my github [reposit
 All other directories and files are [MIT](http://opensource.org/licenses/MIT) Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to [http://debashisbarman.github.io](http://debashisbarman.github.io) would be appreciated.
 
 **Footnote**
-_[1] Quotation by Antoine de Saint-Exupery, French writer (1900-1944)_
+_[1] Quotation by Antoine de Saint-Exupery, French writer (1900-1944)._
