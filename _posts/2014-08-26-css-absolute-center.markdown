@@ -20,7 +20,8 @@ Now add this `css` segment to your stylesheet.
 .absolute-center-wrapper {
 	width: 100%;
 	height: 100%;
-	display: table;}
+	display: table;
+}
 </pre>
 and
 <pre>
