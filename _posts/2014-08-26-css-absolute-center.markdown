@@ -34,13 +34,17 @@ and
 and you are done.
 
 **License**
+
 This project and source code is licensed under MIT [(http://opensource.org/licenses/MIT)](http://opensource.org/licenses/MIT).
 
 **Version**
+
 1.0 (Stable)
 
 **Author**
+
 Debashis Barman [(www.debashisbarman.in)](http://www.debashisbarman.in).
 
 **Download**
+
 The complete source code is available for downloading in my github [repository](https://www.github.com/debashisbarman/css-absolute-center).
