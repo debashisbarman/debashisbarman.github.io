@@ -9,7 +9,7 @@ This URL has been my online home for recent years, manifesting at times as a blo
 
 ##More details:
 
-* Stylesheet written by [Debashis Barman](http://www.debashisbarman.in).
+* Stylesheet by [Debashis Barman](http://www.debashisbarman.in).
 * Built on [Jekyll](http://jekyllrb.com), the open source static site generator.
 * Hosted on [GitHub Pages](http://pages.github.com).
 
