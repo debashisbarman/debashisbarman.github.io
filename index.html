@@ -1,24 +1,27 @@
 ---
 layout: default
 ---
-<div class="col-lg-1 col-lg-offset-1"></div>
-<div class="col-lg-8">
-	<ul class="list-unstyled">
-		{% for post in site.posts %}
+<div class="about-me">
+{% include welcome.html %}
+</div>
 
-		<li>
-			<p class="para"></p>
-			<h1>{{ post.title }}</h1>
-			<h2><small><span class="glyphicon glyphicon-time"></span> Published on {{ post.date | date: "%b %-d, %Y" }}</small></h2>
-			<div class="intro">{{ post.excerpt }}</div>
-		
-			<ul class="list-unstyled para">
-				<li><h4>Read the full article</h4></li>
-				<li><span class="glyphicon glyphicon-link"></span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-			</ul>
-		
-		</li>
-		{% endfor %}
-	</ul>
+<div class="index">
+<h1>Index</h1>
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
 
+<div class="links">
+{% include references.html %}
+</div>
+
+<div class="menu">
+{% include about.html %}
+</div>
+
+<div class="disclaimer">
+{% include disclaimer.html %}
 </div>

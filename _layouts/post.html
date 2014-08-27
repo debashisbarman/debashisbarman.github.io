@@ -1,21 +1,32 @@
 ---
-layout: article
+layout: default
 ---
-<div class="row">
-	<div class="col-lg-1 col-lg-offset-1"></div>
-	
-	<div class="col-lg-8">
 
-		<header>		<!-- Article header -->
-			<h1 class="intro"><strong>{{ page.title }}</strong></h1>
-			<h2><small><span class="glyphicon glyphicon-time"></span> Published on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</small></h2>
-		</header>
-		<hr class="article-hr para" align="left">
-		<article class="para article">		<!-- Article body -->
-			{{ content }}
-		</article>
-		<hr class="article-hr para" align="left">
-	</div>
+<div class="article-head">
+<h1><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+<span>{{ page.date | date_to_string }}</span>
+</div>
+<div class="article-body">
+{{ content }}
 </div>
 
+<div class="menu">
 {% include share.html %}
+</div>
+
+<div class="related-post">
+<h2>Related Posts</h2>
+<ul>
+{% for post in site.related_posts limit:3 %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="menu">
+{% include about.html %}
+</div>
+
+<div class="footer">
+{% include footer.html %}
+</div>
