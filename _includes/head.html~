@@ -9,5 +9,5 @@
 
 <link rel="stylesheet" href="{{ "/css/base3.0.0.min.css" | prepend: site.baseurl }}"/>
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
+<link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
 </head>
