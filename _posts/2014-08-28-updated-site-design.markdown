@@ -20,6 +20,7 @@ The design and source code powering this site is available on my github [reposit
 
 * _posts/
 * images/
+* assets/
 
 All other directories and files are [MIT](http://opensource.org/licenses/MIT) Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to [http://debashisbarman.github.io](http://debashisbarman.github.io) would be appreciated.
 
