@@ -1,5 +1,0 @@
-# robots.txt for http://www.debashisbarman.in
-User-agent: *
-Disallow: 
-Disallow: /images/
-Sitemap: http://www.debashisbarman.in/sitemap.xml
