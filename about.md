@@ -19,5 +19,6 @@ The following directories and their contents **Copyright** Debashis Barman. Thes
 
 * _posts/
 * images/
+* assets/
 
 All other directories and files are [MIT](http://opensource.org/licenses/MIT) Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to [http://github.com/debashisbarman](http://github.com/debashisbarman.com) would be appreciated.
