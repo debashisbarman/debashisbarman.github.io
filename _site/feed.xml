@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debashis Barman</title>
+    <description>Debashis Barman is a Freelance Web Designer. He specializes in Minimalist Web Design, Responsive Layout and Web Typography.
+</description>
+    <link>http://www.debashisbarman.in/</link>
+    <atom:link href="http://www.debashisbarman.in/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 03 Sep 2014 08:38:40 +0530</pubDate>
+    <lastBuildDate>Wed, 03 Sep 2014 08:38:40 +0530</lastBuildDate>
+    <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Updated Site Design</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.[1]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Decided to reconstruct my site by redesigning it. The goal was a clean and minimal content focused layout. So I started removing all the unnecessary components and finally arrived at this current layout. &lt;/p&gt;
+
+&lt;p&gt;This layout is highly inspired by &lt;a href=&quot;http://understandingminimalism.com/dogma/&quot;&gt;Dogma WordPress Theme&lt;/a&gt;. Since dogma is uncopyrighted and free, I edited the theme as per my requirements.&lt;/p&gt;
+
+&lt;p&gt;Few things about my site:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stylesheet by &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;Debashis Barman&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Built on &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, the open source static site generator&lt;/li&gt;
+  &lt;li&gt;Hosted on &lt;a href=&quot;http://pages.github.com&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The design and source code powering this site is available on my github &lt;a href=&quot;http://github.com/debashisbarman&quot;&gt;repository&lt;/a&gt;. Source code can be used for your Jekyll sites. But before using the source code, keep in mind that the following directories and their contents &lt;strong&gt;Copyright&lt;/strong&gt; Debashis Barman. These are not available for re-use without permission.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;_posts/&lt;/li&gt;
+  &lt;li&gt;images/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All other directories and files are &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to &lt;a href=&quot;http://debashisbarman.github.io&quot;&gt;http://debashisbarman.github.io&lt;/a&gt; would be appreciated.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Footnote&lt;/strong&gt;
+&lt;em&gt;[1] Quotation by Antoine de Saint-Exupery, French writer (1900-1944).&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Aug 2014 06:40:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/08/28/updated-site-design.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/08/28/updated-site-design.html</guid>
+        
+        <category>Web</category>
+        
+        <category>Design,</category>
+        
+        <category>Modern</category>
+        
+        <category>Website</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>CSS Absolute Center</title>
+        <description>&lt;p&gt;CSS-Absolute-Center is a Simple CSS Framework for centering HTML elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to Use&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a &lt;em&gt;parent&lt;/em&gt; block.
+&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Inside this create a &lt;em&gt;child&lt;/em&gt; block.&lt;/p&gt;
+
+&lt;p&gt;Add classes &lt;code&gt;.absolute-center-wrapper&lt;/code&gt; to the &lt;em&gt;parent&lt;/em&gt; block and &lt;code&gt;.absolute-center&lt;/code&gt; to the &lt;em&gt;child&lt;/em&gt; block.&lt;/p&gt;
+
+&lt;p&gt;Now add this &lt;code&gt;css&lt;/code&gt; segment to your stylesheet.&lt;/p&gt;
+&lt;pre&gt;
+.absolute-center-wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+&lt;/pre&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;pre&gt;
+.absolute-center {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+&lt;/pre&gt;
+&lt;p&gt;and you are done.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;License&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This project and source code is licensed under MIT &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;(http://opensource.org/licenses/MIT)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Version&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.0 (Stable)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Author&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Debashis Barman &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;(www.debashisbarman.in)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Download&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The complete source code is available for downloading in my github &lt;a href=&quot;https://www.github.com/debashisbarman/css-absolute-center&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 26 Aug 2014 06:00:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/08/26/css-absolute-center.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/08/26/css-absolute-center.html</guid>
+        
+        <category>Web</category>
+        
+        <category>Design,</category>
+        
+        <category>Modern</category>
+        
+        <category>Website</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introduction to Markdown</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Markdown is a way to write content for the web. Markdown is a plain text formatting syntax designed so that it optionally can be converted to &lt;em&gt;HTML&lt;/em&gt; using a tool by the same name. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Markdown is popularly used for &lt;em&gt;readme files&lt;/em&gt;, for writing messages in online discussion for writing messages in online discussion forums or in text editors for the quick creation of rich text documents. It’s written in what nerds like to call &lt;strong&gt;plaintext&lt;/strong&gt; which is exactly the sort of text you’re used to writing and seeing.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial, we’ll learn the basics of markdown.&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-writing&quot;&gt;Basic Writing&lt;/h2&gt;
+
+&lt;h3 id=&quot;paragraphs&quot;&gt;Paragraphs&lt;/h3&gt;
+
+&lt;p&gt;Paragraphs in markdown are just one or more lines of consecutive text followed by one or more blank lines.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This text is written in markdown as an example of paragraph&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;headings&quot;&gt;Headings&lt;/h3&gt;
+
+&lt;p&gt;To make headers in Markdown, the phrase is preface with a hash &lt;code&gt;#&lt;/code&gt; mark. For example for header one, you’d use one hash mark.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#This is header one&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bold-and-italic&quot;&gt;Bold and Italic&lt;/h3&gt;
+
+&lt;p&gt;To make a phrase &lt;strong&gt;bold&lt;/strong&gt; in markdown, the phrase is surrounded with an &lt;code&gt;*&lt;/code&gt; and for making a phrase &lt;em&gt;italic&lt;/em&gt;, an underscore &lt;code&gt;_&lt;/code&gt; is used.&lt;/p&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
+
+&lt;p&gt;An &lt;strong&gt;unordered list&lt;/strong&gt; can be achieved by preceding list items either with a &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
+
+&lt;p&gt;We can make an &lt;strong&gt;ordered list&lt;/strong&gt; by preceding list items with a number. For example,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+1. Item 1
+2. Item 2
+3. Item 3
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nested-lists&quot;&gt;Nested Lists&lt;/h3&gt;
+
+&lt;p&gt;Nested lists can be created by indenting list items by &lt;strong&gt;two spaces&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-formatting&quot;&gt;Code Formatting&lt;/h2&gt;
+
+&lt;h3 id=&quot;inline&quot;&gt;Inline&lt;/h3&gt;
+
+&lt;p&gt;A single backticks is used to format text in special monospace format.&lt;/p&gt;
+
+&lt;h3 id=&quot;multiple-lines&quot;&gt;Multiple lines&lt;/h3&gt;
+
+&lt;p&gt;For multiples lines three backticks are used.&lt;/p&gt;
+
+&lt;h2 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h2&gt;
+
+&lt;p&gt;Blockquote is achieved by putting a &lt;code&gt;&amp;gt;&lt;/code&gt; before the phrase.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Links are created by wrapping the link text in brackets &lt;code&gt;[]&lt;/code&gt; and then wrapping the link in parenthesis &lt;code&gt;()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example &lt;code&gt;[Debashis Barman Homepage](http://www.debashisbarman.in)&lt;/code&gt; will create the link &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;Debashis Barman Homepage&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 21 Jul 2014 05:34:10 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/07/21/introduction-to-markdown.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/07/21/introduction-to-markdown.html</guid>
+        
+        <category>Markdown-Tutorial</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Elements of Modern Website</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;The term web design is normally used to describe the design process relating to the front-end (client side) design of a website     including writing mark up. Every year, we see new website design elements emerge. But what are the latest features to include?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here are some important elements of modern web design that one can include. You don’t need to have all of them, but this list will get you started.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Responsive Design:&lt;/strong&gt; It is a web design approach aimed at crafting sites to provide an optimal viewing experience across a wide range of devices i.e. from mobile phones to desktop computer monitors. A responsive website adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flat Design:&lt;/strong&gt; Flat design is known for its simplistic appearance. Instead of using three-dimensional effects and other design techniques, flat designs use simple illustrations that typically have bright colors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Typography:&lt;/strong&gt; Typography refers to the use of fonts on the World Wide Web. Web designers may choose to limit the variety of website typefaces to only a few which are of a unique style, instead of using a wide range of typefaces or type styles.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Well Planned Color Scheme:&lt;/strong&gt; Color, on its own, is a really powerful tool; so use of a well planned color scheme adds a lot of contrast to a website, giving it a properly balanced, harmonious, energetic, and even complex looks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Large Background Images:&lt;/strong&gt; Now a days most of the websites use the trend of a large photo background which is responsive in nature. That means responsive background images conform to any screen size whether you are viewing the image from your desktop, tablet, or mobile device; you will be able to view the image clearly without scrolling up and down and side to side.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smooth Scrolling to Page Sections:&lt;/strong&gt; Unlike a typical website, instead of clicking a link and landing on a new page, modern websites have a smooth scrolling feature where you click a link and it brings you to a different part of the page. It is mainly done by CSS and jQuery plugin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Large Product Images:&lt;/strong&gt; Modern websites tend to display large product images on their sites to highlight different features or parts of their product. This element is another important design tactic that we are seeing more and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Product Videos:&lt;/strong&gt; Modern websites also use in-depth product videos to talk about the benefits of their products as well as new features that come out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Font Icons:&lt;/strong&gt; Using &lt;em&gt;fonts&lt;/em&gt; for &lt;em&gt;icons&lt;/em&gt; is a great way to achieve scalability and it is very common in modern web design. The only limitation being color (and possible compatibility with some browsers).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hover Effect:&lt;/strong&gt; Hover effects help you identify where you are on a page. When you place your cursor over a part of a website that has a hover effect, it usually changes colors or highlights letting you know where you are looking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The visual appearance of your website draws viewers in, but compelling content keeps them engaged!&lt;/strong&gt; Once you have a great website design, don’t forget to put your time and effort into creating great content that will give your visitors what they’re looking for.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Apr 2014 02:40:10 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/04/25/elements-of-modern-website.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/04/25/elements-of-modern-website.html</guid>
+        
+        <category>Web</category>
+        
+        <category>Design,</category>
+        
+        <category>Modern</category>
+        
+        <category>Website</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
