@@ -4,6 +4,13 @@ http://www.wikihow.com/Block-a-Specific-Website-Without-Software
 http://www.wikihow.com/Block-a-Website-in-All-Web-Browsers
 http://www.wikihow.com/Block-Websites-on-Firefox (works well)
 
+##add the lines in HOSTFILE
+127.0.0.1	www.google.com
+
+##restart the computer
+
+##try to go to google.com
+
 Download IIT GPU Workshop Materials
 ===================================
 http://www.iitg.ernet.in/eee/gpa3_2014/index.html (website homepage)
