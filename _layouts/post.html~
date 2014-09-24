@@ -10,9 +10,8 @@ layout: default
 {{ content }}
 </div>
 
-
-<br/>
 <hr/>
+<br/>
 <div class="menu">
 {% include share.html %}
 </div>
