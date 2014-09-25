@@ -5,7 +5,7 @@ date:   2014-09-25 10:10:00
 tags: kernel programming, c kernel, simple kernel in c
 ---
 Hello, world ! Today I'm going to show you how to write a kernel in C and a little bit of assembly. This is a simple kernel written in C and Assembly which could be loaded with the GRUB bootloader on an x86 system. This kernel will
-display a message on the screen and then hang.
+display a message on the screen and then hang. All the source code is available on my github [repository](https://github.com/debashisbarman/Simple-Kernel-in-C-and-Assembly).
 
 ##Tools
 Before writing the kernel, make sure that the following tools are available in your system.
