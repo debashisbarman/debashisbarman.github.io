@@ -126,13 +126,11 @@ SECTIONS
 That's it. All done.
 
 ##Building the kernel
-We will now create object files from k r e . s and k r e . and then link it using our linker script.
-
-We will now create object files from k r e . s and k r e . and then link it using our linker script.
+We will now create object files from <code>kernel.asm</code> and <code>kernel.c</code> and then link it using our linker script.
 <pre>
 nasm -f elf32 kernel.asm -o kernel.o
 </pre>
-Now we will run the assembler to create the object file kasm.o in ELF-32 bit format.
+Now we will run the assembler to create the object file <code>kasm.o</code> in ELF-32 bit format.
 <pre>
 gcc -m32 -c kernel.c -o kc.o
 </pre>
