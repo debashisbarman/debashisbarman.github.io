@@ -1,7 +1,0 @@
-<h2>Projects</h2>
-<ul>
-<li>
-<h3><a href="{{ "/projects/Mini-OS/" | prepend: site.url }}">Mini Operating System</a></h3>
-<p>Mini OS is a Bare Bone Operating System written in C and Assembly which could be loaded with the GRUB bootloader on an x86 system. The purpose of this project is to make something stable and simple.</p>
-</li>
-</ul>
