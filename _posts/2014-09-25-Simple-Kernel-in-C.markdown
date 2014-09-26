@@ -34,15 +34,15 @@ section .text
 	dd - (0x1BADB002 + 0x00)	;checksum. m+f+c should be zero
 
 global start
-extern kmain	;kmain is defined in the c file
+extern k_main	;k_main is defined in the c file
 
 start:
 	cli	;block interrupts
-	call kmain
+	call k_main
 	hlt	;halt the CPU
 </pre>
 
-In the <code>kernel.asm</code> we make a call to <code>kmain</code>. So our execution starts at <code>kmain()</code> in the main C file <code>kernel.c</code>.
+In the <code>kernel.asm</code> we make a call to <code>k_main</code>. So our execution starts at <code>k_main()</code> in the main C file <code>kernel.c</code>.
 <pre>
 /*
  *
