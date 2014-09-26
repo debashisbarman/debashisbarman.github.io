@@ -24,7 +24,9 @@ assembly-language that serves as the starting point for our kernel.
 
 Here is our <code>kernel.asm</code> file.
 <pre>
-;;kernel.asm
+;; kernel.asm
+;; version 0.0.1
+
 bits 32		;nasm directive
 section .text
 	;multiboot spec
@@ -34,19 +36,21 @@ section .text
 	dd - (0x1BADB002 + 0x00)	;checksum. m+f+c should be zero
 
 global start
-extern k_main	;k_main is defined in the c file
+extern k_main	;k_main is defined in the kernel.c file
 
 start:
-	cli	;block interrupts
+	cli  ; stop interrupts
+
 	call k_main
-	hlt	;halt the CPU
+
+	hlt ; halt the CPU
 </pre>
 
 In the <code>kernel.asm</code> we make a call to <code>k_main</code>. So our execution starts at <code>k_main()</code> in the main C file <code>kernel.c</code>.
 <pre>
 /*
  *
- * kernel.c - version 1.0.2
+ * kernel.c - version 0.0.1
  * 
  */
 
@@ -144,5 +148,4 @@ We will now run the kernel on the <code>qemu</code> emulator.
 <pre>
 qemu-system-i386 -kernel kernel
 </pre>
-
 That's it.
