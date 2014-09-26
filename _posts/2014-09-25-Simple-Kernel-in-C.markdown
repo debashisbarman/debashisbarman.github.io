@@ -143,8 +143,21 @@ Now the linking part,
 ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o
 </pre>
 
-##Now run your kernel
-We will now run the kernel on the <code>qemu</code> emulator.
+##Configuring the grub
+GRUB requires the kernel to be of the name pattern <code>kernel-&lt;version&gt;</code> . So, I renamed my kernel executable to <code>kernel-0.0.1</code>.
+
+Now place it in the <code>/boot</code> directory. You will require superuser privileges to do so.
+
+In your GRUB configuration file <code>grub.cfg</code> you should add an entry, something like:
+
+<pre>
+title Mini OS
+  root (hd0, 0)
+  kernel /boot/kernel-0.0.1 ro
+</pre>
+
+##Using the qemu emulator
+The kernel will also be run using the <code>qemu</code> emulator.
 <pre>
 qemu-system-i386 -kernel kernel
 </pre>
