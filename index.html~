@@ -5,39 +5,6 @@ layout: default
 {% include welcome.html %}
 </div>
 
-<div class="index">
-{% include projects.html %}
-</div>
-
-<div class="index">
-<h2>Articles</h2>
-<ul>
-{% for post in site.posts %}
-<li>
-<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-{{ post.excerpt }}
-</li>
-{% endfor %}
-</ul>
-</div>
-<hr/>
-<div class="links">
-{% include references.html %}
-</div>
-
-<div class="menu">
-{% include other.html %}
-</div>
-
-<div class="disclaimer">
-{% include disclaimer.html %}
-</div>---
-layout: default
----
-<div class="about-me">
-{% include welcome.html %}
-</div>
-
 <div class="project">
 <h2>Projects</h2>
 <ul>
