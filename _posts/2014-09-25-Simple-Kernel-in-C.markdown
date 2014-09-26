@@ -8,7 +8,7 @@ Hello, world ! Today I'm going to show you how to write a kernel in C and a litt
 display a message on the screen and then hang. All the source code is available on my github [repository](https://github.com/debashisbarman/Simple-Kernel-in-C-and-Assembly).
 
 ##Tools
-Before writing the kernel, make sure that the following tools are available in your system.
+Before writing the kernel, make sure that the following tools are available on your system.
 <ul>
 <li>An x86 computer (of course)</li>
 <li>Linux</li>
