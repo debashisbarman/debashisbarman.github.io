@@ -8,7 +8,7 @@ Hello, world ! Today I'm going to show you how to write a kernel in C and a litt
 display a message on the screen and then hang. All the source code is available on my github [repository](https://github.com/debashisbarman/Simple-Kernel-in-C-and-Assembly).
 
 ##Tools
-Before writing the kernel, make sure that the following tools are available in your system.
+Before writing the kernel, make sure that the following tools are available on your system.
 <ul>
 <li>An x86 computer (of course)</li>
 <li>Linux</li>
@@ -24,7 +24,9 @@ assembly-language that serves as the starting point for our kernel.
 
 Here is our <code>kernel.asm</code> file.
 <pre>
-;;kernel.asm
+;; kernel.asm
+;; version 0.0.1
+
 bits 32		;nasm directive
 section .text
 	;multiboot spec
@@ -34,19 +36,21 @@ section .text
 	dd - (0x1BADB002 + 0x00)	;checksum. m+f+c should be zero
 
 global start
-extern kmain	;kmain is defined in the c file
+extern k_main	;k_main is defined in the kernel.c file
 
 start:
-	cli	;block interrupts
-	call kmain
-	hlt	;halt the CPU
+	cli  ; stop interrupts
+
+	call k_main
+
+	hlt ; halt the CPU
 </pre>
 
-In the <code>kernel.asm</code> we make a call to <code>kmain</code>. So our execution starts at <code>kmain()</code> in the main C file <code>kernel.c</code>.
+In the <code>kernel.asm</code> we make a call to <code>k_main</code>. So our execution starts at <code>k_main()</code> in the main C file <code>kernel.c</code>.
 <pre>
 /*
  *
- * kernel.c - version 1.0.2
+ * kernel.c - version 0.0.1
  * 
  */
 
@@ -139,10 +143,22 @@ Now the linking part,
 ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o
 </pre>
 
-##Now run your kernel
-We will now run the kernel on the <code>qemu</code> emulator.
+##Configuring the grub
+GRUB requires the kernel to be of the name pattern <code>kernel-&lt;version&gt;</code> . So, I renamed my kernel executable to <code>kernel-0.0.1</code>.
+
+Now place it in the <code>/boot</code> directory. You will require superuser privileges to do so.
+
+In your GRUB configuration file <code>grub.cfg</code> you should add an entry, something like:
+
+<pre>
+title Mini OS
+  root (hd0, 0)
+  kernel /boot/kernel-0.0.1 ro
+</pre>
+
+##Using the qemu emulator
+The kernel will also be run using the <code>qemu</code> emulator.
 <pre>
 qemu-system-i386 -kernel kernel
 </pre>
-
 That's it.
