@@ -14,7 +14,7 @@ layout: default
 <ul>
 {% for post in site.posts %}
 <li>
-<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 <!--{{ post.excerpt }}-->
 </li>
 {% endfor %}
