@@ -9,7 +9,7 @@
 
 body 		{ width:35em; margin:0 0 120px 120px; font:15px/1.6em Circular,Georgia,serif; }
 h1 		{ margin:120px 0 1.4em 0; font-size:1em; font-weight:bold; }
-h2		{ margin:0 0 1.4em 0; font-size:1em; font-weight:bold; }
+h2		{ margin:120px 0 1.4em 0; font-size:1em; font-weight:bold; }
 h3 		{ margin:120px 0 1.4em 0; font-size:1em; font-weight:bold; }
 h4 		{ margin:120px 0 1.4em 0; font-size:1em; font-weight:bold; }
 p 		{ margin:0 0 1.4em 0 }
@@ -21,8 +21,8 @@ a.marklet	{ border:1px solid; padding:0 3px 0 3px; }
 ul, ol 		{ margin:0 0 1.4em 0; padding:0; }
 ul		{ margin:0 0 1.4em 15px;}
 
-ul li 		{ list-style:circle; margin:0 }
-ol li 		{ list-style:decimal; margin:0; list-style-position:inside; }
+ul li 		{ list-style:none; margin:0 }
+ol li 		{ list-style:none; margin:0; list-style-position:inside; }
 
 ul.l, ul.f 	{ margin-left:0; }
 ul.l li, ul.f li 	{ list-style:none; margin:0; padding:0 }
