@@ -8,7 +8,7 @@
 
 /* Body
 =========================*/
-body {
+body 	{
 	width:35em;
 	margin:120px 0 120px 120px;
 	font:15px/1.6em Circular,Georgia,serif;
@@ -16,7 +16,7 @@ body {
 
 /* Typography
 =========================*/
-h1 {
+h1 	{
 	font-size:1em; 
 	font-weight:bold;
 	}
@@ -24,7 +24,7 @@ h2	{
 	font-size:1em;
 	font-weight:bold;
 	}
-h3 {
+h3 	{
 	font-size:1em;
 	font-weight:bold;
 	}
@@ -46,7 +46,7 @@ a 	{
 	
 /* Images
 =========================*/
-img {
+img 	{
 	width: 100%; 
 	}
 
@@ -55,7 +55,7 @@ img {
 ul	{
 	padding: 0;
 	}
-ul li {
+ul li 	{
 	list-style:none; 
 	margin:0 
 	}
@@ -72,14 +72,14 @@ blockquote	{
 code, pre {
 	font-family: Menlo, Monaco, "Courier New", monospace;
 }
-code {
+code 	{
 	padding: .25em .5em;
 	font-size: 85%;
 	color: #000;
 	background-color: #fff;
 	border-radius: 3px;
-}
-pre {
+	}
+pre 	{
 	display: block;
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -91,18 +91,17 @@ pre {
 	word-break: break-all;
 	word-wrap: break-word;
 	background-color: #fff;
-}
+	}
 pre code {
 	padding: 0;
 	font-size: 100%;
 	color: inherit;
 	background-color: transparent;
-}
+	}
 	
 /* Components
 =========================*/
-.block,
-.article-head,
+.block
 .article-body {
 	margin:0 0 120px 0;	
 	}
@@ -113,12 +112,12 @@ pre code {
 /* Media queries
 =========================*/
 @media (max-width: 650px) {
-body {
+body 	{
 	width:75%;
 	margin:0 0 15% 15%;
 	padding-top: 5%;
 	}
-h1, h2 {
+h1, h2 	{
 	margin-top:auto; 
 	}
 .block 
@@ -129,17 +128,17 @@ h1, h2 {
 }
 
 @media (max-width: 480px) {
-body {
+body 	{
 	width:80%; 
 	margin:0 0 10% 10%;
 	padding-top: 5%; 
 	font-size:14px; 
 	line-height:1.7em 
 	}
-h1, h2 {
+h1, h2 	{
 	margin-top:auto; 
 	}
-code {
+code 	{
 	font-size: 14px;	
 	}
 .block
