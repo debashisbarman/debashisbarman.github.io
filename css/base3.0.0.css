@@ -36,7 +36,7 @@ p 	{
 	margin:0 0 1.4em 0
 	}
 	
-/* Links
+/* Link
 =========================*/
 a 	{
 	color:#000; 
@@ -44,18 +44,19 @@ a 	{
 	text-decoration:none; 
 	}
 	
-/* Images
+/* Image
 =========================*/
 img 	{
 	width: 100%; 
 	}
 
-/* List
+/* Lists
 =========================*/
-ul	{
+ul, ol	{
 	padding: 0;
 	}
-ul li 	{
+ul li,
+ol li	{
 	list-style:none; 
 	margin:0 
 	}
@@ -69,7 +70,8 @@ blockquote	{
 	
 /* Code
 =========================*/
-code, pre {
+code, 
+pre	{
 	font-family: Menlo, Monaco, "Courier New", monospace;
 	}
 code 	{
