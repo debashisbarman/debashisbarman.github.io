@@ -1,7 +1,7 @@
 /*
  * Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io.
  * Inspired by 'dogma' (http://maartenpkappert.nl/dogma/). 
- * 08/20/2014
+ * 11/22/2014
  * Version 3.0.0 (Stable)
  * 
  */
@@ -71,7 +71,7 @@ blockquote	{
 =========================*/
 code, pre {
 	font-family: Menlo, Monaco, "Courier New", monospace;
-}
+	}
 code 	{
 	padding: .25em .5em;
 	font-size: 85%;
