@@ -101,7 +101,7 @@ pre code {
 	
 /* Components
 =========================*/
-.block
+.block,
 .article-body {
 	margin:0 0 120px 0;	
 	}
@@ -120,7 +120,7 @@ body 	{
 h1, h2 	{
 	margin-top:auto; 
 	}
-.block 
+.block, 
 .article-head, 
 .article-body {
 	margin:5% 0 15% 0;	
@@ -141,7 +141,7 @@ h1, h2 	{
 code 	{
 	font-size: 14px;	
 	}
-.block
+.block,
 .article-head, 
 .article-body {
 	margin-top:auto;	
