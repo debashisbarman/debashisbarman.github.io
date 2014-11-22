@@ -8,7 +8,7 @@ tags: Web Design, Modern Website
 
 Decided to reconstruct my site by redesigning it. The goal was a clean and minimal content focused layout. So I started removing all the unnecessary components and finally arrived at this current layout. 
 
-This layout is highly inspired by [Dogma WordPress Theme](http://understandingminimalism.com/dogma/). Since dogma is uncopyrighted and free, I edited the theme as per my requirements.
+This layout is highly inspired by [Dogma WordPress Theme](http://understandingminimalism.com/dogma/). Since dogma is uncopyrighted and free, I edited the theme for [Jekyll](http://jekyllrb.com).
 
 Few things about my site:
 

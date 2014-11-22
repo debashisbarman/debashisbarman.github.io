@@ -1,34 +1,33 @@
 ---
 layout: default
 ---
-<div class="about-me">
+<div class="block">
 {% include welcome.html %}
 </div>
 
-<div class="index">
+<div class="block">
 {% include projects.html %}
 </div>
 
-<div class="index">
+<div class="block">
 <h2>Articles</h2>
 <ul>
 {% for post in site.posts %}
 <li>
-<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-{{ post.excerpt }}
+<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 </li>
 {% endfor %}
 </ul>
 </div>
-<hr/>
-<div class="links">
+
+<div class="block">
 {% include references.html %}
 </div>
 
-<div class="menu">
+<div class="block">
 {% include other.html %}
 </div>
 
-<div class="disclaimer">
+<div class="block">
 {% include disclaimer.html %}
 </div>
