@@ -101,16 +101,7 @@ pre code {
 	
 /* Components
 =========================*/
-.about-me,
-.index, 
-.article-head, 
-.article-body, 
-.related-post, 
-.footer, 
-.links, 
-.menu, 
-.share
-.disclaimer {
+.block {
 	margin:0 0 120px 0;	
 	}
 .article-head {
