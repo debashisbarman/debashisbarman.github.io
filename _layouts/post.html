@@ -12,11 +12,11 @@ layout: default
 
 
 <br/>
-<div class="menu">
+<div class="block">
 {% include share.html %}
 </div>
 
-<div class="related-post">
+<div class="block">
 <h2>Related Articles</h2>
 <ul>
 {% for post in site.related_posts limit:3 %}
@@ -25,10 +25,10 @@ layout: default
 </ul>
 </div>
 
-<div class="menu">
+<div class="block">
 {% include other.html %}
 </div>
 
-<div class="footer">
+<div class="block">
 {% include footer.html %}
 </div>
