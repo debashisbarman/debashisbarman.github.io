@@ -84,9 +84,9 @@ code 	{
 pre 	{
 	display: block;
 	margin-top: 0;
-	margin-bottom: 1rem;
-	padding: 1rem;
-	font-size: .8rem;
+	margin-bottom: 1em;
+	padding: 1em;
+	font-size: .8em;
 	line-height: 1.4;
 	white-space: pre;
 	white-space: pre-wrap;
