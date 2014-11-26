@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Simple Kernel in C and Assembly</title>
+<meta name="description" content="Debashis Barman is a Freelance Web Designer. He specializes in Minimalist Web Design, Responsive Layout and Web Typography.
+">
+<meta name="keywords" content="Freelance Web Designer, Debashis Barman, Responsive Web Design, Minimal Web Design"/>
+
+<link rel="stylesheet" href="/css/base3.0.0.css"/>
+<link rel="canonical" href="http://www.debashisbarman.in/2014/09/25/Simple-Kernel-in-C.html">
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+
+
+<body>
+
+<div>
+
+<div class="article-head">
+<h1><a href="/2014/09/25/Simple-Kernel-in-C.html">Simple Kernel in C and Assembly</a></h1>
+<span>25 Sep 2014</span>
+</div>
+<div class="article-body">
+<p>Hello, world ! Today I’m going to show you how to write a kernel in C and a little bit of assembly. This is a simple kernel written in C and Assembly which could be loaded with the GRUB bootloader on an x86 system. This kernel will
+display a message on the screen and then hang. All the source code is available on my github <a href="https://github.com/debashisbarman/Simple-Kernel-in-C-and-Assembly">repository</a>.</p>
+
+<h2 id="tools">Tools</h2>
+<p>Before writing the kernel, make sure that the following tools are available on your system.</p>
+<ul>
+<li>An x86 computer (of course)</li>
+<li>Linux</li>
+<li>NASM assembler</li>
+<li>gcc</li>
+<li>ld (GNU Linker)</li>
+<li>grub</li>
+</ul>
+
+<h2 id="lets-start-coding">Let’s start coding</h2>
+<p>We like to write everything in C, but we cannot avoid a little bit of assembly. We will write a small file in x86
+assembly-language that serves as the starting point for our kernel. </p>
+
+<p>Here is our <code>kernel.asm</code> file.</p>
+<pre>
+;; kernel.asm
+;; version 0.0.1
+
+bits 32		;nasm directive
+section .text
+	;multiboot spec
+	align 4
+	dd 0x1BADB002			;magic
+	dd 0x00				;flags
+	dd - (0x1BADB002 + 0x00)	;checksum. m+f+c should be zero
+
+global start
+extern k_main	;k_main is defined in the kernel.c file
+
+start:
+	cli  ; stop interrupts
+
+	call k_main
+
+	hlt ; halt the CPU
+</pre>
+
+<p>In the <code>kernel.asm</code> we make a call to <code>k_main</code>. So our execution starts at <code>k_main()</code> in the main C file <code>kernel.c</code>.</p>
+<pre>
+/*
+ *
+ * kernel.c - version 0.0.1
+ * 
+ */
+
+
+#define WHITE_TXT 0x07 /* light gray on black text */
+
+void k_clear_screen();
+unsigned int k_printf(char *message, unsigned int line);
+
+/* simple kernel written in C */
+void k_main() 
+{
+	k_clear_screen();
+	k_printf("Hello, world! Welcome to my kernel.", 0);
+};
+
+/* k_clear_screen : to clear the entire text screen */
+void k_clear_screen()
+{
+	char *vidmem = (char *) 0xb8000;
+	unsigned int i=0;
+	while(i &lt; (80*25*2))
+	{
+		vidmem[i]=' ';
+		i++;
+		vidmem[i]=WHITE_TXT;
+		i++;
+	};
+};
+
+/* k_printf : the message and the line # */
+unsigned int k_printf(char *message, unsigned int line)
+{
+	char *vidmem = (char *) 0xb8000;
+	unsigned int i=0;
+
+	i=(line*80*2);
+
+	while(*message!=0)
+	{
+		if(*message=='\n') // check for a new line
+		{
+			line++;
+			i=(line*80*2);
+			*message++;
+		} else {
+			vidmem[i]=*message;
+			*message++;
+			i++;
+			vidmem[i]=WHITE_TXT;
+			i++;
+		};
+	};
+
+	return(1);
+}
+</pre>
+<p>All our kernel will do is clear the screen and write to it the string “Hello, world! Welcome to my kernel.”</p>
+
+<p>Now the <code>linker.ld</code> script.</p>
+<pre>
+/*
+ * link.ld
+ */
+
+OUTPUT_FORMAT(elf32-i386)
+ENTRY(start)
+SECTIONS
+{
+	. = 0x100000;
+	.text : {*(.text)}
+	.data : {*(.data)}
+	.bss  : {*(.bss)}
+}
+</pre>
+
+<p>That’s it. All done.</p>
+
+<h2 id="building-the-kernel">Building the kernel</h2>
+<p>We will now create object files from <code>kernel.asm</code> and <code>kernel.c</code> and then link it using our linker script.</p>
+<pre>
+nasm -f elf32 kernel.asm -o kasm.o
+</pre>
+<p>Now we will run the assembler to create the object file <code>kasm.o</code> in ELF-32 bit format.</p>
+<pre>
+gcc -m32 -c kernel.c -o kc.o
+</pre>
+<p>Now the linking part,</p>
+<pre>
+ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o
+</pre>
+
+<h2 id="configuring-the-grub">Configuring the grub</h2>
+<p>GRUB requires the kernel to be of the name pattern <code>kernel-&lt;version&gt;</code> . So, I renamed my kernel executable to <code>kernel-0.0.1</code>.</p>
+
+<p>Now place it in the <code>/boot</code> directory. You will require superuser privileges to do so.</p>
+
+<p>In your GRUB configuration file <code>grub.cfg</code> you should add an entry, something like:</p>
+
+<pre>
+title Mini OS
+  root (hd0, 0)
+  kernel /boot/kernel-0.0.1 ro
+</pre>
+
+<h2 id="using-the-qemu-emulator">Using the qemu emulator</h2>
+<p>The kernel will also be run using the <code>qemu</code> emulator.</p>
+<pre>
+qemu-system-i386 -kernel kernel
+</pre>
+<p>That’s it.</p>
+
+</div>
+
+
+<br/>
+<div class="block">
+<p>Did you enjoy this post? If so, <a href="https://twitter.com/share" data-text="Finishing" data-via="orderedlist" data-count="none"><span class="entypo-twitter"></span>share</a> it!</p>
+<p>Have comments on this post or want to discuss further? Hit me up on <a target="_blank" href="https://twitter.com/_DebashisBarman" data-show-count="false" data-show-screen-name="false">Twitter</a> and let me know your thoughts.
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</div>
+
+<div class="block">
+<h2>Related Articles</h2>
+<ul>
+
+<li><a href="/2014/11/22/Whitespace-in-Webdesign-an-example.html">Whitespace in Webdesign : An Example</a></li>
+
+<li><a href="/2014/08/28/updated-site-design.html">Updated Site Design</a></li>
+
+<li><a href="/2014/08/26/css-absolute-center.html">CSS Absolute Center</a></li>
+
+</ul>
+</div>
+
+<div class="block">
+<h2>Other Pages</h2>
+<ul>
+<li><a href="http://www.debashisbarman.in" >Home</a></li>
+<li><a target="_blank" href="https://gist.github.com/debashisbarman" >My Gists</a></li>
+<li><a href="http://www.debashisbarman.in/about/" >About the site</a></li>
+<li><a href="http://www.debashisbarman.in/assets/DebashisBarmanCurriculumVitae.pdf" >Curriculum Vitae</a></li>
+<li>Keep track via <a href="http://www.debashisbarman.in/feed.xml" >RSS</a> or <a target="_blank" href="https://twitter.com/_DebashisBarman" data-show-count="false" data-show-screen-name="false">Twitter</a></li>
+</ul>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</div>
+
+<div class="block">
+<br/>
+<footer>
+<p>&copy; 2014 Debashis Barman. All rights reserved.</p>
+</footer>
+
+</div>
+
+
+</div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-49449513-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
