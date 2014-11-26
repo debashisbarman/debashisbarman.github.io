@@ -1,9 +1,0 @@
-/*
- * Created by Debashis Barman exclusively for debashisbarman.in / debashisbarman.github.io.
- * Inspired by 'dogma' (http://maartenpkappert.nl/dogma/). 
- * 08/20/2014
- * Version 3.0.0 (Stable)
- * 
- */
-
-body{width:35em;margin:120px 0 120px 120px;font:15px/1.6em Circular,Georgia,serif}hr{height:1px;margin:25px 0;background-color:#000000;border:none;clear:both}h1,h2,h3,h4{font-size:1em;font-weight:700}p{margin:0 0 1.4em}a{color:#000;border-bottom:1px solid #000;text-decoration:none}img{width:100%}ul{padding:0}ul li{list-style:none;margin:0}blockquote{margin:0;font-style:italic}code,pre{font-family:Menlo,Monaco,"Courier New",monospace}code{padding:.25em .5em;font-size:85%;color:#000;background-color:#fff;border-radius:3px}pre{display:block;margin-top:0;margin-bottom:1rem;padding:1rem;font-size:.8rem;line-height:1.4;white-space:pre;white-space:pre-wrap;word-break:break-all;word-wrap:break-word;background-color:#fff}pre code{padding:0;font-size:100%;color:inherit;background-color:transparent}.about-me,.article-body,.article-head,.footer,.index,.links,.menu,.related-post,.share .disclaimer{margin:0 0 120px}.article-head{margin:0 0 50px}@media (max-width:650px){body{width:75%;margin:0 0 15% 15%;padding-top:5%}h1,h2{margin-top:auto}.about-me,.article-body,.article-head,.footer,.index,.links,.menu,.related-post,.share .disclaimer{margin:5% 0 15%}}@media (max-width:480px){body{width:80%;margin:0 0 10% 10%;padding-top:5%;font-size:14px;line-height:1.7em}h1,h2{margin-top:auto}code{font-size:14px}.about-me,.article-body,.article-head,.footer,.index,.links,.menu,.related-post,.share .disclaimer{margin-top:auto}}
