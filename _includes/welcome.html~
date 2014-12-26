@@ -5,3 +5,5 @@
 <p>I enjoy computer programming, writing CSS and doing projects, specially on web and <a target="_blank" href="https://github.com/debashisbarman/Mini-OS/">operating system</a>. Some of my works are available on <a target="_blank" href="http://www.behance.net/debashisbarman/">Behance</a>.</p>
 <p>You can find me on <a target="_blank" href="https://www.github.com/debashisbarman/">Github</a>. Contact me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
 <p>I love minimalism and occasionally blog here.</p>
+
+<p><img src="images/bg.jpg" alt="Debashis Barman" /></p>
