@@ -1,33 +1,43 @@
 ---
 layout: default
 ---
-<div class="block">
-{% include welcome.html %}
-</div>
 
-<div class="block">
+<header class="masthead">
+<div class="masthead-inner-wrapper">
+<div class="masthead-inner">
+
+{% include sidebar.html %}
+
+</div>
+</div>
+</header>
+
+<div class="content container clearfix">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+
+{% include about.html %}
+
+<br id="projects">
 {% include projects.html %}
-</div>
 
-<div class="block">
+<br id="articles">
 <h2>Articles</h2>
 <ul>
 {% for post in site.posts %}
 <li>
-<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+<strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+{{ post.excerpt }}
 </li>
 {% endfor %}
 </ul>
-</div>
 
-<div class="block">
+<br id="references">
 {% include references.html %}
-</div>
 
-<div class="block">
-{% include other.html %}
-</div>
+<br id="other-pages">
+{% include other-pages.html %}
 
-<div class="block">
-{% include disclaimer.html %}
+</div>
+</div>
 </div>

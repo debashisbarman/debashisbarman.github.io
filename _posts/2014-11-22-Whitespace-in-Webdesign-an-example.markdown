@@ -9,10 +9,10 @@ Minimalist or modern designs tend toward more use of white space. White space or
 Here goes an illustrated example of use of whitespace in webdesign with a minimalist, content focused layout.
 
 Homepage
-![homepage](../../../images/snap1.png)
+![homepage](../../../assets/images/snap1.png)
 
 A blog
-![homepage](../../../images/snap2.png)
+![homepage](../../../assets/images/snap2.png)
 
 and a post
-![homepage](../../../images/snap3.png)
+![homepage](../../../assets/images/snap3.png)
