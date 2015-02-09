@@ -80,6 +80,8 @@ hr { border: none; outline: none; height: 1px; background-color: #c0c0c0; width:
 
 .content { padding: 0 13px 34px 13px; font-size: 13px; line-height: 2; }
 
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { background-color: #ffffff; padding: 0; margin-bottom: 3%; }
+
 .content .lead { color: #777; }
 
 .content p { margin-bottom: 21px; }
