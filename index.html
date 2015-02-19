@@ -1,43 +1,82 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+<title>Debashis Barman | Developer // Web Designer</title>
+<link href="assets/kathamo/kathamo.css" rel="stylesheet"/>
+<style>
 
-<header class="masthead">
-<div class="masthead-inner-wrapper">
-<div class="masthead-inner">
+h1, h2 { font-weight: ; }
 
-{% include sidebar.html %}
+p, ul { font-size: 13px; }
+p { margin-bottom: 21px; }
+li { padding-left: 8px; }
 
-</div>
-</div>
-</header>
+.img-circle { max-width: ; }
 
-<div class="content container clearfix">
+@media (min-width: 1024px) {
+
+h1 { font-size: 34px; }
+.page { height: 100vh; width: 100%; }
+.cover { padding-left: 8px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+.page { height: 100%; padding: 60px 0; width: 100%; }
+.cover { padding-left: 5px; }
+}
+
+@media (max-width: 767px) {
+
+.page { height: 100%; padding: 34px 0; width: 100%; }
+}
+
+</style>
+</head>
+<body>
+<div id="getting-started" class="page clearfix">
+<div class="vertical-center-wrapper">
+<div class="vertical-center">
+
+<div class="container">
 <div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
 
-{% include about.html %}
+<div class="col-lg-offset-3 col-lg-3 col-md-offset-1 col-md-4 col-sm-12">
+<div class="hidden-sm text-right">
+<img class="img-circle img-responsive" src="assets/images/profile.png" style="margin-top: -55px;margin-right: -55px;">
+<h1 style="margin-top: -28px">Debashis Barman</h1>
+<h5><small>Developer // Web Designer</small></h5>
+</div>
+<div class="visible-sm">
+<h1>Debashis Barman</h1>
+<h4><small>Developer // Web Designer</small></h4>
+</div>
+</div>
 
-<br id="projects">
-{% include projects.html %}
+<div class="col-lg-4 col-md-5 col-sm-12">
+<div class="cover">
+<h2><small>Everything !</small></h2>
 
-<br id="articles">
-<h2>Articles</h2>
-<ul>
-{% for post in site.posts %}
-<li>
-<strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
-{{ post.excerpt }}
-</li>
-{% endfor %}
+<p>Freelance developer and web designer; living in India; specialize in minimalist mobile-friendly development; passionate programmer and occasional blogger; (<a target="_blank" href="assets/DebashisBarmanResume.pdf">resume</a>).</p>
+
+<p>Feel free to navigate my site.</p>
+
+<ul class="li-circle">
+<li><a target="_blank" href="https://www.github.com/debashisbarman/">Development</a></li>
+<li><a target="_blank" href="https://www.behance.net/debashisbarman/">Design</a></li>
+<li><a target="_blank" href="https://www.medium.com/@iDeb/">Writing</a></li>
 </ul>
+<p>The best way to contact me is on Twitter. Follow me <a target="_blank" href="https://www.twitter.com/@iDebashisBarman/">@iDebashisBarman</a> for more updates.</p>
 
-<br id="references">
-{% include references.html %}
+<hr>
+<p><small>Built with <a class="credit" target="_blank" href="http://jekyllrb.com/">Jekyll</a> and hosted on <a class="credit" target="_blank" href="http://pages.github.com/">Github Pages</a></small>.</p>
+</div>
+</div>
 
-<br id="other-pages">
-{% include other-pages.html %}
+</div>
+</div>
 
 </div>
 </div>
 </div>
+</body>
+</html>

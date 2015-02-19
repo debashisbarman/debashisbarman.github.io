@@ -32,7 +32,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 /* Import (Google Font)
 ================================================== */
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:300,700,300italic,700italic);
 
 
 /* Reset & Basics (Inspired by E. Meyers)
@@ -67,11 +67,11 @@ html, body { width: 100%; padding: 0; margin: 0 }
 
 /* Basic Styles
 ================================================== */
-html { margin: 0; padding: 0; font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { margin: 0; padding: 0; font-family: Raleway, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin:0; padding: 0; font-size: 15px; font-weight: normal; line-height: 1.618; color: #101010; letter-spacing: 0.618px; }
 
-hr { border: none; outline: none; height: 1px; width: 100%; margin:5% 0; background: #f0f0f0; }
+hr { border: none; outline: none; height: 1px; width: 100%; margin:5% 0; background: #f0f0f0; clear: both; }
 
 
 /* Base Grid
@@ -312,7 +312,7 @@ hr { border: none; outline: none; height: 1px; width: 100%; margin:5% 0; backgro
 
 /* Typography
 ================================================== */
-h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0 auto 1.618% 0; }
+h1, h2, h3, h4, h5, h6 { font-family: Raleway, sans-serif; font-weight: 500; margin: 0 auto 1.618% 0; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color: #c0c0c0; }
 
@@ -399,8 +399,8 @@ blockquote cite { font-size: 8px; }
 
 /* Anchor
 ================================================== */
-a, a:visited { color: #5bc0ef; text-decoration: none; outline: 0; }
-a:hover, a:focus { color: #5bc0de; border-bottom: 1px solid #5bc0de; }
+a, a:visited { color: #1eaedb; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #0fa0ce; border-bottom: 1px solid #0fa0ce; }
 p a, p a:visited { line-height: inherit; }
 
 
@@ -786,3 +786,4 @@ li.navbar-item { clear: both; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-justify { text-align: justify; }
+
