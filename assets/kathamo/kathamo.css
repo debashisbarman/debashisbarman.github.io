@@ -4,7 +4,7 @@
  * https://github.com/debashisbarman/Kathamo/
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 25/01/2015
+ * 21/03/2015
  */
 
 
@@ -67,9 +67,9 @@ html, body { width: 100%; padding: 0; margin: 0 }
 
 /* Basic Styles
 ================================================== */
-html { margin: 0; padding: 0; font-family: Raleway, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin:0; padding: 0; font-size: 15px; font-weight: normal; line-height: 1.618; color: #101010; letter-spacing: 0.618px; }
+body { margin:0; padding: 0; font-size: 15px; font-weight: normal; line-height: 1.618; color: #101010; /* letter-spacing: 0.618px; */ }
 
 hr { border: none; outline: none; height: 1px; width: 100%; margin:5% 0; background: #f0f0f0; clear: both; }
 
@@ -312,7 +312,7 @@ hr { border: none; outline: none; height: 1px; width: 100%; margin:5% 0; backgro
 
 /* Typography
 ================================================== */
-h1, h2, h3, h4, h5, h6 { font-family: Raleway, sans-serif; font-weight: 500; margin: 0 auto 1.618% 0; }
+h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; margin: 0 auto 1.618% 0; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color: #c0c0c0; }
 
