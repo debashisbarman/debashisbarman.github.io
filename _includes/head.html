@@ -4,16 +4,99 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
 <meta name="description" content="{{ site.description }}">
 <meta name="keywords" content="Freelance Web Designer, Debashis Barman, Responsive Web Design, Minimal Web Design"/>
 
-<!-- Kathamo (Grid only) -->
-<link rel="stylesheet" href="{{ "/assets/kathamo/grid.css" | prepend: site.baseurl }}"/>
-
-<!-- Custom Stylesheet -->
-<link rel="stylesheet" href="{{ "/assets/scholar/base.css" | prepend: site.baseurl }}"/>
-
+<link rel="stylesheet" href="{{ "/kathamo/kathamo.css" | prepend: site.baseurl }}"/>
+<link rel="stylesheet" href="{{ "/font-awesome-4.2.0/css/font-awesome.css" | prepend: site.baseurl }}"/>
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
+<link href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
+<style>
+/* Global */
+h2 { color: #4c6672; padding-bottom: 21px; font-weight: 500; }
+p { font-size: 15px; }
+
+/* Header */
+header { height: auto; background-color: #4c6672; color: #fff; padding: 34px 0 55px 0; }
+header h1 { font-size: 34px; font-weight: 500; }
+header p { font-size: 18px; margin: 34px 0 0 0; }
+header a, header a:visited { color: #fff; text-decoration: none; outline: 0; font-weight: 500; }
+header a:hover, header a:focus { color: #fff; border-bottom: none; }
+header p a, header p a:visited { line-height: inherit; }
+
+/* Article */
+.article { padding: 21px 0 34px 0; background-color: #f3f5f6; }
+.article article { padding: 5px 0; /* border-bottom: 1px dotted #dbe0e3; */ }
+.article .date { color: #a0a0a0; font-weight: 500; }
+.article a { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 5px 0; /* border-bottom: 1px solid #4c6672; */ border-bottom: none; }
+.article a:hover, .article a:focus { color: #4c6672; padding: 0 0 3px 0; /* border-bottom: 1px solid #4c6672; */ border-bottom: none; }
+.article p a, .article p a:visited { line-height: inherit; }
+.article p { margin: 21px 0 0 0; line-height: 1.618; }
+
+/* Project */
+section { padding: 21px 0 34px 0; }
+.section a { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 5px 0; border-bottom: 1px solid #4c6672; }
+.section a:hover, .section a:focus { color: #4c6672; padding: 0 0 5px 0; border-bottom: 1px solid #4c6672; }
+.section p a, .section p a:visited { line-height: inherit; }
+.section p { margin: 21px 0 0 0; line-height: 1.618; }
+
+/* Links */
+.references { padding: 34px 0 21px 0; }
+.references li { border-bottom: 1px dotted #dbe0e3; padding-bottom: 5px; }
+.references li .pull-right { color: #dbe0e3; }
+.references a { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 2px 0; border-bottom: none; }
+.references a:hover, .references a:focus { color: #4c6672; padding: 0 0 2px 0; border-bottom: none; }
+
+/* Footer */
+footer { background-color: #4c6672; color: #fff; padding: 21px 0 34px 0; }
+footer a, footer a:visited { color: #fff; text-decoration: none; outline: 0; font-weight: 500; }
+footer a:hover, footer a:focus { color: #fff; border-bottom: none; }
+footer ul.li-inline { font-size: 13px; }
+
+/* Media queries */
+@media (min-width: 1024px) {
+p { font-size: 16px; }
+}
+@media (max-width: 767px) {
+header { padding: 34px 0; }
+h6, p { line-height: 2; }
+.article article { border-bottom: 1px dotted #dbe0e3; }
+.article a, .article a:hover { border-bottom: none; }
+.article .pull-right { color: #dbe0e3; }
+.section { padding: 13px 0; }
+.section a, .section a:hover { border-bottom: 1px solid #4c6672; }
+.text-right { text-align: left; }
+}
+
+/* ***************************************************** */
+
+/* Post */
+.breadcumb { padding: 0 0 13px 0; }
+.post { padding: 34px 0; border-top: 5px solid #4c6672; }
+.title { font-size: 34px; margin: 34px 0 21px 0; font-weight: 500; color: #4c6672; }
+.subtitle { font-size: 21px; margin: 0 0 55px 0; font-weight: 500; color: #a0a0a0; display: block; }
+
+.post h2, .post h3, .post h4, .post h5, .post h6 { font-size: 21px; font-weight: 500; color: #4c6672; margin: 55px 0 0 0; }
+
+.post p, .post ul { margin: 21px 0; font-size: 15px; line-height: 1.618; }
+
+.post a { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 5px 0; border-bottom: 1px solid #4c6672; }
+.post a:hover, .post a:focus { color: #4c6672; padding: 0 0 5px 0; border-bottom: 1px solid #4c6672; }
+.post p a, .post p a:visited { line-height: inherit; }
+.post p { margin: 21px 0 0 0; line-height: 1.618; }
+
+.post img { margin: 21px 0; }
+
+.post blockquote { border-left: 2px solid #4c6672; }
+
+.post blockquote p { margin: 0; }
+
+.share { padding: 13px 0 34px 0; background-color: #4c6672; color: #fff; }
+.share a { color: #fff; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 5px 0; border-bottom: none; }
+.share a:hover, .share a:focus { color: #fff; padding: 0 0 5px 0; border-bottom: none; }
+.share p a, .share p a:visited { line-height: inherit; }
+.share p { margin: 21px 0 0 0; line-height: 1.618; }
+
+
+</style>
 </head>

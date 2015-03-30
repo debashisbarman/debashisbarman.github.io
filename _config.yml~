@@ -1,0 +1,12 @@
+# Site settings
+title: Debashis Barman
+email: deb.dbuniversity@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Debashis Barman is a Freelance Web Designer. He specializes in Minimalist Web Design, Responsive Layout and Web Typography.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.debashisbarman.in" # the base hostname & protocol for your site
+twitter_username: _DebashisBarman
+github_username:  debashisbarman
+
+# Build settings
+markdown: kramdown
