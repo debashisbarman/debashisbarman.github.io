@@ -13,12 +13,16 @@
 <link href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
 <style>
 /* Global */
-h2 { color: #4c6672; padding-bottom: 21px; font-weight: 500; }
+h2 { color: #4c6672; padding-bottom: 21px;  }
 p { font-size: 15px; }
+
+.ongoing-project { cursor: pointer; pointer-events: none; }
+span.ongoing-project { color: #a0a0a0; }
 
 /* Header */
 header { height: auto; background-color: #4c6672; color: #fff; padding: 34px 0 55px 0; }
-header h1 { font-size: 34px; font-weight: 500; }
+header a h1 { /* font-size: 34px; */ font-weight: 300; }
+header a h1 strong { font-weight: 500; }
 header p { font-size: 18px; margin: 34px 0 0 0; }
 header a, header a:visited { color: #fff; text-decoration: none; outline: 0; font-weight: 500; }
 header a:hover, header a:focus { color: #fff; border-bottom: none; }
