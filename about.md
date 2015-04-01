@@ -7,7 +7,7 @@ permalink: /about/
 
 This URL has been my online home for recent years, manifesting at times as a blog or a portfolio until landing on this flat layout. Today it is an outlet for my design and development related ramblings.
 
-![debashisbarman.in](assets/images/db.in.png)
+![debashisbarman.in](http://www.debashisbarman.in/assets/images/db.in.png)
 
 ##More details:
 
