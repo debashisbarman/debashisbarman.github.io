@@ -8,4 +8,4 @@ Minimalist or modern designs tend toward more use of white space. White space or
 
 Here goes an illustrated example of use of whitespace in webdesign with a minimalist, content focused layout.
 
-![debashisbarman.in](../../../assets/images/db.in.png)
+![debashisbarman.in](../../../assets/images/onemandesign.png)
