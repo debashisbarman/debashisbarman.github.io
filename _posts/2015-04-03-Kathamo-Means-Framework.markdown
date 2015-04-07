@@ -445,7 +445,7 @@ Kathamo has a number of small utility classes that act as easy-to-use helpers. S
 
 ### Visibility
 
-Use visibility classes `visible-*` and `hidden-*` to control visibilty of an element. Here `*` indicates `lg`, `md` or `sm`. 
+Use visibility classes `.visible-*` and `.hidden-*` to control visibilty of an element. Here `*` indicates `lg`, `md` or `sm`. 
 
 <pre>
 &lt;!-- To disable in small devices --&gt;
@@ -461,7 +461,7 @@ Use visibility classes `visible-*` and `hidden-*` to control visibilty of an ele
 
 ### Text Alignment
 
-Use classes `text-right`, `text-left`, `text-center` and `text-justify` to set alignment of a particular block of texts.
+Use classes `.text-right`, `.text-left`, `.text-center` and `.text-justify` to set alignment of a particular block of texts.
 
 <pre>
 &lt;!-- To set justified text alignment --&gt;
@@ -472,7 +472,7 @@ Use classes `text-right`, `text-left`, `text-center` and `text-justify` to set a
 
 ### Floating Elements
 
-Use classes `pull-right` and `pull-left` to float an element.
+Use classes `.pull-right` and `.pull-left` to float an element.
 
 <pre>
 &lt;!-- Float in right direction --&gt;
