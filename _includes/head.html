@@ -13,7 +13,8 @@
 <link href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
 <style>
 /* Global */
-h2 { color: #4c6672; padding-bottom: 21px;  }
+.fa.subtitle-icon { color: #4c6672; padding-bottom: 8px; }
+h2 { color: #4c6672;  }
 
 
 img { box-shadow: 0px 0px 3px 2px #f3f5f6; }
@@ -32,7 +33,8 @@ header p a, header p a:visited { line-height: inherit; }
 
 /* Article */
 .article { padding: 21px 0 34px 0; background-color: #f3f5f6; }
-.article article { padding: 5px 0; /* border-bottom: 1px dotted #dbe0e3; */ }
+.article article { padding: 5px 0; border-bottom: 1px dotted #dbe0e3; }
+.article article.no-border-bottom { border-bottom: none; }
 .article .date { color: #a0a0a0; font-weight: 500; }
 .article a { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 5px 0; /* border-bottom: 1px solid #4c6672; */ border-bottom: none; }
 .article a:hover, .article a:focus { color: #4c6672; padding: 0 0 3px 0; /* border-bottom: 1px solid #4c6672; */ border-bottom: none; }
@@ -47,7 +49,8 @@ section { padding: 21px 0 34px 0; }
 .section p { margin: 21px 0 0 0; line-height: 1.618; }
 
 /* Links */
-.references { padding: 34px 0 21px 0; }
+.references { padding: 21px 0 21px 0; }
+.references h2 { padding-bottom: 28px; /* Important */ }
 .references li { border-bottom: 1px dotted #dbe0e3; padding-bottom: 5px; }
 .references li .pull-right { color: #dbe0e3; }
 .references a { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; padding: 0 0 2px 0; border-bottom: none; }
@@ -61,7 +64,9 @@ footer ul.li-inline { font-size: 13px; }
 
 /* Media queries */
 @media (min-width: 768px) {
-p { font-size: 17px; }
+h2 { font-size: 34px; }
+.fa.subtitle-icon { font-size: 55px; }
+p { font-size: 18px; }
 }
 
 @media (max-width: 767px) {
