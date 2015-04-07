@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Whitespace in Webdesign : An Example"
+title:  "Kathamo means Framework"
 date:   2014-11-22 10:10:00
 tags: web design, whitespace
 ---
