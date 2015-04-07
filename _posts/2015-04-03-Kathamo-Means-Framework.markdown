@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kathamo means Framework"
+title:  "Kathamo Means Framework"
 date:   2015-04-03 13:47:00
 tags: css, framework, minimalism
 ---
@@ -34,7 +34,7 @@ Kathamo 2.0.0 (Stable) has a few easy ways to quickly get started, each one appe
 
 Start with the below to begin working with a minimal Kathamo document.
 
-```
+<pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 
@@ -51,13 +51,13 @@ Start with the below to begin working with a minimal Kathamo document.
 &lt;body&gt;&lt;/body&gt;
 
 &lt;/html&gt;
-```
+</pre>
 
 ### Grid System
 
 Kathamo includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. In Kathamo, all the columns must be wrapped inside a `.row` and all the rows must be wrapped inside a `.container`. The column classes follows the pattern `col-*-**` where the `*` indicates `lg`, `md` and `sm` and `**` indicates the size of the column, ranging from 1 to 11.
 
-```
+<pre>
 &lt;!-- `.container` is the main wrapper for the grid. --&gt;
 &lt;div class="container"&gt;
 
@@ -71,13 +71,13 @@ Kathamo includes a responsive, mobile first fluid grid system that appropriately
 	&lt;/div&gt;
 
 &lt;/div&gt;
-```
+</pre>
 
 ### Typography
 
 The base typeface of Kathamo is [Raleway](http://www.google.com/fonts/specimen/Raleway) served by Google, set at `font-size: 15px` over `line-height: 1.618` with `letter-spacing: 0.618px` and `font-weight: 300`.
 
-```
+<pre>
 &lt;!-- Standard Headings --&gt;
 &lt;h1&gt;Kathamo &lt;small&gt;Framework&lt;/small&gt;&lt;/h1&gt;
 &lt;h2&gt;Kathamo &lt;small&gt;Framwork&lt;/small&gt;&lt;/h2&gt;
@@ -94,13 +94,13 @@ The base typeface of Kathamo is [Raleway](http://www.google.com/fonts/specimen/R
 &lt;em&gt;Italicized&lt;/em&gt;
 &lt;a&gt;Colored&lt;/a&gt;
 &lt;u&gt;Underlined&lt;/u&gt;
-```
+</pre>
 
 ### List
 
 Basic `<ol>` and `<ul>` are unstyled. Use `li-unstyled`, `li-inline`, `li-circle`, `li-square`, `li-disc`, `<dl>` to add styling.
 
-```
+<pre>
 &lt;!-- Ordered List --&gt;
 &lt;ol&gt;
 &lt;li&gt;Item 1&lt;/li&gt;
@@ -158,25 +158,25 @@ Basic `<ol>` and `<ul>` are unstyled. Use `li-unstyled`, `li-inline`, `li-circle
 &lt;dd&gt;Item 3&lt;/dd&gt;
 &lt;dd&gt;Item 4&lt;/dd&gt;
 &lt;/dl&gt;
-```
+</pre>
 
 
 ### Blockquote
 
 Use `<blockquote>` for quoting blocks of content from another source within your document.
 
-```
+<pre>
 &lt;blockquote&gt;
 Kathamo is an Assamese word, literary meaning "structure" or "frame"; thus the name itself suggests a framework.
 &lt;cite&gt;Debashis Barman, Kathamo Creator&lt;/cite&gt;
 &lt;/blockquote&gt;
-```
+</pre>
 
 ### Code
 
 Use `<code>` for wrapping inline snippets of code and `<pre>` for multiple lines of code.
 
-```
+<pre>
 &lt;!-- For inline snippets of code. --&gt;
 &lt;p&gt;Use &lt;code&gt;&lt;code&gt;&lt;/code&gt; for wrapping inline snippets of code.&lt;/p&gt;
 
@@ -184,13 +184,13 @@ Use `<code>` for wrapping inline snippets of code and `<pre>` for multiple lines
 &lt;pre&gt;
 &lt;link href="kathamo/kathamo.css" rel="stylesheet" /&gt;
 &lt;/pre&gt;
-```
+</pre>
 
 ### Images & Thumbnail
 
 All `<img>` in Kathamo are responsive. Kathamo provides two standard classes `img-circle` and `img-border`. Also use `left-text-wrap` or `right-text-wrap` to the `<img>` for wrapping text around a image.
 
-```
+<pre>
 &lt;!-- Responsive image --&gt;
 &lt;img src="#" title=""&gt;
 
@@ -209,11 +209,11 @@ All `<img>` in Kathamo are responsive. Kathamo provides two standard classes `im
 ...
 &lt;/p&gt;
 &lt;img src="#" class="right-text-wrap"&gt;
-```
+</pre>
 
 Wrap `<ul>` or `<ol>` of `<img>` inside `.thumbnail` to create image thumbnail. Use `.col-3` or `.col-4` to specificy number of columns in the thumbnail
 
-```
+<pre>
 &lt;!-- 3 columns thumbnail --&gt;
 &lt;div class="thumbnail"&gt;
 &lt;ul class="col-3"&gt;
@@ -233,65 +233,65 @@ Wrap `<ul>` or `<ol>` of `<img>` inside `.thumbnail` to create image thumbnail. 
 &lt;li&gt;&lt;img src="#" title=""&gt;&lt;/li&gt;
 &lt;li&gt;&lt;img src="#" title=""&gt;&lt;/li&gt;
 &lt;/div&gt;
-```
+</pre>
 
 ### Table
 
 Use `.table` to any `<table>` for adding basic styling to it.
 
-```
+<pre>
 &lt;table class="table"&gt;
   ...
 &lt;/table&gt;
-```
+</pre>
 
 ### Bordered Table
 
 Use `.table-bordered` for borders on all sides of the table and cells.
 
-```
+<pre>
 &lt;table class="table table-bordered"&gt;
   ...
 &lt;/table&gt;
-```
+</pre>
 
 ### Borderless Table
 
 Use `.table-no-border` to remove borders on all sides of the table and cells.
 
-```
+<pre>
 &lt;table class="table table-no-border"&gt;
   ...
 &lt;/table&gt;
-```
+</pre>
 
 ### Striped Rows
 
 Use `.table-striped` to add zebra-striping to any table row within the `<tbody>`.
 
-```
+<pre>
 &lt;table class="table table-striped"&gt;
   ...
 &lt;/table&gt;
-```
+</pre>
 
 ### Responsive Table
 
 Wrap `.table` in `.table-responsive` to make responsive table.
 
-```
+<pre>
 &lt;div class="table-responsive"&gt;
 &lt;table class="table"&gt;
   ...
 &lt;/table&gt;
 &lt;/div&gt;
-```
+</pre>
 
 ### Form
 
 Use standard HTML tags for `<label>`, `<input>`, `<select>` and `<textarea>`. Kathamo provides custom style for different input types viz. text, password, email, search, checkbox and radio.
 
-```
+<pre>
 &lt;form  ...  &gt;
 	&lt;div class="col-lg-6 col-md-6 col-sm-12"&gt;
 	&lt;label&gt;Your email&lt;/label&gt;
@@ -321,13 +321,13 @@ Use standard HTML tags for `<label>`, `<input>`, `<select>` and `<textarea>`. Ka
 	&lt;input type="reset" class="btn btn-danger" value="Clear"&gt;
 	&lt;/div&gt;
 &lt;/form&gt;
-```
+</pre>
 
 ### Button
 
 Use `.btn` to any standard HTML button with `btn-default`, `btn-success`, `btn-danger` to add styling to it. Kathamo also supports anchor buttons.
 
-```
+<pre>
 &lt;!-- Buttons --&gt;
 &lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
 &lt;button type="submit" class="btn btn-success"&gt;Success&lt;/button&gt;
@@ -342,13 +342,13 @@ Use `.btn` to any standard HTML button with `btn-default`, `btn-success`, `btn-d
 &lt;a type="button" class="btn btn-default" href=""&gt;Default&lt;/a&gt;
 &lt;a type="button" class="btn btn-success" href=""&gt;Success&lt;/a&gt;
 &lt;a type="button" class="btn btn-danger" href=""&gt;Danger&lt;/a&gt;
-```
+</pre>
 
 ### Alerts & Panel
 
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages and panel.
 
-```
+<pre>
 &lt;!-- Info alert --&gt;
 &lt;div class="alert alert-info"&gt;
 &lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it's not super important.
@@ -373,13 +373,13 @@ Panel Heading
 This is a panel.
 &lt;/div&gt;
 &lt;/div&gt;
-```
+</pre>
 
 ### Navbar
 
 Kathamo provides a custom class `.navbar` to add styling `<nav>` navigation bar. Use supportive class `.navbar-static` for a static navbar.
 
-```
+<pre>
 &lt;!-- Navbar --&gt;
 &lt;nav class="navbar clearfix" id="navbar-toggle"&gt;
 &lt;div class="navbar-container"&gt;
@@ -437,7 +437,7 @@ Kathamo provides a custom class `.navbar` to add styling `<nav>` navigation bar.
 
 &lt;/div&gt;
 &lt;/nav&gt;
-```
+</pre>
 
 ### Utilities
 
@@ -447,7 +447,7 @@ Kathamo has a number of small utility classes that act as easy-to-use helpers. S
 
 Use visibility classes `visible-*` and `hidden-*` to control visibilty of an element. Here `*` indicates `lg`, `md` or `sm`. 
 
-```
+<pre>
 &lt;!-- To disable in small devices --&gt;
 &lt;span class="hidden-sm"&gt;
 ...
@@ -457,24 +457,24 @@ Use visibility classes `visible-*` and `hidden-*` to control visibilty of an ele
 &lt;span class="visible-sm"&gt;
 ...
 &lt;/span&gt;
-```
+</pre>
 
 ### Text Alignment
 
 Use classes `text-right`, `text-left`, `text-center` and `text-justify` to set alignment of a particular block of texts.
 
-```
+<pre>
 &lt;!-- To set justified text alignment --&gt;
 &lt;p class="text-justify"&gt;
 ...
 &lt;/p&gt;
-```
+</pre>
 
 ### Floating Elements
 
 Use classes `pull-right` and `pull-left` to float an element.
 
-```
+<pre>
 &lt;!-- Float in right direction --&gt;
 &lt;div class="pull-right"&gt;
 ...
@@ -484,7 +484,7 @@ Use classes `pull-right` and `pull-left` to float an element.
 &lt;div class="pull-right"&gt;
 ...
 &lt;/div&gt;
-```
+</pre>
 
 ## Examples
 
