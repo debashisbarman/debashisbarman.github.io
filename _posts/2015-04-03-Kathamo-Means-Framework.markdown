@@ -4,8 +4,8 @@ title:  "Kathamo Means Framework"
 date:   2015-04-03 13:47:00
 tags: css, framework, minimalism
 ---
+<blockquote>Kathamo is an Assamese word, literary meaning "structure" or "frame"; thus the name itself suggests a framework.</blockquote>
 Kathamo is a minimalist CSS framework that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone.
->Kathamo is an Assamese word, literary meaning "structure" or "frame"; thus the name itself suggests a framework. 
 
 Kathamo is based on the following principles:
 
