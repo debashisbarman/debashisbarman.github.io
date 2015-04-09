@@ -325,7 +325,7 @@ Use standard HTML tags for `<label>`, `<input>`, `<select>` and `<textarea>`. Ka
 
 ### Button
 
-Use `.btn` to any standard HTML button with `btn-default`, `btn-success`, `btn-danger` to add styling to it. Kathamo also supports anchor buttons.
+Use `.btn` to any standard HTML button with `.btn-default`, `.btn-success`, `.btn-danger` to add styling to it. Kathamo also supports anchor buttons.
 
 <pre>
 &lt;!-- Buttons --&gt;
