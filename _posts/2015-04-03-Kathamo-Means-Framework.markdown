@@ -18,13 +18,13 @@ Kathamo is based on the following principles:
 ## Development
 Kathamo is developed by [Debashis Barman](http://www.debashisbarman.in). Kathamo 2.0.0 is currently the stable version. This version of Kathamo includes:
 
-<ul>
+<ul class="li-circle">
 <li>Base CSS file for basic styles as a foundation.</li>
 <li>A 1024 Grid system with responsive elements.</li>
 </ul>
 
 ### License
-All the files in this repository are [MIT](http://opensource.org/licenses/MIT) licensed.
+Kathamo is released under [MIT](http://opensource.org/licenses/MIT) license.
 
 ## Documentation
 
