@@ -2,21 +2,20 @@
 layout: default
 ---
 
-<div class="post clearfix">
+<div id="post" class="clearfix">
 
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-9 col-md-9 col-sm-12 clearfix">
+<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 clearfix">
 <small class="breadcumb"><a href="{{ site.url }}">Home</a> &gt; {{ page.title }}</small>
 <h1 class="title">{{ page.title }}</h1>
 {{ content }}
 </div>
 </div>
 </div>
+
+{% include share.html %}
+
 </div>
-
-{% include articles.html %}
-
-{% include references.html %}
 
 {% include footer.html %}

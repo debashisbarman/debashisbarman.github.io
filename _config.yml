@@ -1,11 +1,11 @@
 # Site settings
-title: Debashis Barman
+title: debashisbarman | Portfolio
 email: deb.dbuniversity@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Freelance web designer and developer; specialize in minimalist mobile-friendly development; passionate programmer and occasional blogger
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.debashisbarman.in" # the base hostname & protocol for your site
-twitter_username: _DebashisBarman
+twitter_username: iDebashisBarman
 github_username:  debashisbarman
 
 # Build settings

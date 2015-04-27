@@ -1,19 +1,31 @@
 <!-- Articles Start -->
-<div class="article">
-<div class="container clearfix">
-<div class="row">
-
+<div class="col-lg-2 col-md-2 hidden-sm">
+<div class="hr-line"></div>
+</div>
+<div class="col-lg-5 col-md-2 col-sm-12">
+<h2 class="visible-sm"><br>Articles</h2>
+<ul class="clearfix">
 {% for post in site.posts %}
-<div class="col-lg-12 col-md-12 col-sm-12">
-<article class="clearfix">
-<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="visible-sm pull-right">+</span>
-<span class="pull-right hidden-sm date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
-</article>
-</div>
+<li>
+<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br class="hidden-sm">
+Published on {{ post.date | date: "%B %-d, %Y" }}
+</p>
+</li>
 {% endfor %}
+</ul>
 
+<br class="hidden-sm">
+<h2>Mention</h2>
+<span class="hidden-sm"><br></span>
+<p>
+<strong>Github : </strong><a target="_blank" href="https://github.com/debashisbarman">debashisbarman</a><br>
+<strong>Behance : </strong><a target="_blank" href="https://behance.net/debashisbarman">debashisbarman</a><br>
+<strong>Tumblr : </strong><a target="_blank" href="http://debashisbarman.tumblr.com">debashisbarman.tumblr.com</a><br>
+<strong>Medium : </strong><a target="_blank" href="https://medium.com/@iDeb">medium.com/@iDeb</a><br>
+<strong>Wordpress : </strong><a target="_blank" href="https://debashisbarman.wordpress.com">debashisbarman.wordpress.com</a>
+</p>
 </div>
 </div>
 </div>
+</article>
 <!-- Articles end -->
-
