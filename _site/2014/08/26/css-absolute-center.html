@@ -1,15 +1,19 @@
+<!DOCTYPE html>
+<html>
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{{ site.description }}">
+<title>CSS Absolute Center</title>
+<meta name="description" content="Freelance web designer and developer; specialize in minimalist mobile-friendly development; passionate programmer and occasional blogger
+">
 <meta name="keywords" content="Freelance Web Designer, Debashis Barman, Responsive Web Design, Minimal Web Design"/>
 
-<link rel="stylesheet" href="{{ "/kathamo/kathamo.css" | prepend: site.baseurl }}"/>
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" href="/kathamo/kathamo.css"/>
+<link rel="canonical" href="http://www.debashisbarman.in/2014/08/26/css-absolute-center.html">
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <script type="text/javascript" src="//use.typekit.net/rws3een.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <style>
@@ -109,3 +113,92 @@ footer p a, footer p a:visited { line-height: inherit; }
 
 </style>
 </head>
+
+
+<div id="post" class="clearfix">
+
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 clearfix">
+<small class="breadcumb"><a href="http://www.debashisbarman.in">Home</a> &gt; CSS Absolute Center</small>
+<h1 class="title">CSS Absolute Center</h1>
+<span class="subtitle">26 Aug 2014</span>
+<p>CSS-Absolute-Center is a Simple CSS Framework for centering HTML elements.</p>
+
+<p><strong>How to Use</strong></p>
+
+<p>Create a <em>parent</em> block.
+<code>&lt;div&gt;&lt;/div&gt;</code>.</p>
+
+<p>Inside this create a <em>child</em> block.</p>
+
+<p>Add classes <code>.absolute-center-wrapper</code> to the <em>parent</em> block and <code>.absolute-center</code> to the <em>child</em> block.</p>
+
+<p>Now add this <code>css</code> segment to your stylesheet.</p>
+<pre>
+.absolute-center-wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+</pre>
+<p>and</p>
+<pre>
+.absolute-center {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+</pre>
+<p>and you are done.</p>
+
+<p><strong>License</strong></p>
+
+<p>This project and source code is licensed under MIT <a href="http://opensource.org/licenses/MIT">(http://opensource.org/licenses/MIT)</a>.</p>
+
+<p><strong>Version</strong></p>
+
+<p>1.0 (Stable)</p>
+
+<p><strong>Author</strong></p>
+
+<p>Debashis Barman <a href="http://www.debashisbarman.in">(www.debashisbarman.in)</a>.</p>
+
+<p><strong>Download</strong></p>
+
+<p>The complete source code is available for downloading in my github <a href="https://www.github.com/debashisbarman/css-absolute-center">repository</a>.</p>
+
+</div>
+</div>
+</div>
+
+<div class="share clearfix">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 clearfix">
+<p>Did you enjoy this post? If so, <a target="_blank" href="https://twitter.com/share" data-text="Finishing" data-via="orderedlist" data-count="none">share</a> it!</p>
+<p>Have comments on this post or want to discuss further? Hit me up on <a target="_blank" href="https://twitter.com/_DebashisBarman" data-show-count="false" data-show-screen-name="false">Twitter</a> and let me know your thoughts.
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<!-- Footer starts -->
+<footer class="text-center">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p><small>&copy; 2015 <a href="">Debashis Barman</a>. Built on <a target="_blank" href="http://jekyllrb.com/">Jekyll</a> and hosted on <a target="_blank" href="http://pages.github.com/">Github Pages</a>.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer ends -->
+
+
+
+</html>

@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debashisbarman | Portfolio</title>
+    <description>Freelance web designer and developer; specialize in minimalist mobile-friendly development; passionate programmer and occasional blogger
+</description>
+    <link>http://www.debashisbarman.in/</link>
+    <atom:link href="http://www.debashisbarman.in/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 28 Apr 2015 23:54:47 +0530</pubDate>
+    <lastBuildDate>Tue, 28 Apr 2015 23:54:47 +0530</lastBuildDate>
+    <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Kathamo Means Framework</title>
+        <description>&lt;blockquote&gt;Kathamo is an Assamese word, literary meaning &quot;structure&quot; or &quot;frame&quot;; thus the name itself suggests a framework.&lt;/blockquote&gt;
+&lt;p&gt;Kathamo is a minimalist CSS framework that can help you rapidly develop sites that look beautiful at any size, be it a 17” laptop screen or an iPhone.&lt;/p&gt;
+
+&lt;p&gt;Kathamo is based on the following principles:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Responsive Grid:&lt;/strong&gt; Kathamo has a familiar, lightweight 1024 grid as its base, but elegantly scales down to downsized browser windows, tablets, mobile phones (in landscape and portrait).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Faster Development:&lt;/strong&gt; Kathamo is a tool for rapid development with easy CSS and a well-structured Grid.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Minimal UI:&lt;/strong&gt; Kathamo is not a UI framework. It’s a development kit that provides the most basic styles as a foundation, but is ready to adopt whatever your design or style is.&lt;/p&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+&lt;p&gt;Kathamo is developed by &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;Debashis Barman&lt;/a&gt;. Kathamo 2.0.0 is currently the stable version. This version of Kathamo includes:&lt;/p&gt;
+
+&lt;ul class=&quot;li-circle&quot;&gt;
+&lt;li&gt;Base CSS file for basic styles as a foundation.&lt;/li&gt;
+&lt;li&gt;A 1024 Grid system with responsive elements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;license&quot;&gt;License&lt;/h3&gt;
+&lt;p&gt;Kathamo is released under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Kathamo 2.0.0 (Stable) has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-template&quot;&gt;Basic Template&lt;/h3&gt;
+
+&lt;p&gt;Start with the below to begin working with a minimal Kathamo document.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&quot;en&quot;&amp;gt;
+
+&amp;lt;head&amp;gt;
+	&amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;
+	&amp;lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&amp;gt;
+	&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&amp;gt;
+	&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+
+	&amp;lt;!-- Kathamo --&amp;gt;
+	&amp;lt;link href=&quot;path-to-kathamo-root-directory/kathamo.css&quot; rel=&quot;stylesheet&quot;&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;grid-system&quot;&gt;Grid System&lt;/h3&gt;
+
+&lt;p&gt;Kathamo includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. In Kathamo, all the columns must be wrapped inside a &lt;code&gt;.row&lt;/code&gt; and all the rows must be wrapped inside a &lt;code&gt;.container&lt;/code&gt;. The column classes follows the pattern &lt;code&gt;col-*-**&lt;/code&gt; where the &lt;code&gt;*&lt;/code&gt; indicates &lt;code&gt;lg&lt;/code&gt;, &lt;code&gt;md&lt;/code&gt; and &lt;code&gt;sm&lt;/code&gt; and &lt;code&gt;**&lt;/code&gt; indicates the size of the column, ranging from 1 to 11.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- `.container` is the main wrapper for the grid. --&amp;gt;
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+	&amp;lt;!-- All columns must be wrapped in a `.row`. --&amp;gt;
+	&amp;lt;div class=&quot;row&quot;&amp;gt;
+
+	&amp;lt;!-- Grid columns are created by specifying the number of 12 available columns you wish to span. --&amp;gt;
+	&amp;lt;div class=&quot;col-lg-3 col-md-5 col-sm-12&quot;&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class=&quot;col-lg-9 col-md-7 col-sm-12&quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+	&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
+
+&lt;p&gt;The base typeface of Kathamo is &lt;a href=&quot;http://www.google.com/fonts/specimen/Raleway&quot;&gt;Raleway&lt;/a&gt; served by Google, set at &lt;code&gt;font-size: 15px&lt;/code&gt; over &lt;code&gt;line-height: 1.618&lt;/code&gt; with &lt;code&gt;letter-spacing: 0.618px&lt;/code&gt; and &lt;code&gt;font-weight: 300&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Standard Headings --&amp;gt;
+&amp;lt;h1&amp;gt;Kathamo &amp;lt;small&amp;gt;Framework&amp;lt;/small&amp;gt;&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;Kathamo &amp;lt;small&amp;gt;Framwork&amp;lt;/small&amp;gt;&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;Kathamo &amp;lt;small&amp;gt;Framwork&amp;lt;/small&amp;gt;&amp;lt;/h3&amp;gt;
+&amp;lt;h4&amp;gt;Kathamo &amp;lt;small&amp;gt;Framwork&amp;lt;/small&amp;gt;&amp;lt;/h4&amp;gt;
+&amp;lt;h5&amp;gt;Kathamo &amp;lt;small&amp;gt;Framwork&amp;lt;/small&amp;gt;&amp;lt;/h5&amp;gt;
+&amp;lt;h6&amp;gt;Kathamo &amp;lt;small&amp;gt;Framwork&amp;lt;/small&amp;gt;&amp;lt;/h6&amp;gt;
+
+&amp;lt;!-- Body Text --&amp;gt;
+&amp;lt;p&amp;gt;Kathamo &amp;lt;small&amp;gt;Framework&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;!-- Other styled text tags --&amp;gt;
+&amp;lt;strong&amp;gt;Bolded&amp;lt;/strong&amp;gt;
+&amp;lt;em&amp;gt;Italicized&amp;lt;/em&amp;gt;
+&amp;lt;a&amp;gt;Colored&amp;lt;/a&amp;gt;
+&amp;lt;u&amp;gt;Underlined&amp;lt;/u&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;list&quot;&gt;List&lt;/h3&gt;
+
+&lt;p&gt;Basic &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; are unstyled. Use &lt;code&gt;li-unstyled&lt;/code&gt;, &lt;code&gt;li-inline&lt;/code&gt;, &lt;code&gt;li-circle&lt;/code&gt;, &lt;code&gt;li-square&lt;/code&gt;, &lt;code&gt;li-disc&lt;/code&gt;, &lt;code&gt;&amp;lt;dl&amp;gt;&lt;/code&gt; to add styling.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Ordered List --&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Item 1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 2&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 3&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 4&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+&amp;lt;!-- Unstyled List --&amp;gt;
+&amp;lt;ol class=&quot;li-unstyled&quot;&amp;gt;
+&amp;lt;li&amp;gt;Item 1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 2&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 3&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 4&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+&amp;lt;!-- Inline List --&amp;gt;
+&amp;lt;ol class=&quot;li-inline&quot;&amp;gt;
+&amp;lt;li&amp;gt;Item 1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 2&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 3&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 4&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+&amp;lt;!-- Unorderd List --&amp;gt;
+&amp;lt;ul class=&quot;li-circle&quot;&amp;gt;
+&amp;lt;li&amp;gt;Item 1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt; Item 3
+&amp;lt;ul class=&quot;li-square&quot;&amp;gt;
+&amp;lt;li&amp;gt;Item 1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 2
+&amp;lt;ul class=&quot;li-disc&quot;&amp;gt;
+&amp;lt;li&amp;gt;Item 1&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 2&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Item 3&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;!-- Data List --&amp;gt;
+&amp;lt;dl&amp;gt;
+&amp;lt;dt&amp;gt;Title 1&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Item 1&amp;lt;/dd&amp;gt;
+&amp;lt;dt&amp;gt;Title 2&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Item 2&amp;lt;/dd&amp;gt;
+&amp;lt;/dl&amp;gt;
+
+&amp;lt;!-- Inline Data List --&amp;gt;
+&amp;lt;dl class=&quot;li-inline&quot;&amp;gt;
+&amp;lt;dt&amp;gt;Inline Data List&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Item 1&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;Item 2&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;Item 3&amp;lt;/dd&amp;gt;
+&amp;lt;dd&amp;gt;Item 4&amp;lt;/dd&amp;gt;
+&amp;lt;/dl&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; for quoting blocks of content from another source within your document.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;blockquote&amp;gt;
+Kathamo is an Assamese word, literary meaning &quot;structure&quot; or &quot;frame&quot;; thus the name itself suggests a framework.
+&amp;lt;cite&amp;gt;Debashis Barman, Kathamo Creator&amp;lt;/cite&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; for wrapping inline snippets of code and &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; for multiple lines of code.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- For inline snippets of code. --&amp;gt;
+&amp;lt;p&amp;gt;Use &amp;lt;code&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt; for wrapping inline snippets of code.&amp;lt;/p&amp;gt;
+
+&amp;lt;!-- For multiple lines of code. --&amp;gt;
+&amp;lt;pre&amp;gt;
+&amp;lt;link href=&quot;kathamo/kathamo.css&quot; rel=&quot;stylesheet&quot; /&amp;gt;
+&amp;lt;/pre&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;images--thumbnail&quot;&gt;Images &amp;amp; Thumbnail&lt;/h3&gt;
+
+&lt;p&gt;All &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; in Kathamo are responsive. Kathamo provides two standard classes &lt;code&gt;img-circle&lt;/code&gt; and &lt;code&gt;img-border&lt;/code&gt;. Also use &lt;code&gt;left-text-wrap&lt;/code&gt; or &lt;code&gt;right-text-wrap&lt;/code&gt; to the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; for wrapping text around a image.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Responsive image --&amp;gt;
+&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;
+
+&amp;lt;!-- Bordered image --&amp;gt;
+&amp;lt;img src=&quot;#&quot; class=&quot;img-border&quot;&amp;gt;
+
+&amp;lt;!-- Round image --&amp;gt;
+&amp;lt;img src=&quot;#&quot; class=&quot;img-circle&quot;&amp;gt;
+
+&amp;lt;!-- To wrap an image around text --&amp;gt;
+&amp;lt;p&amp;gt;
+ ...
+&amp;lt;/p&amp;gt;
+&amp;lt;img src=&quot;#&quot; class=&quot;left-text-wrap&quot;&amp;gt;
+&amp;lt;p&amp;gt;
+...
+&amp;lt;/p&amp;gt;
+&amp;lt;img src=&quot;#&quot; class=&quot;right-text-wrap&quot;&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Wrap &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; of &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; inside &lt;code&gt;.thumbnail&lt;/code&gt; to create image thumbnail. Use &lt;code&gt;.col-3&lt;/code&gt; or &lt;code&gt;.col-4&lt;/code&gt; to specificy number of columns in the thumbnail&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- 3 columns thumbnail --&amp;gt;
+&amp;lt;div class=&quot;thumbnail&quot;&amp;gt;
+&amp;lt;ul class=&quot;col-3&quot;&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- 3 columns thumbnail --&amp;gt;
+&amp;lt;div class=&quot;thumbnail&quot;&amp;gt;
+&amp;lt;ul class=&quot;col-4&quot;&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;img src=&quot;#&quot; title=&quot;&quot;&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;table&quot;&gt;Table&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;.table&lt;/code&gt; to any &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; for adding basic styling to it.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;table class=&quot;table&quot;&amp;gt;
+  ...
+&amp;lt;/table&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;bordered-table&quot;&gt;Bordered Table&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;.table-bordered&lt;/code&gt; for borders on all sides of the table and cells.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;table class=&quot;table table-bordered&quot;&amp;gt;
+  ...
+&amp;lt;/table&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;borderless-table&quot;&gt;Borderless Table&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;.table-no-border&lt;/code&gt; to remove borders on all sides of the table and cells.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;table class=&quot;table table-no-border&quot;&amp;gt;
+  ...
+&amp;lt;/table&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;striped-rows&quot;&gt;Striped Rows&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;.table-striped&lt;/code&gt; to add zebra-striping to any table row within the &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;table class=&quot;table table-striped&quot;&amp;gt;
+  ...
+&amp;lt;/table&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;responsive-table&quot;&gt;Responsive Table&lt;/h3&gt;
+
+&lt;p&gt;Wrap &lt;code&gt;.table&lt;/code&gt; in &lt;code&gt;.table-responsive&lt;/code&gt; to make responsive table.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;div class=&quot;table-responsive&quot;&amp;gt;
+&amp;lt;table class=&quot;table&quot;&amp;gt;
+  ...
+&amp;lt;/table&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;form&quot;&gt;Form&lt;/h3&gt;
+
+&lt;p&gt;Use standard HTML tags for &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt;. Kathamo provides custom style for different input types viz. text, password, email, search, checkbox and radio.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;form  ...  &amp;gt;
+	&amp;lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&amp;gt;
+	&amp;lt;label&amp;gt;Your email&amp;lt;/label&amp;gt;
+	&amp;lt;input type=&quot;text&quot; name=&quot;email&quot; placeholder=&quot;me@example.com&quot;/&amp;gt;
+	&amp;lt;/div&amp;gt;
+
+	&amp;lt;div class=&quot;col-lg-6 col-md-6 col-sm-12&quot;&amp;gt;
+	&amp;lt;label&amp;gt;You're from&amp;lt;/label&amp;gt;
+	&amp;lt;select class=&quot;ui-full-width&quot;&amp;gt;
+	&amp;lt;option&amp;gt;Country&amp;lt;/option&amp;gt;
+	&amp;lt;option name=&quot;country&quot; value=&quot;Option 1&quot;&amp;gt;India&amp;lt;/option&amp;gt;
+	&amp;lt;option name=&quot;country&quot; value=&quot;Option 2&quot;&amp;gt;Outside India&amp;lt;/option&amp;gt;
+	&amp;lt;/select&amp;gt;
+	&amp;lt;/div&amp;gt;
+
+	&amp;lt;div class=&quot;col-lg-12 col-md-12 col-sm-12&quot;&amp;gt;
+	&amp;lt;label&amp;gt;Message&amp;lt;/label&amp;gt;
+	&amp;lt;textarea name=&quot;message&quot; placeholder=&quot;Hi! Deb...&quot;&amp;gt;&amp;lt;/textarea&amp;gt;
+	&amp;lt;/div&amp;gt;
+
+	&amp;lt;div class=&quot;col-lg-12 col-md-12 col-sm-12&quot;&amp;gt;
+	&amp;lt;input type=&quot;checkbox&quot; name=&quot;copy-to-yourself&quot;&amp;gt;Send a copy to yourself.
+	&amp;lt;/div&amp;gt;
+
+	&amp;lt;div class=&quot;col-lg-12 col-md-12 col-sm-12&quot;&amp;gt;
+	&amp;lt;input type=&quot;submit&quot; class=&quot;btn btn-success&quot; value=&quot;Submit&quot;&amp;gt;
+	&amp;lt;input type=&quot;reset&quot; class=&quot;btn btn-danger&quot; value=&quot;Clear&quot;&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;button&quot;&gt;Button&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;code&gt;.btn&lt;/code&gt; to any standard HTML button with &lt;code&gt;.btn-default&lt;/code&gt;, &lt;code&gt;.btn-success&lt;/code&gt;, &lt;code&gt;.btn-danger&lt;/code&gt; to add styling to it. Kathamo also supports anchor buttons.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Buttons --&amp;gt;
+&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&amp;gt;Default&amp;lt;/button&amp;gt;
+&amp;lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot;&amp;gt;Success&amp;lt;/button&amp;gt;
+&amp;lt;button type=&quot;reset&quot; class=&quot;btn btn-danger&quot;&amp;gt;Danger&amp;lt;/button&amp;gt;
+
+&amp;lt;!-- Input Types --&amp;gt;
+&amp;lt;input type=&quot;button&quot; class=&quot;btn btn-default&quot; value=&quot;Default&quot;&amp;gt;
+&amp;lt;input type=&quot;submit&quot; class=&quot;btn btn-success&quot; value=&quot;Success&quot;&amp;gt;
+&amp;lt;input type=&quot;reset&quot; class=&quot;btn btn-danger&quot; value=&quot;Danger&quot;&amp;gt;
+
+&amp;lt;!-- Anchor Buttons --&amp;gt;
+&amp;lt;a type=&quot;button&quot; class=&quot;btn btn-default&quot; href=&quot;&quot;&amp;gt;Default&amp;lt;/a&amp;gt;
+&amp;lt;a type=&quot;button&quot; class=&quot;btn btn-success&quot; href=&quot;&quot;&amp;gt;Success&amp;lt;/a&amp;gt;
+&amp;lt;a type=&quot;button&quot; class=&quot;btn btn-danger&quot; href=&quot;&quot;&amp;gt;Danger&amp;lt;/a&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;alerts--panel&quot;&gt;Alerts &amp;amp; Panel&lt;/h3&gt;
+
+&lt;p&gt;Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages and panel.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Info alert --&amp;gt;
+&amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
+&amp;lt;strong&amp;gt;Heads up!&amp;lt;/strong&amp;gt; This alert needs your attention, but it's not super important.
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- Success alert --&amp;gt;
+&amp;lt;div class=&quot;alert alert-success&quot;&amp;gt;
+&amp;lt;strong&amp;gt;Well done!&amp;lt;/strong&amp;gt; You successfully read this important alert message.
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- Danger alert --&amp;gt;
+&amp;lt;div class=&quot;alert alert-danger&quot;&amp;gt;
+&amp;lt;strong&amp;gt;Oh snap!&amp;lt;/strong&amp;gt; Change a few things up and try submitting again.
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- Panel --&amp;gt;
+&amp;lt;div class=&quot;panel&quot;&amp;gt;
+&amp;lt;div class=&quot;panel-head&quot;&amp;gt;
+Panel Heading
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&quot;panel-body&quot;&amp;gt;
+This is a panel.
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;navbar&quot;&gt;Navbar&lt;/h3&gt;
+
+&lt;p&gt;Kathamo provides a custom class &lt;code&gt;.navbar&lt;/code&gt; to add styling &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; navigation bar. Use supportive class &lt;code&gt;.navbar-static&lt;/code&gt; for a static navbar.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Navbar --&amp;gt;
+&amp;lt;nav class=&quot;navbar clearfix&quot; id=&quot;navbar-toggle&quot;&amp;gt;
+&amp;lt;div class=&quot;navbar-container&quot;&amp;gt;
+
+	&amp;lt;ul class=&quot;navbar-list clearfix&quot;&amp;gt;
+	&amp;lt;li class=&quot;navbar-item navbar-header&quot;&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;Kathamo&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;div class=&quot;sr-only&quot;&amp;gt;
+	&amp;lt;li class=&quot;open-menu&quot;&amp;gt;&amp;lt;a href=&quot;#navbar-toggle&quot;&amp;gt;&amp;lt;span class=&quot;fa fa-fw fa-bars&quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	&amp;lt;li class=&quot;close-menu&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;&amp;lt;span class=&quot;fa fa-fw fa-close&quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	&amp;lt;/div&amp;gt;
+	
+	&amp;lt;div class=&quot;navbar-toggle pull-right&quot;&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+	&amp;lt;/div&amp;gt;
+
+	&amp;lt;/ul&amp;gt;
+
+&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
+
+&amp;lt;!-- Static Navbar --&amp;gt;
+&amp;lt;nav class=&quot;navbar navbar-static clearfix&quot; id=&quot;navbar-toggle&quot;&amp;gt;
+&amp;lt;div class=&quot;navbar-container&quot;&amp;gt;
+
+	&amp;lt;ul class=&quot;navbar-list clearfix&quot;&amp;gt;
+	&amp;lt;li class=&quot;navbar-item navbar-header&quot;&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;Kathamo&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;div class=&quot;sr-only&quot;&amp;gt;
+	&amp;lt;li class=&quot;open-menu&quot;&amp;gt;&amp;lt;a href=&quot;#navbar-toggle&quot;&amp;gt;&amp;lt;span class=&quot;fa fa-fw fa-bars&quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	&amp;lt;li class=&quot;close-menu&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;&amp;lt;span class=&quot;fa fa-fw fa-close&quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	&amp;lt;/div&amp;gt;
+	
+	&amp;lt;div class=&quot;navbar-toggle pull-right&quot;&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	
+	&amp;lt;li class=&quot;navbar-item&quot;&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+	&amp;lt;/div&amp;gt;
+
+	&amp;lt;/ul&amp;gt;
+
+&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;utilities&quot;&gt;Utilities&lt;/h3&gt;
+
+&lt;p&gt;Kathamo has a number of small utility classes that act as easy-to-use helpers. Sometimes it’s better to use a utility class than create a whole new class just to float an element.&lt;/p&gt;
+
+&lt;h3 id=&quot;visibility&quot;&gt;Visibility&lt;/h3&gt;
+
+&lt;p&gt;Use visibility classes &lt;code&gt;.visible-*&lt;/code&gt; and &lt;code&gt;.hidden-*&lt;/code&gt; to control visibilty of an element. Here &lt;code&gt;*&lt;/code&gt; indicates &lt;code&gt;lg&lt;/code&gt;, &lt;code&gt;md&lt;/code&gt; or &lt;code&gt;sm&lt;/code&gt;. &lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- To disable in small devices --&amp;gt;
+&amp;lt;span class=&quot;hidden-sm&quot;&amp;gt;
+...
+&amp;lt;/span&amp;gt;
+
+&amp;lt;!-- To display in small devices --&amp;gt;
+&amp;lt;span class=&quot;visible-sm&quot;&amp;gt;
+...
+&amp;lt;/span&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;text-alignment&quot;&gt;Text Alignment&lt;/h3&gt;
+
+&lt;p&gt;Use classes &lt;code&gt;.text-right&lt;/code&gt;, &lt;code&gt;.text-left&lt;/code&gt;, &lt;code&gt;.text-center&lt;/code&gt; and &lt;code&gt;.text-justify&lt;/code&gt; to set alignment of a particular block of texts.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- To set justified text alignment --&amp;gt;
+&amp;lt;p class=&quot;text-justify&quot;&amp;gt;
+...
+&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;floating-elements&quot;&gt;Floating Elements&lt;/h3&gt;
+
+&lt;p&gt;Use classes &lt;code&gt;.pull-right&lt;/code&gt; and &lt;code&gt;.pull-left&lt;/code&gt; to float an element.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;!-- Float in right direction --&amp;gt;
+&amp;lt;div class=&quot;pull-right&quot;&amp;gt;
+...
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- Float in left direction --&amp;gt;
+&amp;lt;div class=&quot;pull-right&quot;&amp;gt;
+...
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;Here are some website that uses Kathamo as basic framework for development : &lt;a href=&quot;http://www.kenmanipur.org&quot;&gt;Knowledge Exchange Network&lt;/a&gt;, &lt;a href=&quot;http://onemandesign.github.io&quot;&gt;One Man Design&lt;/a&gt;, &lt;a href=&quot;http://www.surajitbarman.in&quot;&gt;Dr. Surajit Barman’s Homepage&lt;/a&gt; and &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;Debashis Barman’s Homepage&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;feedback&quot;&gt;Feedback&lt;/h2&gt;
+
+&lt;p&gt;Please provide &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#107;&amp;#097;&amp;#116;&amp;#104;&amp;#097;&amp;#109;&amp;#111;&amp;#046;&amp;#102;&amp;#114;&amp;#097;&amp;#109;&amp;#101;&amp;#119;&amp;#111;&amp;#114;&amp;#107;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;feedback&lt;/a&gt; for better development of Kathamo.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Apr 2015 19:17:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2015/04/03/Kathamo-Means-Framework.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2015/04/03/Kathamo-Means-Framework.html</guid>
+        
+        <category>css,</category>
+        
+        <category>framework,</category>
+        
+        <category>minimalism</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Whitespace in Webdesign : An Example</title>
+        <description>&lt;p&gt;Minimalist or modern designs tend toward more use of white space. White space or negative space is the space between design elements. On a macro level it’s the space around the design and the large blocks of empty space between elements. On a micro level it’s the space between two lines of text or the space between an image and its caption.&lt;/p&gt;
+
+&lt;p&gt;Here goes an illustrated example of use of whitespace in webdesign with a minimalist flat layout.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/images/onemandesign.png&quot; alt=&quot;debashisbarman.in&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Nov 2014 15:40:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/11/22/Whitespace-in-Webdesign-an-example.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/11/22/Whitespace-in-Webdesign-an-example.html</guid>
+        
+        <category>web</category>
+        
+        <category>design,</category>
+        
+        <category>whitespace</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Simple Kernel in C and Assembly</title>
+        <description>&lt;p&gt;Hello, world ! Today I’m going to show you how to write a kernel in C and a little bit of assembly. This is a simple kernel written in C and Assembly which could be loaded with the GRUB bootloader on an x86 system. This kernel will
+display a message on the screen and then hang. All the source code is available on my github &lt;a href=&quot;https://github.com/debashisbarman/Simple-Kernel-in-C-and-Assembly&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Before writing the kernel, make sure that the following tools are available on your system.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An x86 computer (of course)&lt;/li&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;li&gt;NASM assembler&lt;/li&gt;
+&lt;li&gt;gcc&lt;/li&gt;
+&lt;li&gt;ld (GNU Linker)&lt;/li&gt;
+&lt;li&gt;grub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lets-start-coding&quot;&gt;Let’s start coding&lt;/h2&gt;
+&lt;p&gt;We like to write everything in C, but we cannot avoid a little bit of assembly. We will write a small file in x86
+assembly-language that serves as the starting point for our kernel. &lt;/p&gt;
+
+&lt;p&gt;Here is our &lt;code&gt;kernel.asm&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;
+;; kernel.asm
+;; version 0.0.1
+
+bits 32		;nasm directive
+section .text
+	;multiboot spec
+	align 4
+	dd 0x1BADB002			;magic
+	dd 0x00				;flags
+	dd - (0x1BADB002 + 0x00)	;checksum. m+f+c should be zero
+
+global start
+extern k_main	;k_main is defined in the kernel.c file
+
+start:
+	cli  ; stop interrupts
+
+	call k_main
+
+	hlt ; halt the CPU
+&lt;/pre&gt;
+
+&lt;p&gt;In the &lt;code&gt;kernel.asm&lt;/code&gt; we make a call to &lt;code&gt;k_main&lt;/code&gt;. So our execution starts at &lt;code&gt;k_main()&lt;/code&gt; in the main C file &lt;code&gt;kernel.c&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;
+/*
+ *
+ * kernel.c - version 0.0.1
+ * 
+ */
+
+
+#define WHITE_TXT 0x07 /* light gray on black text */
+
+void k_clear_screen();
+unsigned int k_printf(char *message, unsigned int line);
+
+/* simple kernel written in C */
+void k_main() 
+{
+	k_clear_screen();
+	k_printf(&quot;Hello, world! Welcome to my kernel.&quot;, 0);
+};
+
+/* k_clear_screen : to clear the entire text screen */
+void k_clear_screen()
+{
+	char *vidmem = (char *) 0xb8000;
+	unsigned int i=0;
+	while(i &amp;lt; (80*25*2))
+	{
+		vidmem[i]=' ';
+		i++;
+		vidmem[i]=WHITE_TXT;
+		i++;
+	};
+};
+
+/* k_printf : the message and the line # */
+unsigned int k_printf(char *message, unsigned int line)
+{
+	char *vidmem = (char *) 0xb8000;
+	unsigned int i=0;
+
+	i=(line*80*2);
+
+	while(*message!=0)
+	{
+		if(*message=='\n') // check for a new line
+		{
+			line++;
+			i=(line*80*2);
+			*message++;
+		} else {
+			vidmem[i]=*message;
+			*message++;
+			i++;
+			vidmem[i]=WHITE_TXT;
+			i++;
+		};
+	};
+
+	return(1);
+}
+&lt;/pre&gt;
+&lt;p&gt;All our kernel will do is clear the screen and write to it the string “Hello, world! Welcome to my kernel.”&lt;/p&gt;
+
+&lt;p&gt;Now the &lt;code&gt;linker.ld&lt;/code&gt; script.&lt;/p&gt;
+&lt;pre&gt;
+/*
+ * link.ld
+ */
+
+OUTPUT_FORMAT(elf32-i386)
+ENTRY(start)
+SECTIONS
+{
+	. = 0x100000;
+	.text : {*(.text)}
+	.data : {*(.data)}
+	.bss  : {*(.bss)}
+}
+&lt;/pre&gt;
+
+&lt;p&gt;That’s it. All done.&lt;/p&gt;
+
+&lt;h2 id=&quot;building-the-kernel&quot;&gt;Building the kernel&lt;/h2&gt;
+&lt;p&gt;We will now create object files from &lt;code&gt;kernel.asm&lt;/code&gt; and &lt;code&gt;kernel.c&lt;/code&gt; and then link it using our linker script.&lt;/p&gt;
+&lt;pre&gt;
+nasm -f elf32 kernel.asm -o kasm.o
+&lt;/pre&gt;
+&lt;p&gt;Now we will run the assembler to create the object file &lt;code&gt;kasm.o&lt;/code&gt; in ELF-32 bit format.&lt;/p&gt;
+&lt;pre&gt;
+gcc -m32 -c kernel.c -o kc.o
+&lt;/pre&gt;
+&lt;p&gt;Now the linking part,&lt;/p&gt;
+&lt;pre&gt;
+ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;configuring-the-grub&quot;&gt;Configuring the grub&lt;/h2&gt;
+&lt;p&gt;GRUB requires the kernel to be of the name pattern &lt;code&gt;kernel-&amp;lt;version&amp;gt;&lt;/code&gt; . So, I renamed my kernel executable to &lt;code&gt;kernel-0.0.1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now place it in the &lt;code&gt;/boot&lt;/code&gt; directory. You will require superuser privileges to do so.&lt;/p&gt;
+
+&lt;p&gt;In your GRUB configuration file &lt;code&gt;grub.cfg&lt;/code&gt; you should add an entry, something like:&lt;/p&gt;
+
+&lt;pre&gt;
+title Mini OS
+  root (hd0, 0)
+  kernel /boot/kernel-0.0.1 ro
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;using-the-qemu-emulator&quot;&gt;Using the qemu emulator&lt;/h2&gt;
+&lt;p&gt;The kernel will also be run using the &lt;code&gt;qemu&lt;/code&gt; emulator.&lt;/p&gt;
+&lt;pre&gt;
+qemu-system-i386 -kernel kernel
+&lt;/pre&gt;
+&lt;p&gt;That’s it.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Sep 2014 15:40:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/09/25/Simple-Kernel-in-C.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/09/25/Simple-Kernel-in-C.html</guid>
+        
+        <category>kernel</category>
+        
+        <category>programming,</category>
+        
+        <category>c</category>
+        
+        <category>kernel,</category>
+        
+        <category>simple</category>
+        
+        <category>kernel</category>
+        
+        <category>in</category>
+        
+        <category>c</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Updated Site Design</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.[1]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Decided to reconstruct my site by redesigning it. The goal was a clean and minimal content focused layout. So I started removing all the unnecessary components and finally arrived at this current layout. &lt;/p&gt;
+
+&lt;p&gt;This layout is highly inspired by &lt;a href=&quot;http://understandingminimalism.com/dogma/&quot;&gt;Dogma WordPress Theme&lt;/a&gt;. Since dogma is uncopyrighted and free, I edited the theme for &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Few things about my site:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stylesheet by &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;Debashis Barman&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Built on &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, the open source static site generator&lt;/li&gt;
+  &lt;li&gt;Hosted on &lt;a href=&quot;http://pages.github.com&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The design and source code powering this site is available on my github &lt;a href=&quot;http://github.com/debashisbarman&quot;&gt;repository&lt;/a&gt;. Source code can be used for your Jekyll sites. But before using the source code, keep in mind that the following directories and their contents &lt;strong&gt;Copyright&lt;/strong&gt; Debashis Barman. These are not available for re-use without permission.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;_posts/&lt;/li&gt;
+  &lt;li&gt;images/&lt;/li&gt;
+  &lt;li&gt;assets/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All other directories and files are &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to &lt;a href=&quot;http://debashisbarman.github.io&quot;&gt;http://debashisbarman.github.io&lt;/a&gt; would be appreciated.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Footnote&lt;/strong&gt;
+&lt;em&gt;[1] Quotation by Antoine de Saint-Exupery, French writer (1900-1944).&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Aug 2014 06:40:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/08/28/updated-site-design.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/08/28/updated-site-design.html</guid>
+        
+        <category>Web</category>
+        
+        <category>Design,</category>
+        
+        <category>Modern</category>
+        
+        <category>Website</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>CSS Absolute Center</title>
+        <description>&lt;p&gt;CSS-Absolute-Center is a Simple CSS Framework for centering HTML elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to Use&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a &lt;em&gt;parent&lt;/em&gt; block.
+&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Inside this create a &lt;em&gt;child&lt;/em&gt; block.&lt;/p&gt;
+
+&lt;p&gt;Add classes &lt;code&gt;.absolute-center-wrapper&lt;/code&gt; to the &lt;em&gt;parent&lt;/em&gt; block and &lt;code&gt;.absolute-center&lt;/code&gt; to the &lt;em&gt;child&lt;/em&gt; block.&lt;/p&gt;
+
+&lt;p&gt;Now add this &lt;code&gt;css&lt;/code&gt; segment to your stylesheet.&lt;/p&gt;
+&lt;pre&gt;
+.absolute-center-wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+&lt;/pre&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;pre&gt;
+.absolute-center {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+&lt;/pre&gt;
+&lt;p&gt;and you are done.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;License&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This project and source code is licensed under MIT &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;(http://opensource.org/licenses/MIT)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Version&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.0 (Stable)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Author&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Debashis Barman &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;(www.debashisbarman.in)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Download&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The complete source code is available for downloading in my github &lt;a href=&quot;https://www.github.com/debashisbarman/css-absolute-center&quot;&gt;repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 26 Aug 2014 06:00:00 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/08/26/css-absolute-center.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/08/26/css-absolute-center.html</guid>
+        
+        <category>Web</category>
+        
+        <category>Design,</category>
+        
+        <category>Modern</category>
+        
+        <category>Website</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introduction to Markdown</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Markdown is a way to write content for the web. Markdown is a plain text formatting syntax designed so that it optionally can be converted to &lt;em&gt;HTML&lt;/em&gt; using a tool by the same name. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Markdown is popularly used for &lt;em&gt;readme files&lt;/em&gt;, for writing messages in online discussion for writing messages in online discussion forums or in text editors for the quick creation of rich text documents. It’s written in what nerds like to call &lt;strong&gt;plaintext&lt;/strong&gt; which is exactly the sort of text you’re used to writing and seeing.&lt;/p&gt;
+
+&lt;p&gt;In this tutorial, we’ll learn the basics of markdown.&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-writing&quot;&gt;Basic Writing&lt;/h2&gt;
+
+&lt;h3 id=&quot;paragraphs&quot;&gt;Paragraphs&lt;/h3&gt;
+
+&lt;p&gt;Paragraphs in markdown are just one or more lines of consecutive text followed by one or more blank lines.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This text is written in markdown as an example of paragraph&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;headings&quot;&gt;Headings&lt;/h3&gt;
+
+&lt;p&gt;To make headers in Markdown, the phrase is preface with a hash &lt;code&gt;#&lt;/code&gt; mark. For example for header one, you’d use one hash mark.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;#This is header one&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bold-and-italic&quot;&gt;Bold and Italic&lt;/h3&gt;
+
+&lt;p&gt;To make a phrase &lt;strong&gt;bold&lt;/strong&gt; in markdown, the phrase is surrounded with an &lt;code&gt;*&lt;/code&gt; and for making a phrase &lt;em&gt;italic&lt;/em&gt;, an underscore &lt;code&gt;_&lt;/code&gt; is used.&lt;/p&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
+
+&lt;p&gt;An &lt;strong&gt;unordered list&lt;/strong&gt; can be achieved by preceding list items either with a &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
+
+&lt;p&gt;We can make an &lt;strong&gt;ordered list&lt;/strong&gt; by preceding list items with a number. For example,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+1. Item 1
+2. Item 2
+3. Item 3
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nested-lists&quot;&gt;Nested Lists&lt;/h3&gt;
+
+&lt;p&gt;Nested lists can be created by indenting list items by &lt;strong&gt;two spaces&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-formatting&quot;&gt;Code Formatting&lt;/h2&gt;
+
+&lt;h3 id=&quot;inline&quot;&gt;Inline&lt;/h3&gt;
+
+&lt;p&gt;A single backticks is used to format text in special monospace format.&lt;/p&gt;
+
+&lt;h3 id=&quot;multiple-lines&quot;&gt;Multiple lines&lt;/h3&gt;
+
+&lt;p&gt;For multiples lines three backticks are used.&lt;/p&gt;
+
+&lt;h2 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h2&gt;
+
+&lt;p&gt;Blockquote is achieved by putting a &lt;code&gt;&amp;gt;&lt;/code&gt; before the phrase.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Links are created by wrapping the link text in brackets &lt;code&gt;[]&lt;/code&gt; and then wrapping the link in parenthesis &lt;code&gt;()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example &lt;code&gt;[Debashis Barman Homepage](http://www.debashisbarman.in)&lt;/code&gt; will create the link &lt;a href=&quot;http://www.debashisbarman.in&quot;&gt;Debashis Barman Homepage&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 21 Jul 2014 05:34:10 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/07/21/introduction-to-markdown.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/07/21/introduction-to-markdown.html</guid>
+        
+        <category>Markdown-Tutorial</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Elements of Modern Website</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;The term web design is normally used to describe the design process relating to the front-end (client side) design of a website     including writing mark up. Every year, we see new website design elements emerge. But what are the latest features to include?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here are some important elements of modern web design that one can include. You don’t need to have all of them, but this list will get you started.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Responsive Design:&lt;/strong&gt; It is a web design approach aimed at crafting sites to provide an optimal viewing experience across a wide range of devices i.e. from mobile phones to desktop computer monitors. A responsive website adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flat Design:&lt;/strong&gt; Flat design is known for its simplistic appearance. Instead of using three-dimensional effects and other design techniques, flat designs use simple illustrations that typically have bright colors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Typography:&lt;/strong&gt; Typography refers to the use of fonts on the World Wide Web. Web designers may choose to limit the variety of website typefaces to only a few which are of a unique style, instead of using a wide range of typefaces or type styles.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Well Planned Color Scheme:&lt;/strong&gt; Color, on its own, is a really powerful tool; so use of a well planned color scheme adds a lot of contrast to a website, giving it a properly balanced, harmonious, energetic, and even complex looks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Large Background Images:&lt;/strong&gt; Now a days most of the websites use the trend of a large photo background which is responsive in nature. That means responsive background images conform to any screen size whether you are viewing the image from your desktop, tablet, or mobile device; you will be able to view the image clearly without scrolling up and down and side to side.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smooth Scrolling to Page Sections:&lt;/strong&gt; Unlike a typical website, instead of clicking a link and landing on a new page, modern websites have a smooth scrolling feature where you click a link and it brings you to a different part of the page. It is mainly done by CSS and jQuery plugin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Large Product Images:&lt;/strong&gt; Modern websites tend to display large product images on their sites to highlight different features or parts of their product. This element is another important design tactic that we are seeing more and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Product Videos:&lt;/strong&gt; Modern websites also use in-depth product videos to talk about the benefits of their products as well as new features that come out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Font Icons:&lt;/strong&gt; Using &lt;em&gt;fonts&lt;/em&gt; for &lt;em&gt;icons&lt;/em&gt; is a great way to achieve scalability and it is very common in modern web design. The only limitation being color (and possible compatibility with some browsers).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hover Effect:&lt;/strong&gt; Hover effects help you identify where you are on a page. When you place your cursor over a part of a website that has a hover effect, it usually changes colors or highlights letting you know where you are looking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The visual appearance of your website draws viewers in, but compelling content keeps them engaged!&lt;/strong&gt; Once you have a great website design, don’t forget to put your time and effort into creating great content that will give your visitors what they’re looking for.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Apr 2014 02:40:10 +0530</pubDate>
+        <link>http://www.debashisbarman.in/2014/04/25/elements-of-modern-website.html</link>
+        <guid isPermaLink="true">http://www.debashisbarman.in/2014/04/25/elements-of-modern-website.html</guid>
+        
+        <category>Web</category>
+        
+        <category>Design,</category>
+        
+        <category>Modern</category>
+        
+        <category>Website</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

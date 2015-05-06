@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>debashisbarman | Portfolio</title>
+<meta name="description" content="Freelance web designer and developer; specialize in minimalist mobile-friendly development; passionate programmer and occasional blogger
+">
+<meta name="keywords" content="Freelance Web Designer, Debashis Barman, Responsive Web Design, Minimal Web Design"/>
+
+<link rel="stylesheet" href="/kathamo/kathamo.css"/>
+<link rel="canonical" href="http://www.debashisbarman.in/">
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<script type="text/javascript" src="//use.typekit.net/rws3een.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<style>
+/* Icons */
+.svg-icon { width: 1em; height: 1em; padding: 3px 0; }
+.svg-icon path, .svg-icon polygon, .svg-icon rect { fill: #4c6672; }
+.svg-icon circle { stroke: #4c6672; stroke-width: 1; }
+
+/* Anchors */
+a, a:visited { color: #4c6672; text-decoration: none; outline: 0; font-weight: 500; }
+a:hover, a:focus { color: #4c6672; border-bottom: 1px solid #4c6672; }
+p a, p a:visited { line-height: inherit; }
+
+/* Homepage */
+#home .ongoing-project { cursor: pointer; pointer-events: none; }
+
+#home header { color: #ffffff; background-color: #4c6672; padding: 55px 0 34px 0; }
+#home h1 { text-transform: uppercase; }
+#home h6 { text-transform: uppercase; }
+#home header h6:before { content: "\2014 \0020"; padding-right: 13px; }
+#home header h6:after { content: "\2014 \0020"; padding-left: 13px; }
+
+#home article.myself { padding: 55px 0 34px 0; line-height: 2; }
+#home article.myself h2 { color: #4c6672; margin: 0; padding: 0; }
+#home article.myself ul.li-inline li { padding: 13px 13px 0 0; }
+#home article.myself ul.li-inline a:hover { border-bottom: none; }
+#home article.myself .hr-line { background-color: #4c6672; height: 150px; width: 1px; margin: 0 auto; }
+
+#home article.mywork { background-color: #f3f5f6; padding: 55px 0 34px 0; line-height: 2; }
+#home article.mywork ul li { margin-bottom: 21px; }
+#home article.mywork ul li p { line-height: 2; }
+#home article.mywork h2 { color: #4c6672; margin: 0; padding: 0; }
+#home article.mywork .hr-line { background-color: #4c6672; height: 834px; width: 1px; margin: 0 auto; }
+
+#home article.myskills { padding: 55px 0 34px 0; line-height: 2; }
+#home article.myskills h2 { color: #4c6672; margin: 0; padding: 0; }
+#home article.myskills ul li { margin-bottom: 21px; }
+#home article.myskills ul li p { line-height: 2; }
+#home article.myskills div.skill { height: 8px; width: 210px; border: 1px solid #4c6672; }
+#home article.myskills div.skill div.fill { height: 8px; background-color: #4c6672; }
+#home article.myskills .hr-line { background-color: #4c6672; height: 233px; width: 1px; margin: 0 auto; }
+
+@media (max-width: 767px) {
+#home article.myself h2, article.mywork h2, article.myskills h2 { text-transform: normal ; }
+#home article.myskills div.skill div.fill { float: left; }
+.text-right { text-align: left; }
+.pull-right { float: left; }
+}
+
+@media (min-width: 768px) {
+#home h1 { font-size: 46px; }
+#home article.myself h2, #home article.mywork h2, #home article.myskills h2 { text-transform: uppercase; font-size: 30px; }
+#home article.myskills div.skill div.fill { float: right; }
+}
+
+/* Post */
+#post .breadcumb { padding: 0 0 13px 0; }
+#post { padding: 34px 0 0 0; border-top: 5px solid #4c6672; }
+#post .title { margin: 34px 0 21px 0; font-weight: 500; color: #4c6672; }
+#post .subtitle { margin: 0 0 55px 0; font-weight: 500; color: #a0a0a0; display: block; }
+
+#post h2, #post h3, #post h4, #post h5, #post h6 { color: #4c6672; margin: 55px 0 0 0; }
+
+#post p, #post ul { margin: 21px 0; line-height: 2; }
+#post ul li { font-weight: 300; }
+
+#post img { margin: 21px 0; }
+
+#post blockquote { border-left: 2px solid #4c6672; }
+
+#post blockquote p { margin: 0; }
+
+#post .share { padding: 13px 0 34px 0; background-color: #f3f5f6; }
+#post .share p { margin: 21px 0 0 0; line-height: 2; }
+
+@media (max-width: 767px) {
+#post .title { font-size: 28px; }
+#post .subtitle { font-size: 21px; }
+ul { font-size: 13px; }
+}
+
+@media (min-width: 768px) {
+#post .title { font-size: 34px; }
+#post .subtitle { font-size: 21px; }
+#post h2 { font-size: 28px; text-transform: uppercase; text-align: center; }
+#post h3, #post h4, #post h5, #post h6 { font-size: 21px; text-transform: uppercase; text-align: center; }
+#post h2:before { content: "\2014 \0020"; padding-right: 13px; }
+#post h2:after { content: "\2014 \0020"; padding-left: 13px; }
+}
+
+
+/* Footer */
+footer { color: #ffffff; background-color: #4c6672; padding: 34px 0 21px 0; line-height: 2; }
+footer a, footer a:visited { color: #ffffff; text-decoration: none; outline: 0; font-weight: 500; }
+footer a:hover, footer a:focus { color: #ffffff; border-bottom: 1px solid #ffffff; }
+footer p a, footer p a:visited { line-height: inherit; }
+
+</style>
+</head>
+
+
+<body id="home">
+
+<header class="text-center">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-12 col-md-12 col-sm-12" data-0="opacity: 1" data-89="opacity: 0">
+<h1><strong>Debashis Barman</strong></h1>
+<h6>Designer & Developer</h6>
+</div>
+</div>
+</div>
+</header>
+
+
+<article class="myself clearfix">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-5 col-md-5 col-sm-12 text-right">
+<h2>Profile</h2>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm text-center">
+<h2>
+<svg class="svg-icon" viewBox="0 0 20 20">
+<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297h4.415z"></path>
+</svg>
+</h2>
+</div>
+<div class="col-lg-5 col-md-5 hidden-sm">
+<h2>Contact</h2>
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-5 col-md-5 col-sm-12 text-right">
+<p>Web <a target="_blank" href="http://www.behance.net/debashisbarman/">designer</a> and developer; works at<br class="hidden-sm"><a target="_blank" href="https://www.github.com/debashisbarman/"> Github</a>; specialize in minimalist mobile-friendly development; passionate programmer<br class="hidden-sm">and occasional <a target="_blank" href="https://www.medium.com/@iDeb/">blogger</a></p>
+<p>( Download ) <a href="http://www.debashisbarman.in/assets/DebashisBarmanCurriculumVitae.pdf">Curriculum Vitae</a></p>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm">
+<div class="hr-line"></div>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-12">
+<address class="clearfix">
+<h2 class="visible-sm"><br>Contact</h2>
+<p>
+<strong>Address : </strong>Guwahati Assam India 781017<br>
+<strong>Phone : </strong>+91 887 634 2995<br>
+<strong>Email : </strong><a href="mailto:deb.dbuniversity@gmail.com">deb.dbuniversity@gmail.com</a>
+</p>
+</address>
+<ul class="li-inline">
+<li><h4><a href="https://www.twitter.com/@iDebashisBarman" target="_blank"><svg class="svg-icon" viewBox="0 0 20 20">
+<path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+</svg></a></h4></li>
+<li><h4><a href="http://debashisbarman.tumblr.com/" target="_blank"><svg class="svg-icon" viewBox="0 0 20 20">
+<path fill="none" d="M10.696,12.191c-0.123-0.068-0.22-0.161-0.265-0.275c-0.006-0.019,0-2.357,0-2.357h1.729V8.273h-1.728V6.545l-1.1,0.006c-0.047,0.356-0.132,0.649-0.257,0.88s-0.29,0.428-0.495,0.592C8.375,8.188,8.128,8.314,7.84,8.402l0,1.166l0.865-0.009V11.8c0,0.314,0.035,0.556,0.105,0.722c0.071,0.166,0.197,0.322,0.379,0.471c0.182,0.147,0.402,0.261,0.66,0.341c0.257,0.079,0.536,0.121,0.872,0.121c0.294,0,0.535-0.029,0.79-0.086c0.254-0.056,0.619-0.153,0.933-0.292l0.005-1.062c-0.368,0.229-0.823,0.313-1.194,0.313C11.044,12.328,10.858,12.282,10.696,12.191 M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637"></path>
+</svg></a></h4></li>
+<li><h4><a href="https://dribbble.com/debashisbarman" target="_blank"><svg class="svg-icon" viewBox="0 0 20 20">
+<path fill="none" d="M10,4.784C7.12,4.784,4.784,7.12,4.784,10c0,2.881,2.335,5.216,5.216,5.216c2.881,0,5.216-2.335,5.216-5.216C15.216,7.12,12.881,4.784,10,4.784 M10,5.653c1.034,0,1.983,0.362,2.729,0.966c-0.705,0.566-1.475,1.056-2.303,1.442C9.94,7.257,9.356,6.52,8.702,5.852C9.111,5.723,9.548,5.653,10,5.653 M7.837,6.233c0.672,0.649,1.271,1.375,1.767,2.173c-1.205,0.451-2.503,0.709-3.863,0.72C5.994,7.888,6.775,6.844,7.837,6.233 M5.653,10c1.549,0,3.03-0.292,4.392-0.821c0.146,0.282,0.283,0.568,0.405,0.863c-1.5,0.563-2.761,1.603-3.616,2.93C6.104,12.194,5.653,11.151,5.653,10 M10,14.347c-0.934,0-1.796-0.298-2.504-0.798c0.753-1.221,1.892-2.179,3.253-2.691c0.338,1.04,0.527,2.145,0.547,3.292C10.887,14.277,10.452,14.347,10,14.347 M12.147,13.776c-0.051-1.102-0.238-2.166-0.562-3.172c0.47-0.107,0.956-0.169,1.458-0.169c0.434,0,0.852,0.059,1.261,0.141C14.122,11.949,13.302,13.118,12.147,13.776 M13.043,9.565c-0.606,0-1.193,0.082-1.757,0.22c-0.131-0.324-0.276-0.64-0.434-0.95c0.903-0.427,1.74-0.969,2.505-1.595c0.558,0.677,0.909,1.527,0.974,2.456C13.912,9.62,13.485,9.565,13.043,9.565 M10,0.438c-5.281,0-9.562,4.281-9.562,9.562S4.719,19.562,10,19.562c5.281,0,9.562-4.281,9.562-9.562S15.281,0.438,10,0.438 M10,18.693c-4.801,0-8.693-3.892-8.693-8.693c0-4.801,3.892-8.693,8.693-8.693c4.802,0,8.693,3.892,8.693,8.693C18.693,14.802,14.802,18.693,10,18.693"></path>
+</svg></a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+
+
+<!-- Projects Start -->
+<article class="mywork clearfix">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-5 col-md-5 col-sm-12 text-right">
+<h2>Portfolio</h2>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm text-center">
+<h2><svg class="svg-icon" viewBox="0 0 20 20">
+<path d="M17.638,6.181h-3.844C13.581,4.273,11.963,2.786,10,2.786c-1.962,0-3.581,1.487-3.793,3.395H2.362c-0.233,0-0.424,0.191-0.424,0.424v10.184c0,0.232,0.191,0.424,0.424,0.424h15.276c0.234,0,0.425-0.191,0.425-0.424V6.605C18.062,6.372,17.872,6.181,17.638,6.181 M13.395,9.151c0.234,0,0.425,0.191,0.425,0.424S13.629,10,13.395,10c-0.232,0-0.424-0.191-0.424-0.424S13.162,9.151,13.395,9.151 M10,3.635c1.493,0,2.729,1.109,2.936,2.546H7.064C7.271,4.744,8.506,3.635,10,3.635 M6.605,9.151c0.233,0,0.424,0.191,0.424,0.424S6.838,10,6.605,10c-0.233,0-0.424-0.191-0.424-0.424S6.372,9.151,6.605,9.151 M17.214,16.365H2.786V7.029h3.395v1.347C5.687,8.552,5.332,9.021,5.332,9.575c0,0.703,0.571,1.273,1.273,1.273c0.702,0,1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h5.941v1.347c-0.495,0.176-0.849,0.645-0.849,1.199c0,0.703,0.57,1.273,1.272,1.273s1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h3.395V16.365z"></path>
+</svg></h2>
+</div>
+<div class="col-lg-5 col-md-5 hidden-sm">
+<h2>Articles</h2>
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-5 col-md-5 col-sm-12 text-right">
+<ul>
+<li>
+<p><a target="_blank" href="https://github.com/debashisbarman/Mini-OS">Mini Operating System</a><br>
+Bare Bone Operating System written in C<br>and Assembly ( ongoing project )
+</p>
+</li>
+<li>
+<p><a target="_blank" href="http://kathamo.github.io">Kathamo 2.0.0</a><br>
+Kathamo is a minimalist mobile<br>friendly CSS framework
+</p>
+</li>
+<li>
+<p><a target="_blank" href="http://www.kenmanipur.org">Knowledge Exchange Network</a><br>
+Official website for Knowledge Exchange Network
+</p>
+</li>
+<li>
+<p><a class="ongoing-project" href="">PhD. Activity Management</a><br>
+Software for Director of Research, Assam Don<br>Bosco University
+</p>
+</li>
+<li>
+<p><a class="ongoing-project" href="">North Kamrup College</a><br>
+Official website for North Kamrup College<br>( ongoing project )
+</p>
+</li>
+<li>
+<p><a target="_blank" href="http://www.surajitbarman.in">Dr. Surajit Barman</a><br>
+Official website for Dr. Surajit Barman
+</p>
+</li>
+<li>
+<p><a target="_blank" href="/Indeva">Indeva</a><br>
+Official website of Initiative for Development Activities in India
+</p>
+</li>
+<li>
+<p><a target="_blank" href="http://onemandesign.github.io">One Man Design</a><br>
+Freelance design and development studio
+</p>
+</li>
+<li>
+<p><a target="_blank" href="/Sherlock-Holmes">Sherlock Holmes</a><br>
+Conceptual design for Sherlock Holmes about page
+</p>
+</li>
+</ul>
+</div>
+<!-- Projects end -->
+
+
+
+<!-- Articles Start -->
+<div class="col-lg-2 col-md-2 hidden-sm">
+<div class="hr-line"></div>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-12">
+<h2 class="visible-sm"><br>Articles</h2>
+<ul class="clearfix">
+
+<li>
+<p><a href="/2015/04/03/Kathamo-Means-Framework.html">Kathamo Means Framework</a><br class="hidden-sm">
+Published on April 3, 2015
+</p>
+</li>
+
+<li>
+<p><a href="/2014/11/22/Whitespace-in-Webdesign-an-example.html">Whitespace in Webdesign : An Example</a><br class="hidden-sm">
+Published on November 22, 2014
+</p>
+</li>
+
+<li>
+<p><a href="/2014/09/25/Simple-Kernel-in-C.html">Simple Kernel in C and Assembly</a><br class="hidden-sm">
+Published on September 25, 2014
+</p>
+</li>
+
+<li>
+<p><a href="/2014/08/28/updated-site-design.html">Updated Site Design</a><br class="hidden-sm">
+Published on August 28, 2014
+</p>
+</li>
+
+<li>
+<p><a href="/2014/08/26/css-absolute-center.html">CSS Absolute Center</a><br class="hidden-sm">
+Published on August 26, 2014
+</p>
+</li>
+
+<li>
+<p><a href="/2014/07/21/introduction-to-markdown.html">Introduction to Markdown</a><br class="hidden-sm">
+Published on July 21, 2014
+</p>
+</li>
+
+<li>
+<p><a href="/2014/04/25/elements-of-modern-website.html">Elements of Modern Website</a><br class="hidden-sm">
+Published on April 25, 2014
+</p>
+</li>
+
+</ul>
+
+<br class="hidden-sm">
+<h2>Mention</h2>
+<span class="hidden-sm"><br></span>
+<p>
+<strong>Github : </strong><a target="_blank" href="https://github.com/debashisbarman">debashisbarman</a><br>
+<strong>Behance : </strong><a target="_blank" href="https://behance.net/debashisbarman">debashisbarman</a><br>
+<strong>Tumblr : </strong><a target="_blank" href="http://debashisbarman.tumblr.com">debashisbarman.tumblr.com</a><br>
+<strong>Medium : </strong><a target="_blank" href="https://medium.com/@iDeb">medium.com/@iDeb</a><br>
+<strong>Wordpress : </strong><a target="_blank" href="https://debashisbarman.wordpress.com">debashisbarman.wordpress.com</a>
+</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Articles end -->
+
+
+<article class="myskills clerfix">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-5 col-md-5 col-sm-12 text-right">
+<h2>Skills</h2>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm text-center">
+<h2><svg class="svg-icon" viewBox="0 0 20 20">
+<path d="M17.684,7.925l-5.131-0.67L10.329,2.57c-0.131-0.275-0.527-0.275-0.658,0L7.447,7.255l-5.131,0.67C2.014,7.964,1.892,8.333,2.113,8.54l3.76,3.568L4.924,17.21c-0.056,0.297,0.261,0.525,0.533,0.379L10,15.109l4.543,2.479c0.273,0.153,0.587-0.089,0.533-0.379l-0.949-5.103l3.76-3.568C18.108,8.333,17.986,7.964,17.684,7.925 M13.481,11.723c-0.089,0.083-0.129,0.205-0.105,0.324l0.848,4.547l-4.047-2.208c-0.055-0.03-0.116-0.045-0.176-0.045s-0.122,0.015-0.176,0.045l-4.047,2.208l0.847-4.547c0.023-0.119-0.016-0.241-0.105-0.324L3.162,8.54L7.74,7.941c0.124-0.016,0.229-0.093,0.282-0.203L10,3.568l1.978,4.17c0.053,0.11,0.158,0.187,0.282,0.203l4.578,0.598L13.481,11.723z"></path>
+</svg></h2>
+</div>
+<div class="col-lg-5 col-md-5 hidden-sm">
+<h2>Interest</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-12 text-right">
+<ul>
+<li class="clearfix">
+<p>Programming<br class="hidden-sm">
+<div class="skill pull-right"><div class="fill" style="width:170px"></div>
+</p>
+</li>
+<li class="clearfix">
+<p>Web Design / Development<br class="hidden-sm">
+<div class="skill pull-right"><div class="fill" style="width:200px"></div></div>
+</p>
+</li>
+<li class="clearfix">
+<p>Mobile Development<br class="hidden-sm">
+<div class="skill pull-right"><div class="fill" style="width:120px"></div></div>
+</p>
+</li>
+<li class="clearfix">
+<p>Graphics / Illustration<br class="hidden-sm">
+<div class="skill pull-right"><div class="fill" style="width:150px"></div></div>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm">
+<div class="hr-line"></div>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-12">
+<h2 class="visible-sm"><br>Interest</h2>
+<p>Computer Programming, Internet, Sketching and Doodling, Operating System, Working on tiny side projects, Web development</p>
+<br>
+<h2>Services</h2>
+<span class="hidden-sm"><br></span>
+<p>Responsive Web Design and Development, Mobile Development and Branding ( <a href="mailto:deb.dbuniversity@gmail.com">let's talk</a> )</p>
+</div>
+</div>
+</div>
+</article>
+
+
+<!-- Footer starts -->
+<footer class="text-center">
+<div class="container clearfix">
+<div class="row clearfix">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p><small>&copy; 2015 <a href="">Debashis Barman</a>. Built on <a target="_blank" href="http://jekyllrb.com/">Jekyll</a> and hosted on <a target="_blank" href="http://pages.github.com/">Github Pages</a>.</small></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer ends -->
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-49449513-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+<script src="js/jquery-2.0.2.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script type="text/javascript">var s = skrollr.init();</script>
+</body>
+
+
+</html>
