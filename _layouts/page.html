@@ -2,20 +2,37 @@
 layout: default
 ---
 
-<div id="post" class="clearfix">
+<body class="article" class="clearfix">
 
+<article class="clearfix">
+<div class="article-inner">
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 clearfix">
-<small class="breadcumb"><a href="{{ site.url }}">Home</a> &gt; {{ page.title }}</small>
+<div class="col-lg-10 col-md-12 col-sm-12 clearfix">
+<p><small><a href="{{ site.url }}">Home</a> // {{ page.title }}</small></p>
+
+<!-- Page Header -->
 <h1 class="title">{{ page.title }}</h1>
+<!-- Page Header ends -->
+
+<br>
+<div class="divider"></div>
+<br>
+
+<!-- Page Body -->
+<section class="article-body">
 {{ content }}
-</div>
-</div>
-</div>
-
-{% include share.html %}
+</section>
+<!-- Page Body -->
 
 </div>
+</div>
+</div>
+</div>
+</article>
 
 {% include footer.html %}
+
+{% include google-analytics.html %}
+
+</body>
