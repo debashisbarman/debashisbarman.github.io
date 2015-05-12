@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="{{ "/kathamo/kathamo.css" | prepend: site.baseurl }}"/>
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
+<script src="{{ "js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "js/parallax.js" | prepend: site.baseurl }}"></script>
 <style>
 
 /* Basic Styles
@@ -29,7 +31,7 @@ footer { color: #f3f5f6; background: url({{ "/assets/images/cover.jpg" | prepend
 
 /* Homepage
 ================================================== */
-.home header { color: #f3f5f6; text-transform: uppercase; background: url({{ "/assets/images/cover.jpg" | prepend: site.baseurl }}); background-position: center center; }
+.home header { color: #f3f5f6; text-transform: uppercase; background: transparent; background-position: center center; }
 .home .header-inner { padding: 55px 0; }
 
 .home .about-article-inner { padding: 5% 0; }
