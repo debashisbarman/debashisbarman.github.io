@@ -14,8 +14,6 @@ layout: default
 
 {% include footer.html %}
 
-{% include parallax.html %}
-
 {% include google-analytics.html %}
 
 </body>
