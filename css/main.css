@@ -17,6 +17,8 @@ footer { color: #f3f5f6; background-image: url(../assets/images/cover.jpg); back
 
 code, pre { background-color: #f3f5f6; border : none; border-radius: 0; }
 
+.fadeInBlock { opacity: 0; }
+
 @media (min-width: 768px) {
 .footer-inner { padding: 3% 0; margin: 0 21px 21px 21px; border: 3px solid #eaeaea; border-top: none; }
 }
