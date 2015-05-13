@@ -68,11 +68,11 @@ h2, h3 { font-weight: 500; }
 p, li, li p { font-size: 15px; line-height: 2; font-weight :300; }
 
 a, a:visited { color: #555; padding-bottom: 2px; border-bottom: 1px solid #ccc; text-decoration: none; font-weight: 300; }
-a:hover, a:focus { color: #101010; border-bottom: 1px solid #101010; }
+a:hover, a:focus { color: #101010; border-bottom: 1px solid #101010; transition: border-bottom-color 0.89s ease, color 0.89s ease; -webkit-transition: border-bottom-color 0.89s ease, color 0.89s ease; -o-transition: border-bottom-color 0.89s ease, color 0.89s ease; }
 p a, p a:visited { line-height: inherit; }
 
 h2 a, h2 a:visited { color: #c0c0c0; border-bottom: none; }
-h2 a:hover, h2 a:focus { color: #555; border-bottom: none; }
+h2 a:hover, h2 a:focus { color: #555; border-bottom: none; transition : color 0.89s ease; -webkit-transition : color 0.89s ease; -moz-transition : color 0.89s ease; -o-transition : color 0.89s ease; }
 
 footer p a, footer p a:visited, footer p a:hover, footer p a:focus { color #f3f5f6; border-bottom-color: #f3f5f6; }
 
