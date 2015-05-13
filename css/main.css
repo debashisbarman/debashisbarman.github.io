@@ -12,7 +12,7 @@ body { color: #555; font-weight: normal; }
 
 .divider { clear: both; height: 2px; margin: 5% 0 5% -21px; width: 144px; background: #eaeaea; }
 
-footer { color: #f3f5f6; background: url(../assets/images/cover.jpg); background-position: bottom center; }
+footer { color: #f3f5f6; background-image: url(../assets/images/cover.jpg); background-position: bottom center; }
 .footer-inner { padding: 3% 0; }
 
 @media (min-width: 768px) {
