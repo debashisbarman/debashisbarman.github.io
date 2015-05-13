@@ -65,7 +65,7 @@ h1 { font-weight: 500; line-height: 1.618; letter-spacing: normal; }
 
 h2, h3 { font-weight: 500; }
 
-p, li, li p { font-size: 15px; line-height: 2; }
+p, li, li p { font-size: 15px; line-height: 2; font-weight :300; }
 
 a, a:visited { color: #555; padding-bottom: 2px; border-bottom: 1px solid #ccc; text-decoration: none; font-weight: 300; }
 a:hover, a:focus { color: #101010; border-bottom: 1px solid #101010; }
