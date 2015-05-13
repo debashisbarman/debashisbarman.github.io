@@ -74,7 +74,7 @@ p a, p a:visited { line-height: inherit; }
 h2 a, h2 a:visited { color: #c0c0c0; border-bottom: none; }
 h2 a:hover, h2 a:focus { color: #555; border-bottom: none; }
 
-footer a, footer a:visited, footer a:hover, footer a:focus { color #555; border-color: #555; }
+footer a, footer a:visited, footer a:hover, footer a:focus { color #f3f5f6; border-bottom-color: #f3f5f6; }
 
 .home header p u { padding-bottom: 2px; line-height: 1.618; border-bottom-color: #fff; }
 .article .article-body p { margin-bottom: 34px; }
