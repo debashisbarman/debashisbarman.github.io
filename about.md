@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-##About The Site
 
 This URL has been my online home for recent years, manifesting at times as a blog or a portfolio until landing on this flat layout. Today it is an outlet for my design and development related ramblings.
 
