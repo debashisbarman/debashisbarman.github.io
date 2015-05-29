@@ -32,7 +32,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 /* Import (Google Font)
 ================================================== */
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento:100,200,300,400,500);
 
 
 /* Reset & Basics (Inspired by E. Meyers)
@@ -312,9 +313,9 @@ hr { border: none; outline: none; height: 1px; width: 100%; margin:5% 0; backgro
 
 /* Typography
 ================================================== */
-body { font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.618; color: #101010; letter-spacing: 0.618px; }
+body { font-family: "Quattrocento", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.618; color: #101010; /*letter-spacing: 0.618px; */ }
 
-h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0 auto 1.618% 0; }
+h1, h2, h3, h4, h5, h6 { font-family: "Oswald"; font-weight: bolder; margin: 0 auto 1.618% 0; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color: #c0c0c0; }
 
@@ -322,7 +323,7 @@ p { font-weight: 300; margin-bottom: 8px; }
 
 small { font-size: 89%; }
 
-strong, b { font-weight: 500; }
+strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 
 u { text-decoration: none; border-bottom: 1px #333 solid; }

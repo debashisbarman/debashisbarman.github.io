@@ -17,8 +17,6 @@ footer { color: #f3f5f6; background-image: url(../assets/images/cover.jpg); back
 
 code, pre { background-color: #f3f5f6; border : none; border-radius: 0; }
 
-.fadeInBlock { opacity: 0; }
-
 @media (min-width: 768px) {
 .footer-inner { padding: 3% 0; margin: 0 21px 21px 21px; border: 3px solid #eaeaea; border-top: none; }
 }
@@ -54,6 +52,8 @@ code, pre { background-color: #f3f5f6; border : none; border-radius: 0; }
 
 .article .contact-inner { padding: 5% 0; }
 
+.article pre { margin-bottom: 34px; }
+
 @media (min-width: 768px) {
 .article .article-inner { padding: 89px 0 5% 0; margin: 21px 21px 0 21px; border: 3px solid #eaeaea; border-bottom: none; }
 .article .share-inner { padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
@@ -69,20 +69,23 @@ h2, h3 { font-weight: 500; }
 
 p, li, li p { font-size: 15px; line-height: 2; font-weight :300; }
 
-a, a:visited { color: #555; padding-bottom: 2px; border-bottom: 1px solid #ccc; text-decoration: none; font-weight: 300; }
+a, a:visited { color: #555; padding-bottom: 2px; border-bottom: 1px solid #ccc; text-decoration: none; font-weight: normal; }
 a:hover, a:focus { color: #101010; border-bottom: 1px solid #101010; transition: border-bottom-color 0.89s ease, color 0.89s ease; -webkit-transition: border-bottom-color 0.89s ease, color 0.89s ease; -o-transition: border-bottom-color 0.89s ease, color 0.89s ease; }
 p a, p a:visited { line-height: inherit; }
 
-h2 a, h2 a:visited { color: #c0c0c0; border-bottom: none; }
+h2 a, h2 a:visited { color: #c0c0c0; border-bottom: none; font-weight: normal; }
 h2 a:hover, h2 a:focus { color: #555; border-bottom: none; transition : color 0.89s ease; -webkit-transition : color 0.89s ease; -moz-transition : color 0.89s ease; -o-transition : color 0.89s ease; }
 
 footer p a, footer p a:visited, footer p a:hover, footer p a:focus { color #f3f5f6; border-bottom-color: #f3f5f6; }
 
 .home header p u { padding-bottom: 2px; line-height: 1.618; border-bottom-color: #fff; }
 .article .article-body p { margin-bottom: 34px; }
-.article blockquote { border-left: none; font-weight: 500; margin: 0; padding: 0; }
-.article blockquote p { font-weight: 500; }
+
+.article blockquote { border-left: none; font-size: 16px; font-style: italic; font-weight: bold; margin: 0; padding: 0 0 34px 0; }
+
+.article blockquote p { font-size: 16px; font-weight: bold; font-style: italic; }
 
 @media (min-width: 768px) {
 p, li, li p { font-size: 21px; line-height: 2; }
+.article blockquote, .article blockquote p { font-size: 25px; }
 }
