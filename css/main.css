@@ -19,6 +19,7 @@ code, pre { background-color: #f3f5f6; border : none; border-radius: 0; }
 
 @media (max-width: 768) {
 pre { padding: 5%; }
+.divider { margin-left: 0; }
 }
 
 @media (min-width: 768px) {
@@ -29,40 +30,26 @@ pre { padding: 5%; }
 /* Homepage
 ================================================== */
 .home header { color: #f3f5f6; text-transform: uppercase; background: transparent; background-position: center center; }
-.home .header-inner { padding: 55px 0; }
 
-.home .about-article-inner { padding: 5% 0; }
-
-.home .portfolio { background-color: #f3f5f6; }
-.home .portfolio-inner { padding: 5% 0; }
-
-.home .contact-inner { padding: 5% 0; }
-
-@media (min-width: 768px) {
-.home .header-inner { padding: 89px 0; }
 .home .header-inner { padding: 89px 0; margin: 21px 21px 0 21px; border: 3px solid #eaeaea; border-bottom: none; }
+
 .home .about-article-inner { padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
-.home .portfolio-inner { padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
+
+.home .portfolio-inner { background-color: #f3f5f6; padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
+
 .home .contact-inner { padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
-}
 
 
 /* Article
 ================================================== */
 .article .article-inner { padding: 5% 0; }
 
-.article .share { background-color: #f3f5f6; }
-.article .share-inner { padding: 5% 0; }
-
-.article .contact-inner { padding: 5% 0; }
-
-.article pre { margin-bottom: 34px; }
-
-@media (min-width: 768px) {
 .article .article-inner { padding: 89px 0 5% 0; margin: 21px 21px 0 21px; border: 3px solid #eaeaea; border-bottom: none; }
+
+.article .share { background-color: #f3f5f6; }
 .article .share-inner { padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
+
 .article .contact-inner { padding: 5% 0; margin-left: 21px; margin-right: 21px; border-left: 3px solid #eaeaea; border-right: 3px solid #eaeaea; }
-}
 
 
 /* Typography
