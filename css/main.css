@@ -22,6 +22,10 @@ pre { padding: 5%; }
 .divider { margin-left: 0; }
 }
 
+@media (min-width: 768) {
+.divider { margin: 5% auto; }
+}
+
 
 /* Homepage
 ================================================== */
