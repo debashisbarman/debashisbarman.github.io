@@ -19,7 +19,7 @@ code, pre { background-color: #f3f5f6; border : none; border-radius: 0; }
 
 @media (max-width: 768) {
 pre { padding: 5%; }
-.divider { margin: 5% 0; }
+.divider { display: none; }
 }
 
 
