@@ -11,10 +11,10 @@
 <link rel="stylesheet" href="./css/kathamo.min.css"/>
 <style>
 @font-face {
-  font-family: "Roboto"
+  font-family: 'Product Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("./font/Roboto.woff") format("woff");
+  src: local('Product Sans'), local('ProductSans-Regular'), url("./font/Product-Sans.woff") format("woff");
 }
 
 html {
@@ -25,7 +25,7 @@ body {
   width: 100%;
   height: 100vh;
   display: table;
-  font-family: "Roboto";
+  font-family: 'Product Sans';
   color: #fff;
   text-transform: uppercase;
   background-image: url('./img/bg.jpeg');
@@ -40,6 +40,104 @@ body {
     background-position: right center;
   }
 
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  color: #2196f3;
+  background-color: #fff;
+}
+
+.loading-inner {
+  width: 100%;
+  height: 100vh;
+  display: table;  
+}
+
+.loading h1 {
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.logo {
+  width: 144px;
+  height: 144px;
+  margin: 0 auto;
+  background-image: url('./img/logo.png');
+  background-size: cover;
+  background-position: center center;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
+}
+
+.loader:before,
+.loader:after,
+.loader {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: load 1.8s infinite ease-in-out;
+          animation: load 1.8s infinite ease-in-out;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 21px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+          animation-delay: -0.16s;
+}
+
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 3.5em;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+@-webkit-keyframes load {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #2196f3;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #2196f3;
+  }
+}
+
+@keyframes load {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em #2196f3;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #2196f3;
+  }
 }
 
 .container-fluid {
@@ -153,7 +251,7 @@ header h1 {
 main h2 {
   margin-bottom: 34px;
   font-size: 55px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 21px;
   line-height: 89px;
 }
@@ -173,7 +271,7 @@ main h2 {
   main h2 {
     margin-bottom: 21px;
     font-size: 28px;
-    letter-spacing: 8px;
+    letter-spacing: 7px;
     line-height: 45px;
   }
 
@@ -225,6 +323,21 @@ a.twitter:before {
 </style>
 </head>
 <body>
+
+<div class="loading" id="load_screen">
+<div class="loading-inner">
+<div class="vertical-center text-center">
+<div class="container-fluid">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="logo"></div>
+<h1>Debashis Barman</h1>
+<div class="loader"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <div class="vertical-center">
 <div class="container-fluid">
 <header class="clearfix">
@@ -258,5 +371,13 @@ Distribute</h2>
 </footer>
 </div>
 </div>
+
+<script type="text/javascript">
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+</script>
+
 </body>
 </html>
