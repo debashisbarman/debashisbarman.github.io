@@ -8,9 +8,12 @@
 <meta name="description" content="Designer and developer; specialize in fluid design and mobile development; passionate programmer and occasional blogger">
 <meta name="keywords" content="Web Designer, Developer Debashis Barman, Responsive Web Design, Minimal Web Design"/>
 <meta name="theme-color" content="#3e6396">
+<script src="./js/jquery.js"></script>
+<script src="./js/tweecool.js"></script>
 <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
 <link rel="stylesheet" href="./css/kathamo.min.css"/>
 <style>
+
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
@@ -19,6 +22,8 @@
 }
 
 html {
+  padding: 0;
+  margin: 0;
   font-size: 100%;
 }
 
@@ -26,346 +31,104 @@ body {
   width: 100%;
   height: 100vh;
   display: table;
+  padding: 0;
+  margin: 0;
   font-family: 'Product Sans';
-  color: #fff;
-  text-transform: uppercase;
-  background-image: url('./img/bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 13px solid #fff;
 }
 
-@media (max-width: 767px) {
-
-  body {
-    background-position: right center;
-  }
-
-}
-
-.loading {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  color: #2196f3;
-  background-color: #fff;
-}
-
-.loading-inner {
-  width: 100%;
-  height: 100vh;
-  display: table;  
-}
-
-.loader:before,
-.loader:after,
-.loader {
-  border-radius: 50%;
-  width: 21px;
-  height: 21px;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation: load 1.8s infinite ease-in-out;
-          animation: load 1.8s infinite ease-in-out;
-}
-
-.loader {
-  font-size: 10px;
-  margin: 0 auto;
-  position: relative;
-  text-indent: -9999em;
-  -webkit-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-          animation-delay: -0.16s;
-}
-
-.loader:before {
-  left: -3.5em;
-  -webkit-animation-delay: -0.32s;
-          animation-delay: -0.32s;
-}
-
-.loader:after {
-  left: 3.5em;
-}
-
-.loader:before,
-.loader:after {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-@-webkit-keyframes load {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 2.5em 0 -1.3em #2196f3;
-  }
-  40% {
-    box-shadow: 0 2.5em 0 0 #2196f3;
-  }
-}
-
-@keyframes load {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 2.5em 0 -1.3em #2196f3;
-  }
-  40% {
-    box-shadow: 0 2.5em 0 0 #2196f3;
-  }
-}
-
-.container-fluid {
-  width: 89%;
-  margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-
-  .container-fluid {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-}
-
-.vertical-center {
+main {
+  padding: 5%;
   display: table-cell;
   vertical-align: middle;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  .vertical-center {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-}
-
-.divider {
-  height: 2px;
-  background-color: #fff;
-}
-
-@media (min-width: 1024px) {
-
-  .divider {
-    width: 40px;
-  }
-
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  .divider {
-    width: 8%;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  .divider {
-    width: 13%;
-  }
-
-}
-
-.icon-wrapper {
-  text-align: right;
-}
-
-@media (max-width: 767px) {
-
-  .icon-wrapper {
-    margin-top: -21px;
-    text-align: left;
-  }
-
-}
-
-.icon {
-  width: 34px;
-  height: 34px;
-  padding: 7px;
-  cursor: pointer;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-
-@media (max-width: 767px) {
-
-  .icon {
-    width: 30px;
-    height: 30px;
-    margin-top: 13px; !Important
-    padding: 5px;
-  }
-
-}
-
-header h1 {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 5px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-
-  header h1 {
-    font-size: 13px;
-    line-height: 21px;
-    letter-spacing: 3px;
-  }
-
-}
-
-main h2 {
-  margin-bottom: 34px;
-  font-size: 55px;
-  font-weight: 700;
-  letter-spacing: 21px;
-  line-height: 89px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  main h2 {
-    font-size: 40px;
-    letter-spacing: 13px;
-    line-height: 65px;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  main h2 {
-    margin-bottom: 21px;
-    font-size: 28px;
-    letter-spacing: 7px;
-    line-height: 45px;
-  }
-
-}
-
-footer p {
-  margin-top: 0;
-  font-size: 21px;
-  font-weight: 400;
-  text-transform: initial;
-  letter-spacing: 1px;
-  line-height: 34px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  footer p {
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 28px;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  footer p {
-    font-size: 13px;
-    letter-spacing: 1px;
-    line-height: 21px;
-  }
-
+  background-color: #fff;  
 }
 
 a,
-a:active,
-a:hover {
-  color: #9ca9ba;
-  -webkit-tap-highlight-color: rgba(0,0,0, 0.0);
-  outline: none;
+a:hover,
+a:focus {
+  color: #2196f3;
+  text-decoration: none;
 }
 
-a.twitter:before {
-  width: 26px;
-  height: 26px;
-  background-image: url('./img/twitter.png');
+.container {
+  background-color: #fff;
+}
+
+.title {
+  font-size: 1.618rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #95a5a6;
+  line-height: 1.75;
+}
+
+.twitter-widget ul {
+  margin: 0;
+  padding: 0;
+}
+
+.twitter-widget ul:before {
+  
+}
+
+.twitter-widget li {
+  padding-left: 0;
+  clear: both;
+  list-style: none;
+}
+
+.twitter-widget li img, 
+.twitter-widget li .tweets_txt {
+  margin-bottom: 21px;
+  float: left;
+}
+
+.twitter-widget li img {
+  display: none;
+  -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+          border-radius: 30px;
+}
+
+.twitter-widget li .tweets_txt {
+  width: 100%;
+  !margin-left: 21px;
+  font-size: 1rem;
+}
+
+.twitter-widget li .tweets_txt span {
+  display: block;
+  font-size: .618rem;
+  color: #95a5a6;
 }
 
 </style>
 </head>
+
 <body>
-
-<div class="loading" id="load_screen">
-<div class="loading-inner">
-<div class="vertical-center">
-<div class="loader">Loading</div>
-</div>
-</div>
-</div>
-
-<div class="vertical-center">
-<div class="container-fluid">
-<header class="clearfix">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h1 class="title">Debashis Barman</h1>
-</div>
-</header>
-<div class="col-lg-12 col-md-12 col-sm-12">
-<div class="divider"></div>
-</div>
 <main class="clearfix">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h2>Design<br>
-Develop<br>
-Distribute</h2>
+<div class="container clearfix">
+<div class="col-lg-offset-2 col-lg-7 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+<h1 class="title">Debashis Barman</h1>
+<h2 class="subtitle">Designer and developer; specialized in fluid design and mobile development; passionate programmer and occasional bloger.</h2>
+</div>
+<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+<div class="twitter-widget">
+<div id="tweecool"></div>
+</div>
+<p>Follow on <a href="https://twitter.com/iDebashisBarman" target="_blank">@iDebashisBarman</a></p>
+</div>
 </div>
 </main>
-<footer class="clearfix">
-<div class="col-lg-6 col-md-6 col-sm-12">
-<p>Follow on <a class="twitter" href="https://twitter.com/@iDebashisBarman" target="_blank">@iDebashisBarman</a></p>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-12">
-<p class="icon-wrapper">
-<a href="https://github.com/debashisbarman/" target="_blank"><img class="icon" src="./img/github.png"></a>
-&emsp;
-<a href="https://behance.net/debashisbarman/" target="_blank"><img class="icon" src="./img/behance.png"></a>
-&emsp;
-<a href="https://medium.com/@iDeb/" target="_blank"><img class="icon" src="./img/medium.png"></a>
-</p>
-</div>
-</footer>
-</div>
-</div>
-
 <script>
-window.addEventListener("load", function(){
-	var load_screen = document.getElementById("load_screen");
-	document.body.removeChild(load_screen);
+$(document).ready(function() {
+$('#tweecool').tweecool({
+username : 'iDebashisBarman', 
+limit : 2 
+});
 });
 </script>
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-49449513-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-</body>
-</html>
+  
+</body></html>
