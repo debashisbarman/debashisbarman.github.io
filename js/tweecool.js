@@ -49,7 +49,7 @@
 				$.getJSON("http://api.tweecool.com/?screenname=" + o.username + "&count=" + o.limit, function(data) {
 
 					if (data.errors || data == null) {
-						//wrapper.html('No tweets available.');
+						wrapper.html('<h1>Thinking, right now :-)</h1>');
 						return false;
 					}
 
@@ -72,7 +72,7 @@
 
 				}).fail(function(jqxhr, textStatus, error) {
 					//var err = textStatus + ', ' + error;
-					//wrapper.html('No tweets available.');
+					wrapper.html('<h1>Thinking, right now :-)</h1>');
 				});
 
 			});
