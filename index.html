@@ -4,333 +4,290 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>#RandomThoughts | Debashis Barman (@DebashisBarman)</title>
-<meta name="description" content="Designer and developer; specialize in fluid design and mobile development; passionate programmer and occasional blogger">
+<title>Debashis Barman | Designer & Developer</title>
+<meta name="description" content="Designer and developer; specialize in fluid design and mobile development; passionate programmer and microblogger">
 <meta name="keywords" content="Web Designer, Developer Debashis Barman, Responsive Web Design, Minimal Web Design"/>
-<meta name="theme-color" content="#737b7f">
-<script src="./js/jquery.js"></script>
-<script src="./js/tweecool.js"></script>
+<meta name="theme-color" content="#41506f">
 <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
 <link rel="stylesheet" href="./css/kathamo.min.css"/>
+<link rel="stylesheet" href="./fa/css/font-awesome.css"/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+<script src="./js/jquery.js"></script>
+<script src="./js/tweecool.js"></script>
 <style>
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Product Sans'), local('ProductSans-Regular'), url("./font/Product-Sans.woff") format("woff");
-}
-
 html {
-  padding: 0;
-  margin: 0;
+  font-size: 100%;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(134, 141, 162, .1);
+  background-color: #fefefe;
+}
+
+header {
   display: table;
-  font-family: 'Product Sans';
-  color: #fff;
-  background: linear-gradient(rgba(36, 40, 37, 0.50), rgba(36, 40, 37, 0.70)), url('./img/bg.jpg');
-  !background-image: url('./img/bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 13px solid #fff;
-}
-
-header ul {
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-header ul li {
-  padding-right: 34px;
-  padding-left: 34px;
-  list-style: none;
-  float: left;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 5rem;
-}
-
-main {
-  padding: 5% 0;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-a,
-a:active,
-a:hover {
-  color: #95a5a6;
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0,0,0, 0.0);
-  outline: none;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-footer ul li {
-  padding-left: 34px;
-  !padding-right: 34px;
-  list-style: none;
-  float: left;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 55px;
-}
-
-footer ul li:last-child {
-  padding-right: 34px;
-}
-
-footer ul li .profile {
-  padding-top: 5px;
-  padding-left: -34px;
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.icon {
-  width: 34px;
-  height: 34px;
-  padding: 7px;
-  cursor: pointer;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-
-@media (max-width: 767px) {
-
-  .icon {
-    width: 30px;
-    height: 30px;
-    margin-top: 13px; !Important
-    padding: 5px;
-  }
-
-}
-
-.twitter-widget ul {
-  margin: 0;
-  padding: 0;
-}
-
-.twitter-widget ul:before {
-  
-}
-
-.twitter-widget li {
-  padding-left: 0;
-  clear: both;
-  list-style: none;
-}
-
-.twitter-widget li img, 
-.twitter-widget li .tweets_txt {
-  margin-bottom: 21px;
-  float: left;
-}
-
-.twitter-widget li img {
-  display: none;
-  -webkit-border-radius: 30px;
-     -moz-border-radius: 30px;
-          border-radius: 30px;
-}
-
-.twitter-widget li .tweets_txt {
   width: 100%;
-  !margin-left: 21px;
-  font-size: 2rem;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: #41506f;
+  background-image: url(./img/cover.jpg);
+  background: linear-gradient(rgba(25, 40, 71, 1), rgba(25, 40, 71, .6)), url(./img/cover.jpg);
+  background-size: cover;
+  background-position: top center;
 }
 
 @media (max-width: 767px) {
 
-  .twitter-widget li .tweets_txt {
-    font-size: 21px;
+  header {
+    height: 144px;
   }
 
 }
 
-.twitter-widget li .tweets_txt span {
-  display: block;
-  font-size: 1rem;
-  color: #95a5a6;
+header a,
+header a:active,
+header a:hover {
+  color: #fff;
+}
+
+.fa-2x {
+  font-size: 1.6rem;
+}
+
+.fa-fw {
+  width: 3rem;
+}
+
+@media (max-width: 767px) {
+
+  .fa-fw {
+    width: 2.5rem;
+  }
+
+}
+
+.button-wrapper {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+header .button {
+  padding: 8px 13px;
+  border: 1px solid #fff;
+  border-radius: 5px;
 }
 
 .vertical-center {
   display: table-cell;
   vertical-align: middle;
+  color: #fff;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+a,
+a:active,
+a:hover {
+  !color: #41506f;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0, 0.0);
+  outline: none;
+}
 
-  .vertical-center {
-    padding-top: 5%;
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  max-width: 55ch;
+  margin-right: auto;
+  margin-left: auto; 
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.avatar {
+  width: 144px;
+  border: 5px solid #fff;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+
+  .avatar {
+    width: 6.846153846rem;
+  }
+
+}
+
+.blog {
+  min-height: 377px;
+  margin-top: 3%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.blog ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+
+  .blog {
+    padding: 0;
+  }
+
+}
+
+.blog li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 33.33%;
+}
+
+@media (max-width: 767px) {
+
+  .blog li {
+    width: 100%;
+  }
+
+}
+
+.blog li .blog__post {
+  box-sizing: border-box;
+  min-height: 89px;
+  margin: 2%;
+  padding: 15px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #292F33;
+  background-color: #fff;
+  border: 1px solid #E1E8ED;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+
+  .blog li .blog__post {
+    margin: 0 0 3% 0;
+    !border: 1px solid rgba(134, 141, 162, .2);
+  }
+
+}
+
+.blog li .blog__post-source {
+  margin-top: 8%;
+  font-size: 13px;
+  color: #b7b7b7;
+}
+
+.blog li .blog__post img {
+  margin-top: 13px;
+}
+
+.blog li .blog__post-footer {
+  display: block;
+  margin-top: 8%;
+  padding-top: 5%;
+  line-height: 2;
+  color: #b7b7b7;
+  border-top: 1px solid #eee;
+}
+
+.blog li .blog__post-footer a {
+  color: #b7b7b7;
+}
+
+.blog li .blog__post-time {
+  font-size: 13px;
+}
+
+.blog li .blog__post-action {
+  font-size: 13px;
+  line-height: 2;
+}
+
+main .button {
+  padding: 8px 13px;
+  border: 1px solid #3498DB;
+  border-radius: 5px;
+}
+
+footer {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 767px) {
+
+  footer {
+    padding-top: 0;
     padding-bottom: 5%;
   }
 
 }
 
-.loading {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  color: #737b7f;
-  background-color: #fff;
-}
-
-.loading-inner {
-  width: 100%;
-  height: 100vh;
-  display: table;  
-}
-
-.loader:before,
-.loader:after,
-.loader {
-  border-radius: 50%;
-  width: 21px;
-  height: 21px;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation: load 1.8s infinite ease-in-out;
-          animation: load 1.8s infinite ease-in-out;
-}
-
-.loader {
-  font-size: 10px;
-  margin: 0 auto;
-  position: relative;
-  text-indent: -9999em;
-  -webkit-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-          animation-delay: -0.16s;
-}
-
-.loader:before {
-  left: -3.5em;
-  -webkit-animation-delay: -0.32s;
-          animation-delay: -0.32s;
-}
-
-.loader:after {
-  left: 3.5em;
-}
-
-.loader:before,
-.loader:after {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-@-webkit-keyframes load {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 2.5em 0 -1.3em #737b7f;
-  }
-  40% {
-    box-shadow: 0 2.5em 0 0 #737b7f;
-  }
-}
-
-@keyframes load {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 2.5em 0 -1.3em #737b7f;
-  }
-  40% {
-    box-shadow: 0 2.5em 0 0 #737b7f;
-  }
+footer * {
+  font-size: 13px;
 }
 
 </style>
 </head>
 <body>
 
-<div class="loading" id="load_screen">
-<div class="loading-inner">
-<div class="vertical-center">
-<div class="loader">Loading</div>
+<header>
+<div class="container vertical-center">
+<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 text-center">
+<img class="avatar" src="./img/avatar.jpg">
+<h1>Debashis Barman</h1>
+<h2>Designer and developer; specialized in fluid design and mobile development; passionate programmer and microblogger.</h2>
+<p class="button-wrapper"><a class="button" href="">About Debashis Barman</a></p>
+<p>
+<a href="https://twitter.com/DebashisBarman"><span class="fa fa-fw fa-2x fa-twitter"></span></a>
+<a href="https://github.com/debashisbarman/"><span class="fa fa-fw fa-2x fa-github"></span></a>
+<a href="https://behance.net/debashisbarman/"><span class="fa fa-fw fa-2x fa-behance"></span></a>
+<a href="https://medium.com/@DebashisBarman"><span class="fa fa-fw fa-2x fa-medium"></span></a>
+<a href="https://in.linkedin.com/in/debashisbarman"><span class="fa fa-fw fa-2x fa-linkedin"></span></a>
+</p>
 </div>
 </div>
-</div>
-
-<header class="clearfix">
-<ul>
-<li>#RandomThoughts</li>
-<div class="pull-right hidden-sm">
-<li>@DebashisBarman</li>
-</div>
-</ul>
 </header>
 
-<main class="clearfix">
+<main class="clerfix">
 <div class="container">
-<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
-<div class="twitter-widget">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="blog clearfix">
 <div id="tweecool"></div>
 </div>
 </div>
 </div>
 </main>
 
-<footer class="clearfix">
-<ul>
-<li class="hidden-sm"><img src="./img/profile.jpg" style="width:55px;border:3px solid #fff;border-radius:50%;"></li>
-<li class="visible-sm" style="padding-right:0;line-height:5rem;"><img src="./img/profile.jpg" style="width:34px;border:2px solid #fff;border-radius:50%;"></li>
-<li class="visible-sm" style="padding-left:8px;font-size:13px;">By @DebashisBarman</li>
-<li class="hidden-sm"><h1 class="profile">Debashis Barman<br><small>Designer & Developer</small></h1></li>
-<div class="pull-right hidden-sm">
-<li>
-<p class="icon-wrapper">
-<a href="https://twitter.com/DebashisBarman" target="_blank"><img class="icon" src="./img/twitter.png"></a>
-&emsp;
-<a href="https://github.com/debashisbarman/" target="_blank"><img class="icon" src="./img/github.png"></a>
-&emsp;
-<a href="https://behance.net/debashisbarman/" target="_blank"><img class="icon" src="./img/behance.png"></a>
+<footer class="container clearfix">
+<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 text-center">
+<p>
+<a href="https://twitter.com/DebashisBarman">Twitter</a>&emsp;
+<a href="https://github.com/debashisbarman/">Github</a>&emsp;
+<a href="https://behance.net/debashisbarman/">Behance</a>&emsp;
+<a href="https://medium.com/@DebashisBarman">Medium</a>&emsp;
+<a href="https://in.linkedin.com/in/debashisbarman">LinkedIn</a>
 </p>
-</li>
+<p>&copy; 2015 Debashis Barman.</p>
 </div>
-</ul>
 </footer>
 
 <script>
 $(document).ready(function() {
 $('#tweecool').tweecool({
 username : 'DebashisBarman', 
-limit : 1
+limit : 8,
+profile_image: false,
+show_actions: true,
+show_media: true
 });
-});
-</script>
-
-<script>
-window.addEventListener("load", function(){
-	var load_screen = document.getElementById("load_screen");
-	document.body.removeChild(load_screen);
 });
 </script>
 
