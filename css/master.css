@@ -1,0 +1,118 @@
+body.db-site {
+  padding-top: 3%;
+  font: 400 89%/1.75 "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif; }
+  @media (max-width: 479px) {
+    body.db-site {
+      padding: 0;
+      font-size: 13px; } }
+  @media print {
+    body.db-site {
+      padding: 0;
+      font-size: 13px; } }
+
+h1.db-headline {
+  font-weight: 900; }
+
+h2.db-subhead {
+  color: #979797; }
+  h2.db-subhead.db-subhead--tagline {
+    font-size: 1em;
+    text-transform: uppercase; }
+    @media (max-width: 479px) {
+      h2.db-subhead.db-subhead--tagline {
+        font-size: 11px;
+        line-height: 1.75; } }
+    @media (max-width: 839px) {
+      h2.db-subhead.db-subhead--tagline {
+        max-width: 44ch;
+        margin-right: auto;
+        margin-left: auto; } }
+
+h3.db-projects-list__title {
+  font-weight: 500; }
+
+code {
+  font-size: 13px; }
+  @media (max-width: 479px) {
+    code {
+      font-size: 10px; } }
+
+header.db-header {
+  position: absolute;
+  top: 377px;
+  left: -134px;
+  margin: 0px;
+  color: #979797;
+  text-transform: uppercase;
+  transform: matrix(0, -1, 1, 0, 0, 0); }
+
+.db-grid--modified {
+  padding: 3% 5% 5%;
+  background-color: #fff; }
+  @media (max-width: 479px) {
+    .db-grid--modified {
+      padding: 16px; } }
+  @media (min-width: 1024px) {
+    .db-grid--modified {
+      max-width: 1024px; } }
+
+@media (min-width: 840px) {
+  .db-cell-modified {
+    margin-right: 16px;
+    padding-right: 16px;
+    border-right: 1px dashed #979797; } }
+.db-cell-modified > p.db-cell-modified__para-intro {
+  padding-bottom: 21px; }
+  @media print {
+    .db-cell-modified > p.db-cell-modified__para-intro {
+      padding-bottom: 13px; } }
+
+.button {
+  padding-top: 5px;
+  padding-right: 13px;
+  padding-bottom: 5px;
+  padding-left: 13px; }
+
+.db-avatar {
+  margin-top: 13px;
+  max-width: 144px; }
+  .db-avatar.db-avatar--round {
+    border-radius: 50%; }
+
+ul {
+  margin-bottom: 34px; }
+  @media (max-width: 479px) {
+    ul {
+      padding-right: 0;
+      padding-left: 0; } }
+  @media print {
+    ul {
+      margin-bottom: 0px; } }
+  ul.db-projects-list > li {
+    margin-bottom: 34px;
+    list-style: square; }
+    @media (max-width: 479px) {
+      ul.db-projects-list > li {
+        padding-left: 0;
+        list-style: none; } }
+    @media print {
+      ul.db-projects-list > li {
+        margin-bottom: 0; } }
+
+ol > li {
+  margin-bottom: 13px; }
+
+footer.db-footer {
+  padding-bottom: 3%; }
+  @media (max-width: 479px) {
+    footer.db-footer {
+      background-color: #fbfbfb; } }
+  @media print {
+    footer.db-footer {
+      padding: 0; } }
+  footer.db-footer p {
+    font-size: 13px;
+    color: #979797; }
+    @media (max-width: 479px) {
+      footer.db-footer p {
+        font-size: 10px; } }
