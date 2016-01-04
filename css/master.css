@@ -76,7 +76,7 @@ header.db-header {
   top: 377px;
   left: -8%;
   margin: 0px;
-  color: #979797;
+  color: #b5b5b5;
   text-transform: uppercase;
   transform: matrix(0, -1, 1, 0, 0, 0); }
 
@@ -94,7 +94,7 @@ header.db-header {
   .db-cell-modified {
     margin-right: 16px;
     padding-right: 16px;
-    border-right: 1px dashed #979797; } }
+    border-right: 1px dashed #b5b5b5; } }
 .db-cell-modified > p.db-cell-modified__para-intro {
   padding-bottom: 21px; }
   @media print {
@@ -145,13 +145,13 @@ footer.db-footer {
   padding-bottom: 3%; }
   @media (max-width: 479px) {
     footer.db-footer {
-      background-color: #fbfbfb; } }
+      background-color: #f3f3f3; } }
   @media print {
     footer.db-footer {
       padding: 0; } }
   footer.db-footer p {
     font-size: 13px;
-    color: #979797; }
+    color: #b5b5b5; }
     @media (max-width: 479px) {
       footer.db-footer p {
         font-size: 10px; } }
