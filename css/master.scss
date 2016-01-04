@@ -2,7 +2,7 @@ $base-theme-color: #eee;
 
 body.db-site {
   padding-top: 3%;
-  font: 400 89%/1.75 "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
+  font: 400 14px/1.75 "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
 
   @media (max-width: 479px) {
     padding: 0;
@@ -20,11 +20,17 @@ h1.db-headline {
 }
 
 h2.db-subhead {
-  color: darken($base-theme-color, 34%);
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  & > .db-subhead__subtext {
+    font-weight: 400;
+  }
 
   &.db-subhead--tagline {
     font-size: 1em;
-    text-transform: uppercase;
+    font-weight: 400;
 
     @media (max-width: 479px) {
       font-size: 11px;
@@ -40,7 +46,13 @@ h2.db-subhead {
 }
 
 h3.db-projects-list__title {
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: underline;
+  border-bottom: none;
 }
 
 code {

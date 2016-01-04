@@ -1,6 +1,6 @@
 body.db-site {
   padding-top: 3%;
-  font: 400 89%/1.75 "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif; }
+  font: 400 14px/1.75 "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif; }
   @media (max-width: 479px) {
     body.db-site {
       padding: 0;
@@ -14,10 +14,14 @@ h1.db-headline {
   font-weight: 900; }
 
 h2.db-subhead {
-  color: #979797; }
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase; }
+  h2.db-subhead > .db-subhead__subtext {
+    font-weight: 400; }
   h2.db-subhead.db-subhead--tagline {
     font-size: 1em;
-    text-transform: uppercase; }
+    font-weight: 400; }
     @media (max-width: 479px) {
       h2.db-subhead.db-subhead--tagline {
         font-size: 11px;
@@ -29,7 +33,12 @@ h2.db-subhead {
         margin-left: auto; } }
 
 h3.db-projects-list__title {
-  font-weight: 500; }
+  font-size: 14px;
+  font-weight: 700; }
+
+a {
+  text-decoration: underline;
+  border-bottom: none; }
 
 code {
   font-size: 13px; }
