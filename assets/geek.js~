@@ -1,7 +1,0 @@
-function helloGeek() {
-	console.log("Hello there, Geek! I'm so glad you found this!");
-}
-
-function downloadNow() {
-	window.open("https://goo.gl/4whEIt");
-}
