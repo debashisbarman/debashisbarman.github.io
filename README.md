@@ -1,7 +1,7 @@
 ##About The Site
 
 This URL has been my online home for last three years. It is built with [Kathamo](http://kathamo.github.io) and hosted on [Github Pages](http://pages.github.com).
-The most upto date version of this website can be found at [debashisbarman.github.io](http://debashisbarman.github.io).
+The most upto date version of this website can be found at [http://debashisbarman.github.io](http://debashisbarman.github.io).
 
 ##License
 
