@@ -1,6 +1,6 @@
 ##About The Site
 
-This URL has been my online home for last three years. It is built with [Kathamo](http://kathamo.github.io) and hosted on [Github Pages](http://pages.github.com).
+This URL has been my online home for last three years. It is built with [React](https://reactjs.org/) and [Kathamo](http://kathamo.github.io) and hosted on [Github Pages](http://pages.github.com).
 The most upto date version of this website can be found at [http://debashisbarman.github.io](http://debashisbarman.github.io).
 
 ##License
